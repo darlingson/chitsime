@@ -1,0 +1,475 @@
+
+Information Systems & Data Management Officer
+
+Feed the Children
+
+Posted Nov 13, 2026
+Lilongwe
+Full time
+Apply by Nov 22, 2026
+Free
+Share
+WhatsApp
+Facebook
+X
+LinkedIn
+Copy Link
+Job Description
+
+Summary:
+
+The Information Systems & Data Management Officer is responsible for strengthening the organisation’s programme data systems and digital data management capabilities. The role leads the configuration and maintenance of DHIS2 and digital data collection platforms, supports database management and GIS analysis, develops dashboards and data visualizations, and promotes data quality, integrity, security and use. Working closely with programme and Monitoring, Evaluation, Accountability and Learning (MEAL) teams, the Officer helps ensure that reliable, timely and accessible data informs programme planning, monitoring, reporting and decision-making. General ICT support is not a core function and, where required, is limited to a maximum of 10% of the role and to issues directly affecting programme data systems.
+
+Working Relationships:
+
+The Officer works closely with programme teams, MEAL colleagues, field staff and relevant regional or global technical colleagues. The role coordinates with designated ICT personnel or service providers for general ICT infrastructure and support outside the limited scope defined in this job description.
+
+Key Responsibilities:
+
+A. Data Systems Management and Development
+
+    Design, configure, maintain and improve databases and systems used to store, manage and analyse programme data.
+    Develop and maintain digital data collection forms, workflows and applications using platforms such as KoboToolbox, CommCare and DHIS2 Mobile, as relevant to programme needs.
+    Manage DHIS2 configuration and maintenance, including metadata, organisation units, data elements, indicators, datasets, validation rules, user roles and dashboards.
+    Work with programme and MEAL teams to translate reporting and monitoring requirements into practical data system solutions.
+    Support appropriate integration and interoperability between DHIS2, digital data collection platforms, GIS tools and other approved programme systems.
+    Maintain clear documentation of system configurations, data definitions, workflows, changes and technical procedures.
+
+B. Data Quality, Governance and Protection
+
+    Develop and implement data collection standards, protocols, validation rules and quality assurance procedures.
+    Conduct routine data quality checks, identify gaps or anomalies, coordinate corrective action with relevant teams and document recurring issues.
+    Promote completeness, accuracy, consistency, timeliness and appropriate use of programme data across implementation areas.
+    Support data cleaning, consolidation and preparation for analysis and reporting, maintaining traceability and appropriate version control.
+    Apply organisational policies and applicable requirements for data privacy, confidentiality, access control, retention and secure handling of information.
+    Maintain appropriate data backup and recovery arrangements for systems under the role’s responsibility, in coordination with designated ICT or system administrators where necessary.
+
+C. Data Analysis, Visualization and Reporting
+
+    Develop and maintain automated dashboards, visualizations and routine reports using Power BI, Tableau or comparable tools.
+    Analyse programme data to identify trends, performance gaps, outliers and findings relevant to programme implementation and management decisions.
+    Support teams to define and interpret indicators and ensure that calculations and reporting outputs are consistent and clearly documented.
+    Produce accurate, user-friendly data summaries and visual products for programme reviews, planning, monitoring and reporting.
+    Work with programme and MEAL colleagues to improve the accessibility and practical use of data by technical and non-technical users.
+
+D. Geographic Information Systems (GIS)
+
+    Develop and maintain GIS datasets and spatial databases relevant to programme implementation and monitoring.
+    Conduct spatial analysis and prepare thematic maps to support programme planning, resource allocation, coverage analysis and monitoring.
+    Integrate geographic information with DHIS2 and other approved programme data systems where appropriate.
+    Apply consistent standards for geographic data management, documentation, accuracy and presentation.
+
+E. Capacity Building and User Support
+
+    Train and coach programme, MEAL and field staff in the use of DHIS2, digital data collection platforms, dashboards and GIS outputs.
+    Develop user guides, standard operating procedures and training materials for data systems and reporting processes.
+    Provide technical guidance to users on data entry, validation, analysis and interpretation, adapting explanations to different levels of technical ability.
+    Support field teams to resolve issues with mobile data collection devices and applications when these directly affect programme data collection or submission.
+    Gather user feedback and identify opportunities to improve system usability, adoption and data workflows.
+
+F. System Improvement and Innovation
+
+    Identify opportunities to simplify data workflows, automate routine processes and reduce duplication or manual handling.
+    Assess and recommend improvements to data systems and tools based on programme needs, data protection considerations, usability and sustainability.
+    Monitor relevant developments in data management, DHIS2, GIS and data visualization, recommending practical improvements where beneficial.
+    Maintain an inventory of programme data platforms, relevant subscriptions and system dependencies within the role’s remit, coordinating procurement or licensing matters with the responsible team.
+
+G. Limited ICT Support (Maximum 10% of Role)
+
+    Provide limited troubleshooting for devices, connectivity or software only where an issue directly prevents the use of programme data systems or digital data collection tools.
+    Refer general hardware, network, server, email, account administration, cybersecurity infrastructure and helpdesk issues to the designated ICT team or service provider.
+    Do not assume responsibility for organisation-wide network or server administration, general end-user IT support, email administration or overall ICT infrastructure management.
+
+
+Requirements
+
+Required Qualifications and Experience:
+
+Education
+
+    Bachelor’s degree in Information Systems, Data Management, Computer Science, Information Technology, Statistics, GIS, Monitoring and Evaluation, or a closely related field.
+    Specialized training or certification in DHIS2 and GIS is required, or equivalent demonstrable technical expertise supported by relevant training and practical experience.
+
+Experience
+
+    At least three years of relevant experience in data management, information systems, digital data collection, database administration or programme data systems.
+    Demonstrated practical experience configuring or administering DHIS2, including metadata management, indicators, validation rules, user roles or dashboards.
+    Experience with GIS software such as QGIS or ArcGIS and with spatial analysis and map production. Experience designing, maintaining or analyzing databases, with knowledge of SQL Server, MySQL or comparable database technologies.
+    Experience using digital data collection platforms such as KoboToolbox, CommCare or DHIS2 Mobile.
+    Demonstrated ability to develop dashboards and data visualizations using Power BI, Tableau or similar tools.
+    Experience supporting and training non-technical users and working collaboratively with programme and MEAL teams.
+    Experience in an NGO, humanitarian or development programme environment is an advantage.
+
+4. Technical Skills
+
+    Strong working knowledge of DHIS2 configuration, metadata management, data quality controls and reporting.
+    Practical GIS skills, including spatial data management, analysis and thematic mapping. • Proficiency in data visualization and reporting tools such as Power BI or Tableau.
+    Knowledge of database design, data structures, data cleaning and SQL; Python or R is an advantage.
+    Understanding of data protection, access control, confidentiality, secure data handling and backup principles.
+    Advanced proficiency in Microsoft Office, particularly Excel.
+    Strong analytical, troubleshooting and problem-solving skills focused on data systems and programme information needs.
+
+5. Core Competencies and Personal Attributes
+
+    Strong analytical thinking and attention to detail.
+    Commitment to data accuracy, integrity, confidentiality and responsible data use.
+    Ability to translate technical concepts into clear guidance for non-technical colleagues.
+    Strong communication, facilitation and training skills.
+    Collaborative approach and ability to work effectively with programme, MEAL and field teams.
+    Proactive, organized and able to manage competing priorities and deadlines.
+    Continuous improvement mindset, with an emphasis on practical and sustainable solutions.
+    Commitment to the mission, vision and values of Feed the Children.
+
+Commitment to Equal Employment
+
+At Feed the Children, we believe in Equal Employment Opportunities. Therefore, we consider all applicants based on merit, regardless of race, sex, color, national origin, religion, sexual orientation, age, marital status, disability, or any other characteristic protected by applicable law. We are also committed to promoting a gender-responsive approach as a cross-cutting principle throughout our organization.
+
+Safeguarding Policy
+
+Feed the Children strives to provide an environment free from sexual exploitation, abuse, and harassment in all locations where humanitarian assistance and development programs are implemented. Feed the Children has a zero-tolerance policy toward sexual exploitation, abuse, and harassment. We expect all employees to uphold the highest ethical standards, protect the organization’s integrity and reputation, and ensure that all work is conducted honestly and fairly, in accordance with Feed the Children’s Safeguarding and related policies.
+
+We are committed to keeping children safe. Therefore, our recruitment and selection process includes background checks, reflecting our commitment to child safeguarding.
+
+Our primary commitment is to foster a culture that prioritizes the promotion of safe and protective environments for children participating in the various programs implemented by Feed the Children in El Salvador, Guatemala, and Honduras, ensuring zero tolerance for any form of harm, abuse, or mistreatment of children.
+
+Commitment to Gender Equality, Diversity, and Inclusion
+
+Feed the Children is committed to fostering a diverse, inclusive, respectful, and safe work environment where everyone is treated fairly and with dignity and respect. Feed the Children expressly prohibits and will not tolerate discrimination, harassment, retaliation, or workplace bullying in any work environment. As part of our strategy, we aim to increase the representation and recruitment of women across our workforce, as well as individuals from diverse racial and ethnic backgrounds.
+How to apply
+
+Please send your CV to this Email feedinternationaljobs@feedthechildren.org
+About the employer
+Feed the Children
+
+Feed the Children
+
+No description provided.
+Categories
+IT & Technology
+Data Science
+
+
+
+
+
+
+GIS Specialist – Agroforestry
+
+MAMALAND (A MOTA-ENGIL GROUP COMPANY)
+
+Posted Nov 11, 2026
+Malawi (International)
+Full time
+Apply by Nov 18, 2026
+Free
+Share
+WhatsApp
+Facebook
+X
+LinkedIn
+Copy Link
+Job Description
+
+Mamaland, a Mota-Engil Group company, is dedicated to the development and maintenance of sustainable systems through a more inclusive approach, with the aim of generating Prosperity for the Planet and for People. The MoRe Project is a large-scale initiative, with an expected duration of 40 years, focused on forest restoration and sustainable development in Malawi. The project aims to restore 555,000 hectares of degraded land through reforestation, agroforestry, and assisted natural regeneration, while promoting the active involvement of local communities. Through this approach, MoRe seeks to generate long-lasting environmental, social, and economic benefits, contributing to ecological resilience and the well-being of populations.
+
+Job Description and Main Responsibilities:
+
+    A professional capable of transforming complex spatial data into operational products, robust analyses, and decision support information for environmental, forestry, and carbon projects. The ideal candidate should combine strong technical expertise in geographic information systems, remote sensing, programming, and data science.
+    Manage, structure and ensure the quality of geographic databases, including vector, raster, LiDAR and field observation data.
+    Produce maps, spatial analyses, and indicators to support planning, monitoring, reporting and decisionmaking.
+    Process satellite imagery for land use and land cover classification, forest monitoring, change detection, biomass assessment and environmental evaluations.
+    Apply machine learning and, where appropriate, deep learning techniques to satellite and drone imagery.
+    Support UAV mission planning, data acquisition, and the processing of products such as orthomosaics, digital models, and point cloud
+    Design and maintain digital field data collection tools, including Survey123 and ArcGIS ecosystem solutions.
+    Support forest inventories and MRV/dMRV systems.
+    Prepare technical reports, presentations, procedures, and methodological documentation.
+    Train and support field teams and non-technical users, ensuring GIS outputs are clearly understood and effectively used in operations.
+
+
+Requirements
+
+Job Requirements and Competency Profile:
+
+    Bachelor’s or Master’s degree in Geographic Engineering, Geomatics, Geography, Remote Sensing, Environmental Sciences, Forestry Engineering, Data Science, Computer Science, or a related discipline.
+    Relevant professional experience in GIS, remote sensing, and geospatial analysis. 3 to 5 years of experience is preferred.
+    Proficiency in ArcGIS Pro, ArcGIS Online, and QGIS, including geoprocessing, cartography, and geographic database management.
+    Strong Python skills for data processing, automation, and spatial analysis.
+    Practical experience with Google Earth Engine.
+    Knowledge of optical and radar imagery, classification methods, spectral indices, time-series analysis, and result validation.
+    Experience in environmental, forestry, conservation, agriculture, carbon, or land management projects.
+    Professional proficiency in English, both written and spoken, with the ability to communicate technical results to non-specialist audiences.
+    Availability for regular travel to project sites and fieldwork locations; valid driving licence required.
+
+Preferred Competencies:
+
+    Experience with Python
+    Experience with Power BI, dashboards and integration between GIS and business intelligence tools.
+    Certified drone pilot or proven drone operations experience
+    Knowledge of LiDAR, point clouds and digital terrain/surface models.
+    Experience with carbon projects, MRV systems, forest inventories and biomass estimation.
+
+
+Application link: https://careers.mota-engil.com/job/Lilongwe-GIS-Specialist-Agroforestry-MF-LI/1456007033/
+
+
+
+
+IT Officer
+
+Africa Global Logistics Malawi Limited
+
+Posted Nov 9, 2026
+Blantyre
+Full time
+Apply by Nov 20, 2026
+Free
+Share
+WhatsApp
+Facebook
+X
+LinkedIn
+Copy Link
+Job Description
+
+COMPANY
+
+IT OFFICER
+
+AGL (Africa Global Logistics) is the leading multimodal logistics operator (port, logistics, maritime and rail) in Africa. The company is now part of the MSC Group, a leading maritime and logistics company.
+
+Thanks to its expertise developed over more than a century and to more than 23,000 employees in 49 countries, AGL provides its African and global customers with global, tailor-made and innovative logistics solutions, with the ambition of contributing to the transformation of Africa in a sustainable way.
+
+Are you looking for a rewarding experience in an international environment? Do you want to make an impact in a company that puts Africa at the heart of its project?
+
+Join AGL, the leading multimodal logistics operator on the African continent!
+
+MISSIONS
+
+Applicants must have a Bachelor’s Degree in Information Technology, Computer Science, Information Systems, Computer Engineering or related field preferably 2 to 5 years of practical IT support/infrastructure experience.
+
+Reporting to the IT Manager, the successful person will among other things be responsible for:-
+
+DUTIES & RESPONSIBILITIES:
+
+    Provide effective L1/L2 technical support to users and ensure timely resolution of IT incidents and service requests.
+    Support LAN/WAN, Wi-Fi, switching, routing and telecommunications infrastructure.
+    Administer and support Microsoft-based end-user and identity erwironments.
+    Support PCs, laptops, printers, mobile devices, meeting-room/video conferencing equipment and other IT assets.
+    Monitor infrastructure availability and proactively identify potential service interruptions.
+    Support deployment, configuration maintenance of network and infrastructure equipment
+    Maintain accurate IT asset configuration records inventories, technical documentation.
+    Participate in IT infrastructure projects, migrations, upgrades and User Acceptance Testing
+    Support cybersecurity controls, access management, endpoint security and compliance with company IT policies.
+    Liaise with service providers and vendors on incidents, installations and technical projects.
+    Support technical requirements for all AGL Malawi projects and office operations as required.
+    Contribute to continuous improvement, automation and digitalisation initiatives.
+
+
+Requirements
+
+PROFILE
+
+The ideal candidates should have good knowledge of Microsoft Windows and Microsoft 365, good understanding of networking including TCP/IP, VLANs, LAN/WAN and WI-FI, switching, routing and practical troubleshooting skills across hardware, software and network environments. Those with Microsoft certification such as Microsoft 365, Azure or related Microsoft credentials, experience supporting CCTV and video conferencing solutions and exposure to IT infrastructure projects, cybersecurity and endpoint management will have an added advantage.
+
+We are particularly interested in applicants who demonstrate agility and adaptability, initiative and accountability, strong analytical and troubleshooting ability, teamwork and integrity and ability to work with minimum supervision will be preferred.
+
+Those meeting our professional requirements, experience and specifications should apply with a detailed CV, contact telephone number(s), e-mail address and three traceable referees not later than 20th November 2026 to the following e-mail: mw002-vacancy.aglmw@aglgroup.com or to: –
+
+The Human Resources Manager
+
+Africa Global Logistics Malawi Limited
+
+P O Box 838
+
+BLANTYRE
+
+
+
+
+IT CONSULTANT
+
+TRIDENT SECURITY COMPANY LIMITED
+
+Posted Oct 14, 2026
+Blantyre
+Full time
+Free
+Share
+WhatsApp
+Facebook
+X
+LinkedIn
+Copy Link
+Job Description
+
+OVERVIEW
+
+Trident Security Company Limited is seeking an IT Consultant to provide technical support, maintain the company’s IT infrastructure, and ensure the reliable operation of its hardware, software, internet, server, network, and email systems.
+
+The successful candidate will diagnose and resolve technical issues, manage server and email hosting services, recommend suitable technology solutions, and advise management on IT improvements and technology investments. The consultant will provide support on an as-needed basis, including remote assistance and on-site attendance when required.
+
+JOB TYPE: Full Time
+
+POSITION: IT CONSULTANT
+
+
+DUTIES AND KEY RESPONSIBILITIES
+
+Hardware and Software Support
+
+    Diagnose and resolve hardware issues affecting computers, laptops, printers, scanners, and other IT equipment.
+    Install, configure, maintain, and troubleshoot operating systems, business applications, and other software.
+    Perform routine maintenance, updates, and upgrades to ensure optimal performance of IT equipment and software.
+    Recommend suitable hardware and software solutions based on operational requirements and budget.
+    Advise management on hardware replacements, software upgrades, licensing, and technology purchases.
+
+Internet and Network Management
+
+    Monitor and troubleshoot internet connectivity, Wi-Fi, and local area network (LAN) issues.
+    Maintain and troubleshoot routers, switches, network cables, and other networking equipment.
+    Liaise with internet service providers to resolve connectivity problems and service interruptions.
+
+Server and IT Infrastructure Management
+
+    Maintain, monitor, and troubleshoot company servers and related IT infrastructure.
+    Manage server performance, storage capacity, user accounts, access permissions, and shared network resources.
+    Ensure regular data backups are performed and verify that backup and recovery procedures work effectively.
+    Diagnose and resolve server-related issues affecting access to company systems, files, and applications.
+    Recommend server upgrades, cloud-based solutions, and other infrastructure improvements where necessary.
+
+Email Hosting and Management
+
+    Manage and troubleshoot hosted email services, business email accounts, and associated configurations.
+    Set up new email accounts and configure email access on computers, mobile devices, and other authorised equipment.
+    Resolve email delivery failures, spam issues, mailbox errors, and email synchronisation problems.
+    Monitor email domain registration, hosting services, renewals, and related technical requirements.
+    Recommend reliable email hosting solutions and implement measures to protect business email accounts against unauthorised access and cyber threats.
+
+IT Security and Data Protection
+
+    Ensure computers, servers, networks, and email systems have appropriate security measures in place.
+    Install, configure, and maintain antivirus software and other relevant security applications.
+    Monitor system access and advise management on password management, user permissions, and cybersecurity risks.
+    Maintain and review data backup procedures to minimise the risk of data loss.
+    Assist in investigating and resolving IT security incidents and implement measures to prevent recurrence.
+
+Requirements
+
+KEY REQUIREMENTS
+
+Academic, Professional Qualifications and Experience:
+
+The applicant should possess the following:
+
+    A Diploma or Bachelor’s degree in Information Technology, Computer Science, Computer Engineering, or a related field.
+    A minimum of 3–5 years of relevant experience in IT support, systems administration, network management, or a similar role.
+    Strong knowledge of computer hardware, operating systems, business software, internet connectivity, and network troubleshooting.
+    Practical experience in server administration, hosted email services, data backups, and IT infrastructure maintenance.
+    Good understanding of cybersecurity, data protection, user access management, and disaster recovery procedures.
+    Proficiency in diagnosing and resolving hardware, software, network, server, and email-related problems.
+
+Personal Specification:
+
+    High levels of professionalism, reliability, confidentiality, and attention to detail.
+    Ability to work independently and respond to urgent technical issues.
+    Willingness to attend the company’s premises when physical intervention is required.
+    Flexibility and availability to provide IT support on an as-needed basis, in line with agreed service and response times.
+
+
+SALARY AND BENEFITS
+
+Trident Security Company Limited offers the opportunity to work with well-known clients, access competitive salary and benefits, and gain valuable experience in the security industry.
+
+HOW TO APPLY
+
+To apply for this job email your details to hr@tridentsecurity.mw
+
+
+
+
+DATA ADMINISTRATOR
+
+Strategic Sales and Merchandising Services Limited
+
+Posted Sep 21, 2026
+Lilongwe
+Full time
+Free
+Apply Now
+Share
+WhatsApp
+Facebook
+X
+LinkedIn
+Copy Link
+Job Description
+
+OVERVIEW
+
+At Strategic Sales and Merchandising Services Limited, we connect people and opportunities. We are seeking a detail-oriented, analytical, and results-driven Data Administrator to join our operational team in Malawi.
+
+The Data Administrator plays a vital role in ensuring the credibility, accuracy, and integrity of field data. You will identify and rectify data errors/omissions, maintain operational databases, analyze reports, and deliver strategic insights to support operational success.
+
+Contract Type: 1-Year Fixed-Term Contract (Starting September 2026)
+
+Job Family: Technology
+
+Reports To: Operations Manager
+
+Application Deadline: Not Specified
+
+POSITION: DATA ADMINISTRATOR
+
+JOB TYPE: Fixed Contract (1 Year)
+
+
+
+KEY RESPONSIBILITIES & DELIVERABLES
+
+1. Analysis, Record-Keeping & Reporting:
+
+    Manage structured reporting schedules and review operational reports for quality.
+    Perform data analysis to identify exceptions, trends, and operational insights.
+    Conduct Time in Motion studies, consolidating and analyzing data as required.
+    Maintain comprehensive historical data records for auditing and operational tracking.
+    Communicate findings and feedback to key internal and external stakeholders.
+
+2. Operational Systems & Database Management:
+
+    Manage and maintain operational databases to ensure smooth system functionality.
+    Conduct data audits, track error patterns, and implement systemic improvements.
+    Collaborate with field teams and software developers to resolve mobility tool/system issues.
+    Track daily audit activities and calculate field team performance incentives based on qualifying thresholds.
+
+3. Administration & Compliance:
+
+    Guide team members on relevant policies, processes, and data collection standards.
+    Capture project-specific data while ensuring high precision and accuracy.
+
+Requirements
+
+MINIMUM QUALIFICATIONS & EXPERIENCE
+
+    Education: Diploma or Certification in Information Technology, Data Analytics, Business Administration, or a related field.
+    Experience: 2–3 years of hands-on experience in a systems or analytical environment, preferably within the FMCG sector.
+    Technical Skills: High proficiency in MS Office (Advanced Excel and data tools).
+
+KEY COMPETENCIES
+
+    Analytical & critical thinking.
+    Quality & detail excellence.
+    Excellent written and verbal communication.
+    Strong interpersonal & team collaboration skills.
+    Agility, problem-solving, and continuous improvement mindset.
+
+
+
+HOW TO APPLY
+
+Interested candidates who meet the above criteria should submit their application and CV to:
+
+Email: peopleteam.sadc@smollan.com
+
+Only shortlisted candidates will be contacted. Strategic Sales and Merchandising Services Limited is an equal opportunity employer.
+
+

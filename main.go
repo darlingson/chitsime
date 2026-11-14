@@ -1,22 +1,66 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
+	"context"
+	"errors"
+	"log/slog"
+	"net/http"
+	"os"
+	"os/signal"
+	"time"
 
-    "github.com/gorilla/mux"
+	"github.com/darlingson/chitsime/internal/api"
+	"github.com/darlingson/chitsime/internal/store"
 )
 
 func main() {
-    r := mux.NewRouter()
+	log := slog.New(slog.NewTextHandler(os.Stdout, nil))
 
-    r.HandleFunc("/books/{title}/page/{page}", func(w http.ResponseWriter, r *http.Request) {
-        vars := mux.Vars(r)
-        title := vars["title"]
-        page := vars["page"]
+	dbPath := env("DB_PATH", "data/chitsime.db")
+	if _, err := os.Stat(dbPath); errors.Is(err, os.ErrNotExist) {
+		log.Error("database not found, run setup first", "path", dbPath, "command", "go run ./cmd/setup")
+		os.Exit(1)
+	}
 
-        fmt.Fprintf(w, "You've requested the book: %s on page %s\n", title, page)
-    })
+	st, err := store.Open(dbPath)
+	if err != nil {
+		log.Error("open database", "err", err)
+		os.Exit(1)
+	}
+	defer st.Close()
 
-    http.ListenAndServe(":80", r)
+	addr := env("ADDR", ":8080")
+	srv := &http.Server{
+		Addr:              addr,
+		Handler:           api.New(st, log),
+		ReadHeaderTimeout: 5 * time.Second,
+		ReadTimeout:       15 * time.Second,
+		WriteTimeout:      30 * time.Second,
+		IdleTimeout:       60 * time.Second,
+	}
+
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
+	defer stop()
+
+	go func() {
+		log.Info("api listening", "addr", addr, "db", dbPath)
+		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+			log.Error("server", "err", err)
+			stop()
+		}
+	}()
+
+	<-ctx.Done()
+
+	shutdownCtx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	_ = srv.Shutdown(shutdownCtx)
+	log.Info("stopped")
+}
+
+func env(key, fallback string) string {
+	if v := os.Getenv(key); v != "" {
+		return v
+	}
+	return fallback
 }
