@@ -34,6 +34,9 @@ data/*.db
 data/*.db-wal
 data/*.db-shm
 
+# generated scrape output
+data/*-raw*.json
+
 # Editor/IDE
 # .idea/
 # .vscode/

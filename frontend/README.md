@@ -1,32 +1,25 @@
-# React + TypeScript + Vite
+# Chitsime frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + TypeScript dashboard for the structured job data. Vite builds it into
+`dist/`, which `main.go` embeds and serves from the Go binary.
 
-Currently, two official plugins are available:
+## Commands
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```powershell
+npm install
+npm run dev     # dev server on :5173, proxies /api to :8080
+npm run build   # type-check and emit dist/
+npm run lint    # oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Layout
+
+- `src/App.tsx` - filters, pagination, and switching between the jobs and skill views
+- `src/api.ts` - typed client for `/api/jobs` and `/api/skills`
+- `src/format.ts` - date, salary, experience, and label formatting
+- `src/components/JobCard.tsx` - summary card in the jobs grid
+- `src/components/JobDetail.tsx` - modal with the full advert and skill table
+- `src/components/SkillDemandPanel.tsx` - skill demand table
+
+Set `VITE_API_BASE` to point at a different API host; it defaults to the same
+origin, which is what the Go server provides.

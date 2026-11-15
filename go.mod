@@ -2,9 +2,14 @@ module github.com/darlingson/chitsime
 
 go 1.27.4
 
-require modernc.org/sqlite v1.62.0
+require (
+	github.com/PuerkitoBio/goquery v1.13.0
+	golang.org/x/net v0.58.0
+	modernc.org/sqlite v1.62.0
+)
 
 require (
+	github.com/andybalholm/cascadia v1.3.4 // indirect
 	github.com/dustin/go-humanize v1.1.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/mattn/go-isatty v0.0.24 // indirect
