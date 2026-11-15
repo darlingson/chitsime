@@ -9,7 +9,9 @@ records are ICT/data roles taken from `jobs.txt`.
 - `internal/database/seed.sql` - the five adverts, their skills, and the skill catalogue
 - `internal/store/store.go` - SQLite access
 - `internal/api/` - HTTP handlers and JSON shapes
+- `internal/raw/raw.go` - raw advert records shared by the scraper and merge commands
 - `cmd/scrape/main.go` - captures raw adverts from job sites into JSON
+- `cmd/merge/main.go` - merges captures into one numbered file
 - `cmd/setup/main.go` - creates the database and inserts the seed rows
 - `frontend/` - React + TypeScript dashboard (Vite)
 - `main.go` - serves the API and the embedded frontend
@@ -116,6 +118,34 @@ skip URLs already saved, so `-minutes` works as a checkpoint.
 CareerAd pages also expose JSON-LD `JobPosting` data. Some adverts are
 subscriber-gated; those are saved with `"gated": true` and a public preview
 only. Raw output is local working data and is not committed.
+
+## Merging captures
+
+Combine every capture into one numbered file for manual structuring:
+
+```powershell
+go run ./cmd/merge
+```
+
+It reads `data/careerad-jobs-raw.json` and `data/jobsearch-jobs-raw.json`,
+writes `data/jobs-merged.json`, and tags each advert with a `source`. Sitemap
+metadata is dropped. Adverts are ordered newest first and numbered from 1, so
+an advert can be referred to by `id` while it is being structured:
+
+```json
+{
+  "generated_at": "2026-11-15T08:49:37Z",
+  "count": 686,
+  "jobs": [
+    { "id": 1, "source": "careerad", "title": "...", "...": "..." }
+  ]
+}
+```
+
+Override the inputs with `-in` (comma-separated) and the output with `-out`.
+The merge reports duplicate source URLs and repeated title/employer pairs but
+does not remove them. The merged file is local working data and is not
+committed.
 
 ## Adding an advert
 
