@@ -34,7 +34,7 @@ data/*.db
 data/*.db-wal
 data/*.db-shm
 
-# generated scrape output
+# generated raw source
 data/*-raw*.json
 
 # Editor/IDE

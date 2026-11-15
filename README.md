@@ -1,7 +1,7 @@
 # chitsime
 
 A Go + SQLite API and dashboard over Malawian job adverts. The first five
-records are ICT/data roles taken from `jobs.txt`.
+records are ICT/data roles.
 
 ## Structure
 
@@ -9,7 +9,6 @@ records are ICT/data roles taken from `jobs.txt`.
 - `internal/database/seed.sql` - the five adverts, their skills, and the skill catalogue
 - `internal/store/store.go` - SQLite access
 - `internal/api/` - HTTP handlers and JSON shapes
-- `cmd/scrape/main.go` - captures raw adverts from job sites into JSON
 - `cmd/setup/main.go` - creates the database and inserts the seed rows
 - `frontend/` - React + TypeScript dashboard (Vite)
 - `main.go` - serves the API and the embedded frontend
@@ -88,38 +87,11 @@ curl.exe "http://localhost:8080/api/jobs?posted_from=2026-11-01&posted_to=2026-1
 curl.exe http://localhost:8080/api/skills
 ```
 
-## Capturing adverts
+## Raw source
 
-The scraper saves whole adverts as JSON. It never writes to the database;
-structuring is a separate manual step.
-
-```powershell
-go run ./cmd/scrape -source careerad
-go run ./cmd/scrape -source jobsearch
-```
-
-Flags:
-
-- `-source` - `careerad` (default) or `jobsearch`
-- `-out` - output file, default `data/<source>-jobs-raw.json`
-- `-minutes` - stop after this long; rerun to resume
-- `-delay` - pause between requests, default `300ms`
-- `-limit` - fetch at most this many pages
-- `-fresh` - discard the existing output and start over
-- `-sitemap` - override the sitemap URL
-
-Both sources read their sitemap, fetch every job page, and record title,
-employer, dates, employment type, location, categories, description,
-requirements, application text, and links. Reruns load the existing output and
-skip URLs already saved, so `-minutes` works as a checkpoint.
-
-CareerAd pages also expose JSON-LD `JobPosting` data. Some adverts are
-subscriber-gated; those are saved with `"gated": true` and a public preview
-only.
-
-The working file used for structuring is `data/jobs-raw.json`. It holds the
-adverts from every source in one list, newest first, where each advert has an
-`id` and a `source`. Raw files are local working data and are not committed.
+`data/jobs-raw.json` is the supplied raw source used for structuring. It holds
+686 adverts newest first, each with an `id` and a `source`. Raw files are local
+working data and are not committed.
 
 ## Adding an advert
 
