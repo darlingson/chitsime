@@ -20,9 +20,45 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"golang.org/x/net/html"
-
-	"github.com/darlingson/chitsime/internal/raw"
 )
+
+type Link struct {
+	Text string `json:"text"`
+	Href string `json:"href"`
+}
+
+type Job struct {
+	SourceURL        string   `json:"source_url"`
+	Title            string   `json:"title"`
+	Employer         string   `json:"employer"`
+	PostedAt         string   `json:"posted_at"`
+	Deadline         string   `json:"deadline"`
+	EmploymentType   string   `json:"employment_type"`
+	Location         string   `json:"location"`
+	Categories       []string `json:"categories"`
+	ApplicationText  string   `json:"application_text"`
+	DescriptionText  string   `json:"description_text"`
+	DescriptionHTML  string   `json:"description_html"`
+	RequirementsText string   `json:"requirements_text"`
+	RequirementsHTML string   `json:"requirements_html"`
+	Links            []Link   `json:"links"`
+	Gated            bool     `json:"gated"`
+	FetchedAt        string   `json:"fetched_at"`
+}
+
+type Failure struct {
+	SourceURL string `json:"source_url"`
+	Error     string `json:"error"`
+	At        string `json:"at"`
+}
+
+type Output struct {
+	ScrapedAt string    `json:"scraped_at"`
+	Source    string    `json:"source"`
+	Sitemap   string    `json:"sitemap"`
+	Jobs      []Job     `json:"jobs"`
+	Failures  []Failure `json:"failures"`
+}
 
 type urlSet struct {
 	URLs []struct {
@@ -33,7 +69,7 @@ type urlSet struct {
 type source struct {
 	baseURL string
 	sitemap string
-	parse   func(string, []byte) (raw.Job, error)
+	parse   func(string, []byte) (Job, error)
 }
 
 var sources = map[string]source{
@@ -128,7 +164,7 @@ func main() {
 		body, err := fetch(ctx, client, pageURL)
 		if err != nil {
 			failed++
-			doc.Failures = append(doc.Failures, raw.Failure{
+			doc.Failures = append(doc.Failures, Failure{
 				SourceURL: pageURL,
 				Error:     err.Error(),
 				At:        time.Now().UTC().Format(time.RFC3339),
@@ -141,7 +177,7 @@ func main() {
 		job, err := src.parse(pageURL, body)
 		if err != nil {
 			failed++
-			doc.Failures = append(doc.Failures, raw.Failure{
+			doc.Failures = append(doc.Failures, Failure{
 				SourceURL: pageURL,
 				Error:     err.Error(),
 				At:        time.Now().UTC().Format(time.RFC3339),
@@ -278,10 +314,10 @@ type jobPosting struct {
 	} `json:"jobLocation"`
 }
 
-func parseCareerAd(pageURL string, body []byte) (raw.Job, error) {
+func parseCareerAd(pageURL string, body []byte) (Job, error) {
 	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
 	if err != nil {
-		return raw.Job{}, fmt.Errorf("parse HTML: %w", err)
+		return Job{}, fmt.Errorf("parse HTML: %w", err)
 	}
 
 	page := doc.Selection
@@ -291,7 +327,7 @@ func parseCareerAd(pageURL string, body []byte) (raw.Job, error) {
 		title = cleanText(page.Find("h1").First())
 	}
 	if title == "" {
-		return raw.Job{}, errors.New("title not found")
+		return Job{}, errors.New("title not found")
 	}
 
 	description := contentAfter(page, "Job Description")
@@ -314,7 +350,7 @@ func parseCareerAd(pageURL string, body []byte) (raw.Job, error) {
 		application = applicationText(requirements)
 	}
 
-	links := make([]raw.Link, 0, 4)
+	links := make([]Link, 0, 4)
 	linkSeen := make(map[string]bool)
 	addLinks(description, &links, linkSeen)
 	addLinks(requirements, &links, linkSeen)
@@ -329,7 +365,7 @@ func parseCareerAd(pageURL string, body []byte) (raw.Job, error) {
 		location = joinLocation(jp)
 	}
 
-	return raw.Job{
+	return Job{
 		SourceURL:        pageURL,
 		Title:            title,
 		Employer:         employer,
@@ -484,15 +520,15 @@ func humanizeEmployment(v any) string {
 	return strings.Join(words, " ")
 }
 
-func parseJobSearch(pageURL string, body []byte) (raw.Job, error) {
+func parseJobSearch(pageURL string, body []byte) (Job, error) {
 	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(body))
 	if err != nil {
-		return raw.Job{}, fmt.Errorf("parse HTML: %w", err)
+		return Job{}, fmt.Errorf("parse HTML: %w", err)
 	}
 
 	title := cleanText(doc.Find("h1.entry-title").First())
 	if title == "" {
-		return raw.Job{}, errors.New("title not found")
+		return Job{}, errors.New("title not found")
 	}
 
 	postedAt := doc.Find("time.entry-date").First().AttrOr("datetime", "")
@@ -506,7 +542,7 @@ func parseJobSearch(pageURL string, body []byte) (raw.Job, error) {
 	descriptionHTML, _ := description.Html()
 	application := doc.Find(".job_application .application_details").First()
 
-	links := make([]raw.Link, 0, 4)
+	links := make([]Link, 0, 4)
 	linkSeen := make(map[string]bool)
 	addLinks(description, &links, linkSeen)
 	addLinks(application, &links, linkSeen)
@@ -516,7 +552,7 @@ func parseJobSearch(pageURL string, body []byte) (raw.Job, error) {
 		employer = cleanText(doc.Find(".company .company_header").First())
 	}
 
-	return raw.Job{
+	return Job{
 		SourceURL:       pageURL,
 		Title:           title,
 		Employer:        employer,
@@ -532,7 +568,7 @@ func parseJobSearch(pageURL string, body []byte) (raw.Job, error) {
 	}, nil
 }
 
-func addLinks(sel *goquery.Selection, links *[]raw.Link, seen map[string]bool) {
+func addLinks(sel *goquery.Selection, links *[]Link, seen map[string]bool) {
 	sel.Find("a[href]").Each(func(_ int, a *goquery.Selection) {
 		href, ok := a.Attr("href")
 		if !ok {
@@ -548,7 +584,7 @@ func addLinks(sel *goquery.Selection, links *[]raw.Link, seen map[string]bool) {
 			return
 		}
 		seen[key] = true
-		*links = append(*links, raw.Link{Text: text, Href: href})
+		*links = append(*links, Link{Text: text, Href: href})
 	})
 }
 
@@ -625,7 +661,7 @@ func normalizeText(s string) string {
 	return strings.TrimSpace(strings.Join(out, "\n"))
 }
 
-func pruneFailures(doc raw.Output) []raw.Failure {
+func pruneFailures(doc Output) []Failure {
 	seen := make(map[string]bool, len(doc.Jobs))
 	for _, job := range doc.Jobs {
 		seen[job.SourceURL] = true
@@ -639,30 +675,30 @@ func pruneFailures(doc raw.Output) []raw.Failure {
 	return out
 }
 
-func loadOutput(path, sitemap string) raw.Output {
-	doc := raw.Output{Jobs: []raw.Job{}, Failures: []raw.Failure{}}
+func loadOutput(path, sitemap string) Output {
+	doc := Output{Jobs: []Job{}, Failures: []Failure{}}
 	body, err := os.ReadFile(path)
 	if err != nil {
 		return doc
 	}
 	if err := json.Unmarshal(body, &doc); err != nil {
 		log.Printf("existing output is not valid JSON, starting fresh: %v", err)
-		return raw.Output{Jobs: []raw.Job{}, Failures: []raw.Failure{}}
+		return Output{Jobs: []Job{}, Failures: []Failure{}}
 	}
 	if doc.Sitemap != "" && doc.Sitemap != sitemap {
 		log.Printf("existing output belongs to %s, starting fresh", doc.Sitemap)
-		return raw.Output{Jobs: []raw.Job{}, Failures: []raw.Failure{}}
+		return Output{Jobs: []Job{}, Failures: []Failure{}}
 	}
 	if doc.Jobs == nil {
-		doc.Jobs = []raw.Job{}
+		doc.Jobs = []Job{}
 	}
 	if doc.Failures == nil {
-		doc.Failures = []raw.Failure{}
+		doc.Failures = []Failure{}
 	}
 	return doc
 }
 
-func save(path string, doc *raw.Output) error {
+func save(path string, doc *Output) error {
 	doc.ScrapedAt = time.Now().UTC().Format(time.RFC3339)
 
 	body, err := json.MarshalIndent(doc, "", "  ")
