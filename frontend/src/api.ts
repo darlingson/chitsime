@@ -30,7 +30,7 @@ export type Job = {
   industry: string | null
   seniority: string
   is_ict: boolean
-  education_level: string
+  education_level: string | null
   experience_years: Range
   salary: Salary
   posted_on: string
@@ -39,7 +39,6 @@ export type Job = {
   responsibilities: string[]
   requirements: string[]
   skills: JobSkill[]
-  source_url: string | null
 }
 
 export type SkillDemand = {

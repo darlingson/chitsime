@@ -143,12 +143,6 @@ function JobDetail({ job, onClose }: JobDetailProps) {
               </table>
             </section>
           )}
-
-          {job.source_url && (
-            <a className="source-link" href={job.source_url} target="_blank" rel="noreferrer">
-              View original advert
-            </a>
-          )}
         </div>
       </div>
     </div>

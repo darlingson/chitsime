@@ -12,7 +12,7 @@ type jobDTO struct {
 	Industry         *string       `json:"industry"`
 	Seniority        string        `json:"seniority"`
 	IsICT            bool          `json:"is_ict"`
-	EducationLevel   string        `json:"education_level"`
+	EducationLevel   *string       `json:"education_level"`
 	Experience       rangeDTO      `json:"experience_years"`
 	Salary           salaryDTO     `json:"salary"`
 	PostedOn         string        `json:"posted_on"`
@@ -21,7 +21,6 @@ type jobDTO struct {
 	Responsibilities []string      `json:"responsibilities"`
 	Requirements     []string      `json:"requirements"`
 	Skills           []jobSkillDTO `json:"skills"`
-	SourceURL        *string       `json:"source_url"`
 }
 
 type rangeDTO struct {
@@ -87,6 +86,5 @@ func toJobDTO(j store.Job) jobDTO {
 		Responsibilities: j.Responsibilities,
 		Requirements:     j.Requirements,
 		Skills:           skills,
-		SourceURL:        j.SourceURL,
 	}
 }

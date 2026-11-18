@@ -1,36 +1,45 @@
 # chitsime
 
-A Go + SQLite API and dashboard over Malawian job adverts. The first five
-records are ICT/data roles.
+A Go + SQLite API and dashboard over manually structured Malawian ICT job
+adverts.
 
 ## Structure
 
 - `internal/database/schema.sql` - tables: `employer`, `skill`, `job`, `job_skill`
-- `internal/database/seed.sql` - the five adverts, their skills, and the skill catalogue
-- `internal/store/store.go` - SQLite access
+- `internal/store/store.go` - SQLite access and idempotent import
 - `internal/api/` - HTTP handlers and JSON shapes
-- `cmd/setup/main.go` - creates the database and inserts the seed rows
+- `cmd/setup/main.go` - creates or migrates the database schema
+- `cmd/import/main.go` - imports structured jobs from JSON
 - `frontend/` - React + TypeScript dashboard (Vite)
 - `main.go` - serves the API and the embedded frontend
 
-Each `job` row has comparable fields (`role_family`, `seniority`,
+Each `job` row has comparable fields (`source_id`, `role_family`, `seniority`,
 `education_level`, `experience_min_years`, `posted_on`, ...), plus JSON arrays
 for responsibilities and requirements. Each `job_skill` row records whether a
 skill was `required`, `preferred`, or only `mentioned`, with the evidence text.
 
+## Data
+
+- `data/jobs-raw.json` - raw source (686 adverts). Local working data, not committed.
+- `data/jobs-structured.json` - curated ICT dataset imported into the database.
+
 ## Run it
 
-Create the database and insert the structured rows:
+Create the database schema:
 
 ```powershell
 go run ./cmd/setup -fresh
 ```
 
-Expected:
+Import the structured ICT jobs:
 
-```text
-database ready: data/chitsime.db (5 jobs)
+```powershell
+go run ./cmd/import -file data/jobs-structured.json
 ```
+
+The import is idempotent. Re-running it upserts employers, skills, jobs, and
+each job's skill links by `(source_id, title)`, so the same file can be imported
+again after edits without duplicating rows.
 
 Start the API:
 
@@ -87,21 +96,13 @@ curl.exe "http://localhost:8080/api/jobs?posted_from=2026-11-01&posted_to=2026-1
 curl.exe http://localhost:8080/api/skills
 ```
 
-## Raw source
+## Adding or updating jobs
 
-`data/jobs-raw.json` is the supplied raw source used for structuring. It holds
-686 adverts newest first, each with an `id` and a `source`. Raw files are local
-working data and are not committed.
-
-## Adding an advert
-
-Append the advert's structured rows to `internal/database/seed.sql`, then rerun:
+Edit `data/jobs-structured.json`, then rerun:
 
 ```powershell
-go run ./cmd/setup
+go run ./cmd/import -file data/jobs-structured.json
 ```
 
-Setup is idempotent. `INSERT OR IGNORE` keeps existing rows, so use `-fresh` only
-when you want to rebuild the database from scratch.
-
-The database file lives in `data/` and is not committed.
+Use `go run ./cmd/setup -fresh` only when you want to rebuild the database from
+scratch. The database file lives in `data/` and is not committed.
