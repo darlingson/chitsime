@@ -1,0 +1,4843 @@
+{
+  "jobs": [
+    {
+      "source_id": 49,
+      "title": "Information Systems & Data Management Officer",
+      "employer": "Feed the Children",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "data",
+      "industry": "NGO / humanitarian",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-13",
+      "deadline": "2026-11-22",
+      "summary": "Strengthens programme data systems and digital data management, leading DHIS2 configuration, database and GIS support, dashboards and data quality for programme and MEAL teams.",
+      "responsibilities": [
+        "Design, configure and maintain databases and systems used for programme data.",
+        "Configure and maintain DHIS2 metadata, organisation units, data elements, indicators, datasets, validation rules, user roles and dashboards.",
+        "Develop and maintain digital data collection forms and workflows using KoboToolbox, CommCare and DHIS2 Mobile.",
+        "Develop automated dashboards, visualizations and routine reports using Power BI, Tableau or comparable tools.",
+        "Develop and maintain GIS datasets, conduct spatial analysis and produce thematic maps.",
+        "Implement data collection standards, validation rules and routine data quality checks.",
+        "Train and support programme, MEAL and field staff on data systems, dashboards and GIS outputs.",
+        "Provide limited troubleshooting for device, connectivity or software issues affecting programme data systems."
+      ],
+      "requirements": [
+        "Bachelor degree in Information Systems, Data Management, Computer Science, Information Technology, Statistics, GIS, Monitoring and Evaluation or a closely related field.",
+        "Specialized training or certification in DHIS2 and GIS.",
+        "At least three years of relevant experience in data management, information systems, digital data collection, database administration or programme data systems.",
+        "Practical experience configuring or administering DHIS2, including metadata, indicators, validation rules, user roles or dashboards.",
+        "Experience with GIS software such as QGIS or ArcGIS, spatial analysis and map production.",
+        "Knowledge of database design, data structures, data cleaning and SQL, including SQL Server or MySQL.",
+        "Experience developing dashboards and data visualizations using Power BI, Tableau or similar tools.",
+        "Experience supporting and training non-technical users.",
+        "Experience in an NGO, humanitarian or development programme environment is an advantage.",
+        "Python or R is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Analyses programme data for trends and gaps"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Implements data quality checks and validation rules"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops dashboards and data visualizations"
+        },
+        {
+          "name": "CommCare",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops digital data collection forms in CommCare"
+        },
+        {
+          "name": "DHIS2",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Leads configuration and maintenance of DHIS2"
+        },
+        {
+          "name": "KoboToolbox",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops forms and workflows in KoboToolbox"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops dashboards using Power BI or Tableau"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops dashboards using Power BI or Tableau"
+        },
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Designs and maintains programme databases"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Knowledge of SQL and database design"
+        },
+        {
+          "name": "ArcGIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "GIS software such as QGIS or ArcGIS"
+        },
+        {
+          "name": "GIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Supports GIS analysis and spatial datasets"
+        },
+        {
+          "name": "QGIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "GIS software such as QGIS or ArcGIS"
+        },
+        {
+          "name": "Data protection",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Applies data privacy and access control requirements"
+        },
+        {
+          "name": "Microsoft Excel",
+          "category": "office",
+          "requirement": "required",
+          "evidence": "Advanced proficiency in Excel"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Maintains system configuration documentation"
+        },
+        {
+          "name": "Training",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Trains and coaches programme and field staff"
+        },
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Python or R is an advantage"
+        },
+        {
+          "name": "R",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Python or R is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 62,
+      "title": "GIS Specialist - Agroforestry",
+      "employer": "MAMALAND (A MOTA-ENGIL GROUP COMPANY)",
+      "location": "Malawi (International)",
+      "employment_type": "full_time",
+      "role_family": "gis",
+      "industry": "forestry / environmental services",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-11",
+      "deadline": "2026-11-18",
+      "summary": "Transforms complex spatial data into operational products and decision support for a large-scale forest restoration and agroforestry project, combining GIS, remote sensing, programming and data science.",
+      "responsibilities": [
+        "Manage, structure and assure the quality of geographic databases, including vector, raster, LiDAR and field observation data.",
+        "Produce maps, spatial analyses and indicators for planning, monitoring, reporting and decision-making.",
+        "Process satellite imagery for land use and land cover classification, forest monitoring, change detection, biomass assessment and environmental evaluation.",
+        "Apply machine learning and deep learning techniques to satellite and drone imagery.",
+        "Support UAV mission planning, data acquisition and processing of orthomosaics, digital models and point clouds.",
+        "Design and maintain digital field data collection tools using Survey123 and ArcGIS ecosystem solutions.",
+        "Support forest inventories and MRV or dMRV systems.",
+        "Prepare technical reports, presentations, procedures and methodological documentation.",
+        "Train and support field teams and non-technical users on GIS outputs."
+      ],
+      "requirements": [
+        "Bachelor or Master degree in Geographic Engineering, Geomatics, Geography, Remote Sensing, Environmental Sciences, Forestry Engineering, Data Science, Computer Science or a related discipline.",
+        "Relevant professional experience in GIS, remote sensing and geospatial analysis.",
+        "Three to five years of experience is preferred.",
+        "Proficiency in ArcGIS Pro, ArcGIS Online and QGIS, including geoprocessing, cartography and geographic database management.",
+        "Strong Python skills for data processing, automation and spatial analysis.",
+        "Practical experience with Google Earth Engine.",
+        "Knowledge of optical and radar imagery, classification methods, spectral indices, time-series analysis and result validation.",
+        "Experience in environmental, forestry, conservation, agriculture, carbon or land management projects.",
+        "Professional proficiency in English, both written and spoken.",
+        "Availability for regular travel to project sites and a valid driving licence."
+      ],
+      "skills": [
+        {
+          "name": "Data science",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Combines GIS with programming and data science"
+        },
+        {
+          "name": "Deep learning",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Applies deep learning where appropriate"
+        },
+        {
+          "name": "Machine learning",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Applies machine learning to satellite and drone imagery"
+        },
+        {
+          "name": "Google Earth Engine",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Practical experience with Google Earth Engine"
+        },
+        {
+          "name": "Survey123",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Designs field data collection tools in Survey123"
+        },
+        {
+          "name": "ArcGIS Online",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Proficiency in ArcGIS Online"
+        },
+        {
+          "name": "ArcGIS Pro",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Proficiency in ArcGIS Pro"
+        },
+        {
+          "name": "Cartography",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Produces maps and cartographic products"
+        },
+        {
+          "name": "GIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Strong technical expertise in geographic information systems"
+        },
+        {
+          "name": "Geographic database management",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Manages and assures quality of geographic databases"
+        },
+        {
+          "name": "LiDAR",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Manages LiDAR and point cloud data"
+        },
+        {
+          "name": "QGIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Proficiency in QGIS"
+        },
+        {
+          "name": "Remote sensing",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Technical expertise in remote sensing"
+        },
+        {
+          "name": "Satellite imagery",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Processes satellite imagery for land use classification"
+        },
+        {
+          "name": "Spatial analysis",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Produces spatial analyses and indicators"
+        },
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Strong Python skills for data processing and automation"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Power BI and GIS integration is preferred"
+        },
+        {
+          "name": "Biomass estimation",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Biomass assessment and estimation"
+        },
+        {
+          "name": "Carbon projects",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Experience with carbon projects"
+        },
+        {
+          "name": "Drone operations",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "UAV mission planning and drone operations"
+        },
+        {
+          "name": "MRV",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Supports MRV and dMRV systems"
+        }
+      ]
+    },
+    {
+      "source_id": 97,
+      "title": "IT Officer",
+      "employer": "Africa Global Logistics Malawi Limited",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "infrastructure",
+      "industry": "logistics / transport",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 2,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-09",
+      "deadline": "2026-11-20",
+      "summary": "Provides L1 and L2 IT support and maintains network, server and end-user infrastructure for a multinational logistics operator, including cybersecurity controls and IT asset management.",
+      "responsibilities": [
+        "Provide effective L1 and L2 technical support to users and ensure timely resolution of IT incidents and service requests.",
+        "Support LAN and WAN, Wi-Fi, switching, routing and telecommunications infrastructure.",
+        "Administer and support Microsoft-based end-user and identity environments.",
+        "Support PCs, laptops, printers, mobile devices and meeting-room or video conferencing equipment.",
+        "Monitor infrastructure availability and proactively identify potential service interruptions.",
+        "Maintain accurate IT asset configuration records, inventories and technical documentation.",
+        "Support cybersecurity controls, access management, endpoint security and compliance with company IT policies.",
+        "Liaise with service providers and vendors on incidents, installations and technical projects.",
+        "Contribute to continuous improvement, automation and digitalisation initiatives."
+      ],
+      "requirements": [
+        "Bachelor degree in Information Technology, Computer Science, Information Systems, Computer Engineering or a related field.",
+        "Preferably two to five years of practical IT support or infrastructure experience.",
+        "Good knowledge of Microsoft Windows and Microsoft 365.",
+        "Good understanding of networking including TCP/IP, VLANs, LAN and WAN, Wi-Fi, switching and routing.",
+        "Practical troubleshooting skills across hardware, software and network environments.",
+        "Microsoft certification such as Microsoft 365, Azure or related credentials is an advantage.",
+        "Experience supporting CCTV and video conferencing solutions is an advantage.",
+        "Exposure to IT infrastructure projects, cybersecurity and endpoint management is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "LAN/WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports LAN and WAN infrastructure"
+        },
+        {
+          "name": "Network switching",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports switching infrastructure"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Understanding of networking including TCP/IP and VLANs"
+        },
+        {
+          "name": "Routing",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports routing infrastructure"
+        },
+        {
+          "name": "TCP/IP",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Good understanding of TCP/IP"
+        },
+        {
+          "name": "VLAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Good understanding of VLANs"
+        },
+        {
+          "name": "Wi-Fi",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports Wi-Fi infrastructure"
+        },
+        {
+          "name": "Microsoft 365",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Good knowledge of Microsoft 365"
+        },
+        {
+          "name": "Microsoft Windows",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Good knowledge of Microsoft Windows"
+        },
+        {
+          "name": "Access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Supports access management"
+        },
+        {
+          "name": "Cybersecurity",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Supports cybersecurity controls"
+        },
+        {
+          "name": "Endpoint security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Supports endpoint security"
+        },
+        {
+          "name": "Technical documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Maintains technical documentation"
+        },
+        {
+          "name": "Hardware troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Practical troubleshooting of hardware"
+        },
+        {
+          "name": "IT asset management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Maintains IT asset configuration records"
+        },
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides L1 and L2 technical support"
+        },
+        {
+          "name": "Microsoft certification",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "Microsoft certification is an added advantage"
+        },
+        {
+          "name": "CCTV",
+          "category": "networking",
+          "requirement": "preferred",
+          "evidence": "Experience supporting CCTV is an advantage"
+        },
+        {
+          "name": "Video conferencing",
+          "category": "networking",
+          "requirement": "preferred",
+          "evidence": "Experience supporting video conferencing is an advantage"
+        },
+        {
+          "name": "Microsoft Azure",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Azure certification is an added advantage"
+        },
+        {
+          "name": "Vendor management",
+          "category": "support",
+          "requirement": "preferred",
+          "evidence": "Liaises with service providers and vendors"
+        }
+      ]
+    },
+    {
+      "source_id": 231,
+      "title": "IT Consultant",
+      "employer": "Trident Security Company Limited",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "infrastructure",
+      "industry": "security services",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 3,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-10-14",
+      "deadline": null,
+      "summary": "Provides on-demand technical support and maintains hardware, software, internet, server, network and email systems, advising management on IT improvements and technology investments.",
+      "responsibilities": [
+        "Diagnose and resolve hardware issues affecting computers, laptops, printers, scanners and other IT equipment.",
+        "Install, configure, maintain and troubleshoot operating systems, business applications and other software.",
+        "Monitor and troubleshoot internet connectivity, Wi-Fi and local area network issues.",
+        "Maintain and troubleshoot routers, switches, network cables and other networking equipment.",
+        "Maintain, monitor and troubleshoot company servers and related IT infrastructure.",
+        "Manage server performance, storage capacity, user accounts, access permissions and shared network resources.",
+        "Manage and troubleshoot hosted email services, business email accounts and email configurations.",
+        "Ensure regular data backups and verify that backup and recovery procedures work effectively.",
+        "Implement IT security measures and assist in investigating and resolving security incidents."
+      ],
+      "requirements": [
+        "Diploma or Bachelor degree in Information Technology, Computer Science, Computer Engineering or a related field.",
+        "A minimum of three to five years of relevant experience in IT support, systems administration, network management or a similar role.",
+        "Strong knowledge of computer hardware, operating systems, business software, internet connectivity and network troubleshooting.",
+        "Practical experience in server administration, hosted email services, data backups and IT infrastructure maintenance.",
+        "Good understanding of cybersecurity, data protection, user access management and disaster recovery procedures.",
+        "Proficiency in diagnosing and resolving hardware, software, network, server and email-related problems.",
+        "Ability to work independently and respond to urgent technical issues.",
+        "Willingness to attend the company premises when physical intervention is required."
+      ],
+      "skills": [
+        {
+          "name": "Data protection",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Good understanding of data protection"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Ensures regular data backups"
+        },
+        {
+          "name": "Disaster recovery",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Maintains backup and recovery procedures"
+        },
+        {
+          "name": "Email administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Manages hosted email services"
+        },
+        {
+          "name": "Server administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Maintains and monitors company servers"
+        },
+        {
+          "name": "LAN/WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Troubleshoots local area network issues"
+        },
+        {
+          "name": "Network switch",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Maintains and troubleshoots switches"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Maintains network and internet connectivity"
+        },
+        {
+          "name": "Router",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Maintains and troubleshoots routers"
+        },
+        {
+          "name": "Wi-Fi",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Troubleshoots Wi-Fi connectivity"
+        },
+        {
+          "name": "Access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Manages user accounts and access permissions"
+        },
+        {
+          "name": "Antivirus",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Installs and maintains antivirus software"
+        },
+        {
+          "name": "Cybersecurity",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Ensures appropriate security measures"
+        },
+        {
+          "name": "Confidentiality",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "High levels of confidentiality"
+        },
+        {
+          "name": "Hardware troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and resolves hardware issues"
+        },
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides IT support on an as-needed basis"
+        },
+        {
+          "name": "Operating systems",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Installs and maintains operating systems"
+        },
+        {
+          "name": "Software installation",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Installs and configures business applications"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and resolves technical issues"
+        },
+        {
+          "name": "Cloud solutions",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Recommends cloud-based solutions"
+        },
+        {
+          "name": "Vendor management",
+          "category": "support",
+          "requirement": "preferred",
+          "evidence": "Liaises with internet service providers"
+        }
+      ]
+    },
+    {
+      "source_id": 262,
+      "title": "Data Administrator",
+      "employer": "Strategic Sales and Merchandising Services Limited",
+      "location": "Lilongwe",
+      "employment_type": "contract",
+      "role_family": "data",
+      "industry": "FMCG / retail services",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 2,
+        "max": 3
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-09-21",
+      "deadline": null,
+      "summary": "Maintains the accuracy and integrity of field data and operational databases, performs data audits and analysis, and delivers reporting and insights for operational teams.",
+      "responsibilities": [
+        "Manage structured reporting schedules and review operational reports for quality.",
+        "Perform data analysis to identify exceptions, trends and operational insights.",
+        "Conduct time-in-motion studies and consolidate and analyse data as required.",
+        "Maintain comprehensive historical data records for auditing and operational tracking.",
+        "Manage and maintain operational databases to ensure smooth system functionality.",
+        "Conduct data audits, track error patterns and implement systemic improvements.",
+        "Collaborate with field teams and software developers to resolve mobility tool or system issues.",
+        "Track daily audit activities and calculate field team performance incentives.",
+        "Guide team members on policies, processes and data collection standards."
+      ],
+      "requirements": [
+        "Diploma or certification in Information Technology, Data Analytics, Business Administration or a related field.",
+        "Two to three years of hands-on experience in a systems or analytical environment.",
+        "Experience within the FMCG sector is preferred.",
+        "High proficiency in MS Office, especially advanced Excel and data tools.",
+        "Strong analytical and critical thinking.",
+        "Quality and detail excellence.",
+        "Excellent written and verbal communication.",
+        "Strong interpersonal and team collaboration skills."
+      ],
+      "skills": [
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Performs data analysis to identify trends"
+        },
+        {
+          "name": "Data auditing",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Conducts data audits and tracks error patterns"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Ensures credibility, accuracy and integrity of field data"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Manages structured reporting schedules"
+        },
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Manages and maintains operational databases"
+        },
+        {
+          "name": "Microsoft Excel",
+          "category": "office",
+          "requirement": "required",
+          "evidence": "Advanced Excel and data tools"
+        },
+        {
+          "name": "Microsoft Office",
+          "category": "office",
+          "requirement": "required",
+          "evidence": "High proficiency in MS Office"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent written and verbal communication"
+        },
+        {
+          "name": "Training",
+          "category": "soft",
+          "requirement": "mentioned",
+          "evidence": "Guides team members on policies and processes"
+        }
+      ]
+    },
+    {
+      "source_id": 462,
+      "title": "Senior Laravel Engineer",
+      "employer": "Hyve Mobile",
+      "location": "South Africa (International)",
+      "employment_type": "full_time",
+      "role_family": "software",
+      "industry": "software / telecommunications",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": 6,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-07-28",
+      "deadline": null,
+      "summary": "Builds and maintains high-availability Laravel web applications and API integrations for a telecom service delivery platform, covering CI/CD, AWS services and production support.",
+      "responsibilities": [
+        "Design, document and build new features in existing applications and services.",
+        "Implement API integrations with mobile networks, partners and third-party stakeholders.",
+        "Work with REST APIs and protocols including HTTP/S and SMPP.",
+        "Improve CI/CD pipelines for applications.",
+        "Maintain, refactor and fix bugs in existing applications.",
+        "Respond to alerts and investigate production issues.",
+        "Work with AWS services including ECS, Redshift, S3, RDS and Athena.",
+        "Provide estimates and manage stakeholder expectations.",
+        "Write ad-hoc SQL reports to support data-based decision-making."
+      ],
+      "requirements": [
+        "At least six years of experience in a web application environment.",
+        "Expert knowledge of PHP and Laravel, including Artisan, RBAC and caching.",
+        "Familiarity with Docker, MySQL and microservice environments.",
+        "Experience with REST APIs and protocols such as HTTP/S and SMPP.",
+        "Experience improving CI/CD pipelines.",
+        "Experience with AWS services such as ECS, Redshift, S3, RDS and Athena.",
+        "Kubernetes, Node.js, React, Go or Java are advantageous but not required.",
+        "Good communication and ability to translate business requirements into technical requirements.",
+        "Strong time management, attention to detail and ability to work independently."
+      ],
+      "skills": [
+        {
+          "name": "PHP",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Expert knowledge of PHP and Laravel"
+        },
+        {
+          "name": "Laravel",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Expert knowledge of Laravel, including Artisan, RBAC and caching"
+        },
+        {
+          "name": "REST APIs",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Works with REST APIs and protocols including HTTP/S"
+        },
+        {
+          "name": "Microservices",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Familiarity with microservice environments"
+        },
+        {
+          "name": "Docker",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Familiarity with Docker"
+        },
+        {
+          "name": "MySQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Familiarity with MySQL"
+        },
+        {
+          "name": "CI/CD",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Improves CI/CD pipelines for applications"
+        },
+        {
+          "name": "AWS",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Works with AWS services including ECS, Redshift, S3, RDS and Athena"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Writes ad-hoc SQL reports"
+        },
+        {
+          "name": "SMPP",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Works with protocols including SMPP"
+        },
+        {
+          "name": "Caching",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Laravel caching"
+        },
+        {
+          "name": "Role-based access control",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Laravel RBAC"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good communication and ability to translate business requirements"
+        },
+        {
+          "name": "Kubernetes",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Advantageous but not required"
+        },
+        {
+          "name": "Node.js",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Advantageous but not required"
+        },
+        {
+          "name": "React",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Advantageous but not required"
+        },
+        {
+          "name": "Go",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Advantageous but not required"
+        },
+        {
+          "name": "Java",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Advantageous but not required"
+        }
+      ]
+    },
+    {
+      "source_id": 545,
+      "title": "Assistant ICT Officer",
+      "employer": "Britam Insurance Company Malawi Limited",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "support",
+      "industry": "insurance",
+      "seniority": "junior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 1,
+        "max": 3
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-06-17",
+      "deadline": "2026-06-22",
+      "summary": "Provides first-line ICT support and maintains hardware, networks, servers and security controls for an insurance company, including user access, backups, CCTV and asset management.",
+      "responsibilities": [
+        "Install, configure and maintain workstations, printers and scanners.",
+        "Monitor server performance, internet connectivity and LAN/WAN and wireless networks.",
+        "Perform system updates, security patches, data backups and maintenance of CCTV and biometric access control systems.",
+        "Provide first-line support for hardware, software, email and network issues.",
+        "Resolve ICT incidents and deliver user training.",
+        "Manage user access rights, password resets and profiles across business applications and databases.",
+        "Deploy, monitor and maintain endpoint protection, antivirus and firewall controls.",
+        "Support data protection, compliance and IT internal audit activities.",
+        "Maintain ICT asset and software licence inventories.",
+        "Liaise with vendors and service providers for procurement, servicing and repairs.",
+        "Reconcile motor certificates in the DMVIC platform against debit notes in Pure and report exceptions."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Computer Science, Information Systems or a related field.",
+        "One to three years of experience in ICT support or systems administration.",
+        "Experience with Windows and Linux environments, networking and troubleshooting.",
+        "Cisco CCNA, Microsoft, CompTIA A+, Network+, software development or ITIL certification is an advantage.",
+        "Knowledge of networking, cybersecurity and systems administration.",
+        "Strong troubleshooting, communication, organisational and customer-service skills."
+      ],
+      "skills": [
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides first-line technical support to staff"
+        },
+        {
+          "name": "Hardware troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Troubleshoots hardware, software, email and network issues"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Strong troubleshooting and problem-solving skills"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Knowledge of networking, cybersecurity and systems administration"
+        },
+        {
+          "name": "LAN/WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Monitors LAN/WAN and wireless networks"
+        },
+        {
+          "name": "Wi-Fi",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Monitors wireless networks"
+        },
+        {
+          "name": "Microsoft Windows",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Experience with Windows and Linux environments"
+        },
+        {
+          "name": "Linux",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Experience with Windows and Linux environments"
+        },
+        {
+          "name": "Server administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Monitors local server performance"
+        },
+        {
+          "name": "Cybersecurity",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Knowledge of cybersecurity"
+        },
+        {
+          "name": "Access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Manages user access rights, password resets and profiles"
+        },
+        {
+          "name": "Endpoint security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Deploys and maintains endpoint protection"
+        },
+        {
+          "name": "Antivirus",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Maintains antivirus software"
+        },
+        {
+          "name": "Firewall",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Maintains firewall controls"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Performs data backups"
+        },
+        {
+          "name": "IT asset management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Maintains ICT asset and software licence inventories"
+        },
+        {
+          "name": "Vendor management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Liaises with vendors and service providers"
+        },
+        {
+          "name": "CCTV",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Maintains CCTV systems"
+        },
+        {
+          "name": "Biometric access control",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Maintains biometric access control systems"
+        },
+        {
+          "name": "Data protection",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Supports data protection protocols"
+        },
+        {
+          "name": "IT audit",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Supports IT internal audit engagements"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good communication and interpersonal skills"
+        },
+        {
+          "name": "Customer service",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Customer service orientation"
+        },
+        {
+          "name": "Cisco CCNA",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "CCNA certification is an added advantage"
+        },
+        {
+          "name": "CompTIA A+",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "CompTIA A+ certification is an added advantage"
+        },
+        {
+          "name": "Network+",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "Network+ certification is an added advantage"
+        },
+        {
+          "name": "Microsoft certification",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "Microsoft certification is an added advantage"
+        },
+        {
+          "name": "ITIL",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "ITIL certification is an added advantage"
+        },
+        {
+          "name": "Software development",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Software development certification is an added advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 570,
+      "title": "Data Scientist",
+      "employer": "Standard Bank Malawi",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "data",
+      "industry": "banking",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": 3,
+        "max": 4
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-06-05",
+      "deadline": null,
+      "summary": "Applies data mining, statistical analysis and machine learning to large structured and unstructured datasets, building models, data pipelines and visualisations that support business decisions.",
+      "responsibilities": [
+        "Develop and deploy machine learning and statistical models.",
+        "Perform data preprocessing, cleansing and feature engineering.",
+        "Analyse large datasets to identify patterns, trends and insights.",
+        "Design and maintain data pipelines and ETL processes.",
+        "Translate business needs into data science solutions with stakeholders.",
+        "Build and maintain predictive models for credit risk, churn and propensity.",
+        "Present insights through visualisations and reports.",
+        "Support model deployment and integration into production systems."
+      ],
+      "requirements": [
+        "Three to four years of experience in data and analytics or data monetisation.",
+        "Experience working with structured and unstructured data.",
+        "Strong knowledge of data architecture, ETL and data flows.",
+        "Experience in data mining and statistical analysis.",
+        "Proficiency in SAS, R or Python and visualisation tools such as Power BI or Tableau.",
+        "Experience in machine learning modelling and predictive analytics.",
+        "Understanding of banking data, systems and products.",
+        "Exposure to software engineering, business intelligence and project delivery.",
+        "Strong analytical, interpretation and communication skills."
+      ],
+      "skills": [
+        {
+          "name": "Machine learning",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops and deploys machine learning models"
+        },
+        {
+          "name": "Predictive analytics",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Builds predictive models for credit risk, churn and propensity"
+        },
+        {
+          "name": "Statistical analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Conducts statistical analysis"
+        },
+        {
+          "name": "Data mining",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Experience in data mining"
+        },
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Analyses large datasets to identify patterns and trends"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Performs data preprocessing and cleansing"
+        },
+        {
+          "name": "Feature engineering",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Performs feature engineering to improve model performance"
+        },
+        {
+          "name": "Data pipelines",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Designs and maintains data pipelines"
+        },
+        {
+          "name": "ETL",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Designs and maintains ETL processes"
+        },
+        {
+          "name": "Data architecture",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Strong knowledge of data architecture, ETL and data flows"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Presents insights through visualisations"
+        },
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Proficiency in SAS, R or Python"
+        },
+        {
+          "name": "R",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Proficiency in SAS, R or Python"
+        },
+        {
+          "name": "SAS",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Proficiency in SAS, R or Python"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Proficiency in visualisation tools such as Power BI"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Proficiency in visualisation tools such as Tableau"
+        },
+        {
+          "name": "Database administration",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Technical competency in database administration"
+        },
+        {
+          "name": "Banking domain knowledge",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Understanding of banking data, systems and products"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Articulating information and presenting insights"
+        },
+        {
+          "name": "Business intelligence",
+          "category": "data",
+          "requirement": "preferred",
+          "evidence": "Exposure to business intelligence is preferred"
+        }
+      ]
+    },
+    {
+      "source_id": 594,
+      "title": "Application & Database Officer",
+      "employer": "National Switch Limited",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "infrastructure",
+      "industry": "financial services / payments",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-05-26",
+      "deadline": "2026-05-30",
+      "summary": "Supports enterprise payment applications and Oracle databases, maintaining availability, performance, backups, integrations and security for a national payment switch.",
+      "responsibilities": [
+        "Administer and support payment applications and systems.",
+        "Administer databases and manage performance.",
+        "Manage backup, recovery and data integrity.",
+        "Monitor systems and tune performance.",
+        "Manage incidents.",
+        "Support, optimise and troubleshoot applications.",
+        "Manage change and releases.",
+        "Manage integrations.",
+        "Support reporting, reconciliation and compliance."
+      ],
+      "requirements": [
+        "Bachelor's degree in an IT-related field.",
+        "Oracle database certification.",
+        "Three to five years of experience, preferably in the financial sector.",
+        "Oracle Database Administration is mandatory.",
+        "Experience with Oracle Data Guard.",
+        "Linux expertise.",
+        "Knowledge of payment systems and standards such as ISO 8583 and ISO 20022.",
+        "Proven experience in database administration and enterprise application support.",
+        "Strong analytical, problem-solving, communication and teamwork skills."
+      ],
+      "skills": [
+        {
+          "name": "Oracle Database",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Oracle Database Administration is mandatory"
+        },
+        {
+          "name": "Oracle Data Guard",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Oracle Data Guard experience"
+        },
+        {
+          "name": "Database administration",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Database administration and performance management"
+        },
+        {
+          "name": "Database security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Responsible for the security of enterprise databases"
+        },
+        {
+          "name": "Linux",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Linux expertise"
+        },
+        {
+          "name": "Application support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Application and payment systems administration and support"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Manages backup and recovery"
+        },
+        {
+          "name": "Disaster recovery",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Manages recovery and data integrity"
+        },
+        {
+          "name": "Performance tuning",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "System monitoring and performance tuning"
+        },
+        {
+          "name": "Incident management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Incident management"
+        },
+        {
+          "name": "Change management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Change and release management"
+        },
+        {
+          "name": "Systems integration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Integration management"
+        },
+        {
+          "name": "Payment systems",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Knowledge of payment systems"
+        },
+        {
+          "name": "ISO 8583",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Knowledge of ISO 8583"
+        },
+        {
+          "name": "ISO 20022",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Knowledge of ISO 20022"
+        },
+        {
+          "name": "Data integrity",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Manages data integrity"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Reporting, reconciliation and compliance support"
+        },
+        {
+          "name": "Reconciliation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Reconciliation and compliance support"
+        },
+        {
+          "name": "Oracle certification",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Oracle database certification"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent communication skills"
+        },
+        {
+          "name": "Problem solving",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong analytical and problem-solving skills"
+        }
+      ]
+    },
+    {
+      "source_id": 678,
+      "title": "Senior Software Engineer",
+      "employer": "UNICAF",
+      "location": "Malawi (International)",
+      "employment_type": "full_time",
+      "role_family": "software",
+      "industry": "education technology",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": 5,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-03-24",
+      "deadline": null,
+      "summary": "Leads backend development for a scalable education platform, designing APIs, optimising databases and caching, and guiding the team through CI/CD and agile delivery.",
+      "responsibilities": [
+        "Design, build and maintain scalable backend services and RESTful APIs.",
+        "Collaborate with cross-functional teams to deliver features.",
+        "Oversee CI/CD pipelines and deployment processes.",
+        "Optimise database performance and implement caching with Redis.",
+        "Ensure code quality, security and maintainability.",
+        "Drive software development lifecycle best practices.",
+        "Participate in Agile processes.",
+        "Lead and mentor developers through technical direction and code reviews.",
+        "Monitor system performance, troubleshoot issues and optimise scalability."
+      ],
+      "requirements": [
+        "At least five years of backend development experience with scalable, high-performance systems.",
+        "Proficiency in Python and PHP, with working knowledge of HTML and JavaScript.",
+        "Hands-on experience integrating with AWS or another cloud provider.",
+        "Expertise in Docker and containerised application development.",
+        "Experience building and maintaining RESTful APIs.",
+        "Strong grasp of CI/CD practices.",
+        "Deep understanding of relational databases such as MySQL and PostgreSQL.",
+        "Deep understanding of NoSQL databases such as MongoDB and DynamoDB.",
+        "Experience implementing caching with Redis.",
+        "Mastery of Git and version control workflows.",
+        "Experience leading engineering teams in an Agile or Scrum environment.",
+        "Excellent written and verbal communication in English.",
+        "Terraform or CloudFormation experience is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Proficiency in Python and PHP"
+        },
+        {
+          "name": "PHP",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Proficiency in Python and PHP"
+        },
+        {
+          "name": "HTML",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Solid working knowledge of HTML"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Solid working knowledge of JavaScript"
+        },
+        {
+          "name": "AWS",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Hands-on experience integrating with AWS"
+        },
+        {
+          "name": "Docker",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Expertise in Docker and containerised application development"
+        },
+        {
+          "name": "REST APIs",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Builds and maintains RESTful APIs"
+        },
+        {
+          "name": "CI/CD",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Strong grasp of CI/CD practices"
+        },
+        {
+          "name": "MySQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Deep understanding of MySQL"
+        },
+        {
+          "name": "PostgreSQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Deep understanding of PostgreSQL"
+        },
+        {
+          "name": "MongoDB",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Deep understanding of MongoDB"
+        },
+        {
+          "name": "DynamoDB",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Deep understanding of DynamoDB"
+        },
+        {
+          "name": "Redis",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Implements caching strategies using Redis"
+        },
+        {
+          "name": "Git",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mastery of Git and version control workflows"
+        },
+        {
+          "name": "Backend development",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Five or more years of backend development experience"
+        },
+        {
+          "name": "Caching",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Implements effective caching strategies"
+        },
+        {
+          "name": "Software development lifecycle",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Drives best practices in the software development lifecycle"
+        },
+        {
+          "name": "Agile/Scrum",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Experience leading engineering teams in an Agile or Scrum environment"
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Leads a team of developers"
+        },
+        {
+          "name": "Mentoring",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Provides mentorship and technical direction"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent written and verbal communication"
+        },
+        {
+          "name": "Problem solving",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Demonstrated ability to solve complex problems"
+        },
+        {
+          "name": "Terraform",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Infrastructure automation experience is an advantage"
+        },
+        {
+          "name": "CloudFormation",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Infrastructure automation experience is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 393,
+      "title": "Senior ICT Officer (Systems Programmer)",
+      "employer": "The Catholic University of Malawi",
+      "location": "Chiradzulu",
+      "employment_type": "full_time",
+      "role_family": "software",
+      "industry": "higher education",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-08-17",
+      "deadline": "2026-08-21",
+      "summary": "Develops and maintains university software systems, translating user requirements into code, APIs and database-backed applications and supporting existing systems.",
+      "responsibilities": [
+        "Collaborate with departments and users to identify requirements and specifications.",
+        "Design algorithms and flowcharts for new software programs and systems.",
+        "Produce efficient code that meets requirements.",
+        "Troubleshoot, debug, maintain and improve existing software.",
+        "Assess user feedback to improve software performance.",
+        "Recommend improvements to existing software products.",
+        "Develop technical documentation for future software projects."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Computer Engineering, Information Systems, Computer Science or a related field.",
+        "Three years of relevant work experience.",
+        "Strong command of core programming languages and relational databases.",
+        "Ability to implement modern API and microservice concepts.",
+        "Strong problem-solving skills for troubleshooting complex system errors and debugging large code bases.",
+        "Ability to write clean code in languages such as Python, JavaScript, C#, PHP and SQL."
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Writes code using Python"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Writes code using JavaScript"
+        },
+        {
+          "name": "C#",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Writes code using C#"
+        },
+        {
+          "name": "PHP",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Writes code using PHP"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Writes code using SQL"
+        },
+        {
+          "name": "APIs",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Implements modern API concepts"
+        },
+        {
+          "name": "Microservices",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Implements microservice concepts"
+        },
+        {
+          "name": "Relational databases",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Strong command of relational databases"
+        },
+        {
+          "name": "Debugging",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Debugging large code bases"
+        },
+        {
+          "name": "Technical documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Develops technical documentation"
+        },
+        {
+          "name": "Problem solving",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong problem-solving skills"
+        }
+      ]
+    },
+    {
+      "source_id": 475,
+      "title": "IT Manager",
+      "employer": "UNICAF",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "management",
+      "industry": "education technology",
+      "seniority": "manager",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-07-22",
+      "deadline": null,
+      "summary": "Leads the university's ICT function, managing infrastructure, systems, security, licensing and the IT team to support online education operations.",
+      "responsibilities": [
+        "Develop, implement and oversee the IT strategy, policies and procedures.",
+        "Lead, supervise, mentor and evaluate the IT team.",
+        "Plan, manage and maintain servers, networks, cloud services, telecommunications, hardware and software.",
+        "Oversee installation, configuration, maintenance and upgrading of hardware, software, operating systems and network infrastructure.",
+        "Maintain software licensing compliance and IT asset management records.",
+        "Manage network security, system vulnerabilities, software updates and patch management.",
+        "Oversee inventory of IT equipment, software licences, consumables and technology assets."
+      ],
+      "requirements": [
+        "Bachelor's degree in Computer Science, IT or ICT from a recognised university.",
+        "At least three years of experience.",
+        "Technical expertise in ICT."
+      ],
+      "skills": [
+        {
+          "name": "IT strategy",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Develops and oversees the organisation's IT strategy"
+        },
+        {
+          "name": "IT infrastructure",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Manages servers, networks, cloud services and telecommunications"
+        },
+        {
+          "name": "Server administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Maintains servers"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Maintains networks and network infrastructure"
+        },
+        {
+          "name": "Cloud services",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Manages cloud services"
+        },
+        {
+          "name": "Operating systems",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Maintains and upgrades operating systems"
+        },
+        {
+          "name": "IT asset management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Maintains IT asset management records"
+        },
+        {
+          "name": "Software licensing",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Establishes software licensing compliance"
+        },
+        {
+          "name": "Network security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Manages network security and system vulnerabilities"
+        },
+        {
+          "name": "Patch management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Manages software updates and patch management"
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Leads, supervises and mentors the IT team"
+        },
+        {
+          "name": "Vendor management",
+          "category": "support",
+          "requirement": "mentioned",
+          "evidence": "Oversees inventory and technology assets"
+        }
+      ]
+    },
+    {
+      "source_id": 477,
+      "title": "Technology Risk Manager, Assurance",
+      "employer": "EY Malawi",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "security",
+      "industry": "professional services / audit",
+      "seniority": "manager",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 5,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-07-22",
+      "deadline": null,
+      "summary": "Leads technology risk assurance engagements, assessing IT controls, governance and security across client environments and reporting findings to senior stakeholders.",
+      "responsibilities": [
+        "Lead internal IT audit and technology assurance engagements from planning to reporting.",
+        "Oversee IT general controls assessments across access, change, operations, backups, job monitoring and incidents.",
+        "Evaluate IT governance, risk management and control frameworks.",
+        "Assess control design and operating effectiveness across on-premises, cloud and hybrid systems.",
+        "Review audit workpapers, findings, risk ratings and reports.",
+        "Present audit findings, risks and remediation recommendations to senior stakeholders.",
+        "Manage client relationships, deliverables, timelines and engagement budgets.",
+        "Coach, review and develop junior team members.",
+        "Contribute to practice development, proposals and methodology improvements."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Systems, Accounting or a related field.",
+        "CISA certification is a key requirement.",
+        "CISSP certification is an added advantage.",
+        "At least five years of experience in technology audit, risk, assurance or consulting.",
+        "Strong experience in IT general controls, including access management, change management, IT operations, incident management, backups and job monitoring.",
+        "Experience managing audit engagements, reviewing deliverables and supervising teams.",
+        "Knowledge of IT governance, IT service management and technology risk frameworks.",
+        "Exposure to ERP security, data analytics in audit, cloud control assurance or regulated industries is advantageous.",
+        "Strong stakeholder engagement, communication, project management and leadership skills."
+      ],
+      "skills": [
+        {
+          "name": "IT audit",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Leads internal IT audit and technology assurance engagements"
+        },
+        {
+          "name": "IT General Controls",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Oversees ITGC assessments"
+        },
+        {
+          "name": "IT governance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Evaluates IT governance and control frameworks"
+        },
+        {
+          "name": "Technology risk",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Assesses technology risk and control design"
+        },
+        {
+          "name": "Access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Reviews user access management controls"
+        },
+        {
+          "name": "Change management",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Reviews change management controls"
+        },
+        {
+          "name": "Incident management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Reviews incident management controls"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Reviews backup controls"
+        },
+        {
+          "name": "Cloud security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Assesses controls across cloud and hybrid systems"
+        },
+        {
+          "name": "ERP security",
+          "category": "security",
+          "requirement": "preferred",
+          "evidence": "Exposure to ERP security and controls reviews is advantageous"
+        },
+        {
+          "name": "Data analytics",
+          "category": "data",
+          "requirement": "preferred",
+          "evidence": "Exposure to data analytics in audit is advantageous"
+        },
+        {
+          "name": "CISA",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "CISA certification is a key requirement"
+        },
+        {
+          "name": "CISSP",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "CISSP certification is an added advantage"
+        },
+        {
+          "name": "Project management",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Strong project management skills"
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Leads engagement teams and supervises staff"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent written and verbal communication"
+        },
+        {
+          "name": "Stakeholder management",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Manages client relationships and expectations"
+        }
+      ]
+    },
+    {
+      "source_id": 529,
+      "title": "Application Support Specialist",
+      "employer": "Standard Bank Malawi",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "support",
+      "industry": "banking",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-06-30",
+      "deadline": null,
+      "summary": "Provides technical support for core banking and integration applications, diagnosing incidents, testing APIs and monitoring performance to keep production systems stable.",
+      "responsibilities": [
+        "Diagnose and resolve incidents across core banking, integration, data warehouse and pricing applications.",
+        "Monitor application performance and health.",
+        "Execute predefined support procedures and routine maintenance.",
+        "Assess the impact of proposed changes on designated applications.",
+        "Review technical specifications for changes to core banking and related systems.",
+        "Support localisation requirements and Group standardisation.",
+        "Log and track system defects and document resolutions.",
+        "Perform API testing and validate system integrations.",
+        "Collaborate with developers and cross-functional teams on application delivery."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Computer Science or a related field.",
+        "SQL certification or qualification is an added advantage.",
+        "At least three years of experience supporting applications, preferably in banking or financial services.",
+        "Familiarity with core banking systems, peripheral applications and integration platforms.",
+        "Experience troubleshooting within service level agreements.",
+        "Experience supporting application upgrades, patches and releases.",
+        "Experience with monitoring tools, performance tuning and security practices.",
+        "Knowledge of transactional banking domains and the payments ecosystem.",
+        "Familiarity with database administration using Oracle or SQL Server.",
+        "Understanding of Linux/Unix and Windows server environments, databases and networking protocols."
+      ],
+      "skills": [
+        {
+          "name": "Application support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides technical support for key business applications"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and resolves incidents"
+        },
+        {
+          "name": "Incident management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and resolves incidents within SLAs"
+        },
+        {
+          "name": "API testing",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Performs API testing and validates integrations"
+        },
+        {
+          "name": "Core banking",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Familiarity with core banking systems"
+        },
+        {
+          "name": "Payments",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Understanding of the payments ecosystem"
+        },
+        {
+          "name": "Database administration",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Familiarity with database administration"
+        },
+        {
+          "name": "Oracle Database",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Familiarity with Oracle"
+        },
+        {
+          "name": "SQL Server",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Familiarity with SQL Server"
+        },
+        {
+          "name": "Linux",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Understanding of Linux/Unix server environments"
+        },
+        {
+          "name": "Unix",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Understanding of Linux/Unix server environments"
+        },
+        {
+          "name": "Microsoft Windows",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Understanding of Windows server environments"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Understanding of networking protocols"
+        },
+        {
+          "name": "Performance tuning",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Experience with performance tuning"
+        },
+        {
+          "name": "Monitoring tools",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Experience with monitoring tools"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "preferred",
+          "evidence": "SQL certification is an added advantage"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong written and verbal communication"
+        },
+        {
+          "name": "Stakeholder management",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong stakeholder management skills"
+        }
+      ]
+    },
+    {
+      "source_id": 625,
+      "title": "IT Intern",
+      "employer": "BURN",
+      "location": "Blantyre",
+      "employment_type": "internship",
+      "role_family": "support",
+      "industry": "clean energy / manufacturing",
+      "seniority": "intern",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 0,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-05-15",
+      "deadline": null,
+      "summary": "Supports the local IT team with infrastructure maintenance, first-line user support, backups, access management and asset tracking in a learning role.",
+      "responsibilities": [
+        "Assist in maintaining servers, networks and endpoint devices.",
+        "Provide first-line technical support to staff under supervision.",
+        "Support network security, data backup and disaster recovery procedures.",
+        "Assist with deployment of enterprise software, user accounts and access permissions.",
+        "Support audio/video conferencing and collaboration tools.",
+        "Help maintain the IT asset inventory.",
+        "Assist with compliance with IT policies and local regulations.",
+        "Support IT training and orientation for new staff.",
+        "Assist with application and system health monitoring.",
+        "Help document and maintain IT runbooks and incident records."
+      ],
+      "requirements": [
+        "Recently completed Bachelor's degree in IT, Computer Science or a related field.",
+        "Basic understanding of networking concepts such as LAN/WAN.",
+        "Basic understanding of Windows and Linux environments.",
+        "Eagerness to learn and a proactive approach to problem-solving.",
+        "Good communication skills and fluency in English.",
+        "Familiarity with cloud services such as Microsoft 365 or Azure.",
+        "Basic awareness of IT security best practices.",
+        "CompTIA IT Fundamentals, ITIL Foundation or similar certification is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides first-line technical support to staff"
+        },
+        {
+          "name": "IT infrastructure",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Maintains servers, networks and endpoint devices"
+        },
+        {
+          "name": "Server administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Assists in maintaining servers"
+        },
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Basic understanding of networking concepts"
+        },
+        {
+          "name": "LAN/WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Basic understanding of LAN/WAN"
+        },
+        {
+          "name": "Microsoft Windows",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Basic understanding of Windows environments"
+        },
+        {
+          "name": "Linux",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Basic understanding of Linux environments"
+        },
+        {
+          "name": "Network security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Supports network security"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Supports data backup procedures"
+        },
+        {
+          "name": "Disaster recovery",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Supports disaster recovery procedures"
+        },
+        {
+          "name": "Software installation",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Assists with deployment of enterprise software"
+        },
+        {
+          "name": "Access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Assists with user accounts and access permissions"
+        },
+        {
+          "name": "Microsoft 365",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Familiarity with Microsoft 365 is preferred"
+        },
+        {
+          "name": "Microsoft Azure",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Familiarity with Azure is preferred"
+        },
+        {
+          "name": "IT asset management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Helps maintain the IT asset inventory"
+        },
+        {
+          "name": "IT policies",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Assists with compliance with IT policies"
+        },
+        {
+          "name": "Video conferencing",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports audio/video conferencing tools"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good communication skills"
+        },
+        {
+          "name": "CompTIA IT Fundamentals",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "Relevant certification is an advantage"
+        },
+        {
+          "name": "ITIL",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "ITIL Foundation is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 118,
+      "title": "Digital Client Experience Manager",
+      "employer": "Standard Bank Group",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "management",
+      "industry": "banking",
+      "seniority": "manager",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 5,
+        "max": 7
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-06",
+      "deadline": null,
+      "summary": "Leads digital channel adoption and growth for business and commercial banking, using customer data to improve digital experiences and manage payment solutions.",
+      "responsibilities": [
+        "Develop and deliver the digital adoption and channel growth strategy.",
+        "Lead growth and management of digital banking, card-acquiring and merchant payment solutions.",
+        "Use customer, merchant, competitor and channel data to identify adoption barriers and opportunities.",
+        "Develop business cases, campaigns and customer value propositions.",
+        "Oversee implementation and performance of digital and acquiring solutions.",
+        "Monitor channel performance, revenue, costs, retention and campaign effectiveness.",
+        "Ensure risk management, regulatory compliance, governance and service standards.",
+        "Lead and manage the team through goals, coaching and talent development."
+      ],
+      "requirements": [
+        "Bachelor's degree in Business, Commerce, Marketing, Information Technology, Digital Banking or a related field.",
+        "A relevant postgraduate or professional qualification is an advantage.",
+        "Five to seven years of experience in digital banking, electronic payments, card acquiring, channel management, e-commerce, product management or a related financial-services environment.",
+        "Demonstrated experience driving digital adoption, sales growth, customer engagement or change initiatives.",
+        "Good understanding of card issuing and acquiring, merchant services, digital banking platforms, pricing and payment processes.",
+        "Experience using customer and performance data to guide business decisions.",
+        "Strong stakeholder-management experience across business, technology, operations, risk, marketing and external providers.",
+        "Previous people-management or team-leadership experience is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Digital banking",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Experience in digital banking"
+        },
+        {
+          "name": "Digital channels",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Leads digital channel adoption and growth"
+        },
+        {
+          "name": "Electronic payments",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Experience in electronic payments"
+        },
+        {
+          "name": "Card acquiring",
+          "category": "other",
+          "requirement": "mentioned",
+          "evidence": "Experience in card acquiring is one acceptable background"
+        },
+        {
+          "name": "Merchant services",
+          "category": "other",
+          "requirement": "mentioned",
+          "evidence": "Understanding of merchant services"
+        },
+        {
+          "name": "Product management",
+          "category": "management",
+          "requirement": "mentioned",
+          "evidence": "Product management is one acceptable background"
+        },
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Uses customer and performance data to guide decisions"
+        },
+        {
+          "name": "Customer insights",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Uses customer and merchant insights to improve digital experiences"
+        },
+        {
+          "name": "Stakeholder management",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong stakeholder-management experience"
+        },
+        {
+          "name": "Risk management",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Ensures effective risk management"
+        },
+        {
+          "name": "Regulatory compliance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Ensures regulatory compliance and operational controls"
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Leads and manages the team"
+        },
+        {
+          "name": "Financial management",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Monitors revenue, costs and profitability"
+        },
+        {
+          "name": "Change management",
+          "category": "management",
+          "requirement": "mentioned",
+          "evidence": "Experience driving change initiatives"
+        },
+        {
+          "name": "E-commerce",
+          "category": "other",
+          "requirement": "mentioned",
+          "evidence": "E-commerce is one acceptable background"
+        }
+      ]
+    },
+    {
+      "source_id": 141,
+      "title": "Information Technology and Digital Systems Apprentice",
+      "employer": "Ulalo",
+      "location": "Mzuzu",
+      "employment_type": "internship",
+      "role_family": "support",
+      "industry": "NGO / education",
+      "seniority": "intern",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 0,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-04",
+      "deadline": null,
+      "summary": "Provides hands-on device repair and ICT support for tablets, phones, computers and education technology, including Microsoft 365 and equipment inventories.",
+      "responsibilities": [
+        "Diagnose, service, troubleshoot and maintain tablets, mobile phones, computers, radios and related electronics.",
+        "Support ICT infrastructure, Microsoft 365 and digital systems.",
+        "Maintain equipment inventories.",
+        "Support education technology including BEFIT tablets and Connected Education computer laboratories.",
+        "Document repairs and maintenance activities.",
+        "Communicate clearly and work with the team on assigned tasks."
+      ],
+      "requirements": [
+        "Minimum diploma in Information Technology, Computer Science, Computer Engineering, Electronics, Electrical Engineering or a related technical field.",
+        "At least six months of hands-on device troubleshooting, maintenance or repair experience.",
+        "Ability to diagnose common faults in computers, phones, tablets or similar electronic devices.",
+        "Basic familiarity with safe disassembly and reassembly, component replacement, operating-system installation, software troubleshooting and repair documentation.",
+        "Attention to detail, integrity, confidentiality and willingness to learn.",
+        "Good communication and teamwork skills.",
+        "Phone repair, computer hardware, tablet servicing or electronics repair certification is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Hardware troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and repairs computer, phone and tablet faults"
+        },
+        {
+          "name": "Device repair",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Services and maintains tablets, phones, computers and radios"
+        },
+        {
+          "name": "Electronics repair",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Repairs related electronic devices"
+        },
+        {
+          "name": "Operating systems",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Operating-system installation"
+        },
+        {
+          "name": "Software installation",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Software troubleshooting and installation"
+        },
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides hands-on ICT support"
+        },
+        {
+          "name": "Microsoft 365",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Supports Microsoft 365"
+        },
+        {
+          "name": "IT asset management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Maintains equipment inventories"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Repair documentation"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Ability to communicate clearly"
+        },
+        {
+          "name": "Confidentiality",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Integrity and confidentiality"
+        }
+      ]
+    },
+    {
+      "source_id": 315,
+      "title": "Business Analyst & Project Delivery",
+      "employer": "Airtel Malawi Plc",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "management",
+      "industry": "telecommunications / mobile money",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-09-04",
+      "deadline": null,
+      "summary": "Delivers mobile money products and projects, gathering requirements, translating them into technical specifications and coordinating testing, vendors and launches.",
+      "responsibilities": [
+        "Gather, document and validate business requirements.",
+        "Develop business requirement documents and functional requirement specifications.",
+        "Translate business requirements into technical specifications.",
+        "Develop project scopes, schedules, budgets and implementation plans.",
+        "Coordinate project teams and external vendors.",
+        "Manage multiple mobile money projects simultaneously.",
+        "Coordinate system integration, user acceptance, pilot, cutover and hypercare activities.",
+        "Track scope, milestones, dependencies, risks, issues and deliverables.",
+        "Coordinate vendors and technology partners to deliver on time.",
+        "Coordinate defect resolution and retesting before deployment.",
+        "Prepare project status reports for management.",
+        "Ensure readiness across operations, customer service, finance, compliance and marketing.",
+        "Identify opportunities for new mobile money products and services.",
+        "Support design and rollout of wallet, merchant, bulk payment, remittance, savings, lending, airtime and utility payment products.",
+        "Conduct market and competitor analysis.",
+        "Ensure compliance with central bank regulations, AML/CFT and data privacy requirements.",
+        "Manage implementation risks, project risk registers and business continuity.",
+        "Manage Airtel Money platform vendors and integrations with banks, fintechs, mobile network operators, payment gateways, switches and government systems."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Information Systems or Computer Science.",
+        "Professional certifications in business analysis, project management or Agile delivery are highly desirable.",
+        "Three to five years of experience in business analysis, project management, product delivery or digital financial services.",
+        "Two to four years of experience in mobile money, fintech, banking, payments or telecommunications.",
+        "Experience managing end-to-end project lifecycles from requirements gathering through post-go-live support.",
+        "Experience using data and analytics to support business decisions.",
+        "Experience developing operational and management reports using Power BI, Tableau, Excel or SQL.",
+        "Ability to analyse transaction trends, customer behaviour, product performance and operational KPIs."
+      ],
+      "skills": [
+        {
+          "name": "Business analysis",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Three to five years of experience in business analysis"
+        },
+        {
+          "name": "Requirements gathering",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Gathers, documents and validates business requirements"
+        },
+        {
+          "name": "Project management",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Manages end-to-end project lifecycles"
+        },
+        {
+          "name": "Mobile money",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Experience in mobile money"
+        },
+        {
+          "name": "Digital financial services",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Experience in digital financial services"
+        },
+        {
+          "name": "Payments",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Experience in payments"
+        },
+        {
+          "name": "Stakeholder management",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Conducts stakeholder interviews, workshops and consultations"
+        },
+        {
+          "name": "Vendor management",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Coordinates vendors and technology partners"
+        },
+        {
+          "name": "Risk management",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Manages implementation risks and project risk registers"
+        },
+        {
+          "name": "Regulatory compliance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Ensures compliance with central bank regulations"
+        },
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Uses data and analytics to support business decisions"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops reports using Power BI"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Develops reports using Tableau"
+        },
+        {
+          "name": "Microsoft Excel",
+          "category": "office",
+          "requirement": "required",
+          "evidence": "Develops reports using Excel"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Develops reports using SQL"
+        },
+        {
+          "name": "Agile",
+          "category": "soft",
+          "requirement": "preferred",
+          "evidence": "Agile delivery certification is highly desirable"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Prepares status reports and provides updates to management"
+        }
+      ]
+    },
+    {
+      "source_id": 342,
+      "title": "ICT & Web Development Intern",
+      "employer": "Liberty Affiliates",
+      "location": "Lilongwe",
+      "employment_type": "internship",
+      "role_family": "software",
+      "industry": "consultancy / development",
+      "seniority": "intern",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": null,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-08-31",
+      "deadline": "2026-09-03",
+      "summary": "Maintains and develops the organisation's website, supporting content management, responsive design, security, backups and basic SEO.",
+      "responsibilities": [
+        "Manage, update and maintain the organisation's website.",
+        "Develop new website pages, features, forms and web components.",
+        "Improve website design, responsiveness, functionality and user experience.",
+        "Troubleshoot and resolve website errors, bugs and broken links.",
+        "Upload and manage website content.",
+        "Ensure the website works across computers, tablets and mobile devices.",
+        "Support website security, backups, performance optimisation and SEO.",
+        "Use HTML, CSS and JavaScript.",
+        "Support content management systems such as WordPress.",
+        "Support selected ICT and digital technology assignments.",
+        "Explore practical applications of AI and emerging technologies.",
+        "Document website updates and provide progress reports."
+      ],
+      "requirements": [
+        "Diploma, Bachelor's degree or current study in Information Technology, Computer Science, Software Engineering, Web Development, ICT or a related field.",
+        "Demonstrable practical knowledge of web development.",
+        "Knowledge of HTML, CSS and JavaScript.",
+        "Experience with WordPress or another content management system is an advantage.",
+        "Basic knowledge of databases and responsive web design is an advantage.",
+        "Interest in AI and emerging digital technologies.",
+        "Strong problem-solving and analytical skills.",
+        "Good communication and documentation skills.",
+        "Ability to work independently, manage time and meet deadlines."
+      ],
+      "skills": [
+        {
+          "name": "HTML",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Knowledge of HTML, CSS and JavaScript"
+        },
+        {
+          "name": "CSS",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Knowledge of HTML, CSS and JavaScript"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Knowledge of HTML, CSS and JavaScript"
+        },
+        {
+          "name": "Web development",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Demonstrable practical knowledge of web development"
+        },
+        {
+          "name": "Responsive design",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Improves website responsiveness across devices"
+        },
+        {
+          "name": "WordPress",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Experience with WordPress is an advantage"
+        },
+        {
+          "name": "Content management systems",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Experience with WordPress or another CMS is an advantage"
+        },
+        {
+          "name": "SEO",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Supports basic SEO"
+        },
+        {
+          "name": "Website security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Supports basic website security"
+        },
+        {
+          "name": "Data backup",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Supports website backups"
+        },
+        {
+          "name": "Databases",
+          "category": "database",
+          "requirement": "preferred",
+          "evidence": "Basic knowledge of databases is an advantage"
+        },
+        {
+          "name": "AI",
+          "category": "data",
+          "requirement": "mentioned",
+          "evidence": "Interest in AI and emerging technologies"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Documents website updates"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good communication and documentation skills"
+        },
+        {
+          "name": "Problem solving",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong problem-solving and analytical skills"
+        }
+      ]
+    },
+    {
+      "source_id": 381,
+      "title": "Associate Data Specialist",
+      "employer": "United Nations Resident Coordination Office",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "data",
+      "industry": "UN / development",
+      "seniority": "junior",
+      "is_ict": true,
+      "education_level": "master",
+      "experience_years": {
+        "min": 2,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-08-18",
+      "deadline": "2026-09-01",
+      "summary": "Implements databases, data collection systems and analytics for a UN coordination office, cleaning data, producing dashboards and supporting data-driven reporting.",
+      "responsibilities": [
+        "Implement databases, data collection systems and data analytics.",
+        "Identify, analyse and interpret trends using statistical methods.",
+        "Implement process improvements for data analytics tasks.",
+        "Acquire and clean data from primary and secondary sources.",
+        "Maintain databases and data systems.",
+        "Develop reports, dashboards and tools to summarise findings.",
+        "Track and report on department data initiatives.",
+        "Create basic data visualisations.",
+        "Support data collection, initial analysis and stakeholder requirements gathering.",
+        "Produce data products such as reports and newsletters.",
+        "Compile insights and prepare supporting materials for stakeholder communications.",
+        "Keep abreast of emerging data analytics practices and technologies.",
+        "Support data preparation and verification for model assessments.",
+        "Train staff on data analytics.",
+        "Serve as technology and innovation focal point."
+      ],
+      "requirements": [
+        "Advanced university degree in computer science, data science, analytics, statistics, applied mathematics, information management, data management, information systems, information science or a related quantitative field.",
+        "A first-level degree with qualifying experience may be accepted in lieu of the advanced degree.",
+        "At least two years of experience translating business requirements into technical solutions.",
+        "Demonstrated ability to perform quality assurance of data analysis outputs.",
+        "Experience assessing data accuracy and consistency through data validation is desirable.",
+        "Data storytelling and data visualisation skills using Tableau, Power BI, Qlik or R are desirable.",
+        "One year or more of experience in data analytics is desirable.",
+        "Strong analytical, communication and planning skills."
+      ],
+      "skills": [
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Implements and maintains databases"
+        },
+        {
+          "name": "Data collection",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Implements data collection systems"
+        },
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Analyses and interprets data"
+        },
+        {
+          "name": "Statistics",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Uses statistical methods to identify trends"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Performs quality assurance of data analysis outputs"
+        },
+        {
+          "name": "Data validation",
+          "category": "data",
+          "requirement": "preferred",
+          "evidence": "Assessing data accuracy through data validation is desirable"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Creates data visualisations"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Data visualisation using Tableau is desirable"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Data visualisation using Power BI is desirable"
+        },
+        {
+          "name": "Qlik",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Data visualisation using Qlik is desirable"
+        },
+        {
+          "name": "R",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Data visualisation using R is desirable"
+        },
+        {
+          "name": "Data storytelling",
+          "category": "data",
+          "requirement": "preferred",
+          "evidence": "Data storytelling skills are desirable"
+        },
+        {
+          "name": "Requirements gathering",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Translates business requirements into technical solutions"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops reports and dashboards"
+        },
+        {
+          "name": "Training",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Trains staff on data analytics"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Speaks and writes clearly and effectively"
+        }
+      ]
+    },
+    {
+      "source_id": 385,
+      "title": "Field Engineer",
+      "employer": "Bespat Human Capital Management",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "infrastructure",
+      "industry": "telecommunications",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 2,
+        "max": 3
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-08-18",
+      "deadline": "2026-08-21",
+      "summary": "Installs, commissions and maintains enterprise network equipment and connectivity services, troubleshooting faults and supporting field operations.",
+      "responsibilities": [
+        "Install, configure and commission enterprise network equipment and customer solutions.",
+        "Support enterprise services including MPLS, IPVPN, internet, SD-WAN and LAN/WAN.",
+        "Perform preventive and corrective maintenance to ensure network availability.",
+        "Troubleshoot and resolve customer faults within service level agreements.",
+        "Conduct site surveys, testing and acceptance of new installations.",
+        "Coordinate with internal teams and vendors on enterprise projects.",
+        "Prepare technical reports, service documentation and network records.",
+        "Ensure compliance with safety, quality and operational standards."
+      ],
+      "requirements": [
+        "Bachelor's degree or diploma in Telecommunications, Electronics, Computer Engineering, Information Technology or a related field.",
+        "Two to three years of experience in telecommunications or enterprise network operations.",
+        "Experience with IP networking, routing, switching, fiber and wireless technologies.",
+        "Knowledge of MPLS, VPN technologies and enterprise connectivity solutions is an added advantage.",
+        "CCNA, HCIA, HCIP or equivalent certification is an advantage.",
+        "Strong troubleshooting, problem-solving, communication and planning skills."
+      ],
+      "skills": [
+        {
+          "name": "Networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience in enterprise network operations"
+        },
+        {
+          "name": "IP networking",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience with IP networking"
+        },
+        {
+          "name": "Routing",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience with routing"
+        },
+        {
+          "name": "Network switching",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience with switching"
+        },
+        {
+          "name": "Fiber",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience with fiber technologies"
+        },
+        {
+          "name": "Wireless",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Experience with wireless technologies"
+        },
+        {
+          "name": "LAN/WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports LAN/WAN connectivity"
+        },
+        {
+          "name": "MPLS",
+          "category": "networking",
+          "requirement": "preferred",
+          "evidence": "Knowledge of MPLS is an added advantage"
+        },
+        {
+          "name": "VPN",
+          "category": "networking",
+          "requirement": "preferred",
+          "evidence": "Knowledge of VPN technologies is an added advantage"
+        },
+        {
+          "name": "SD-WAN",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Supports SD-WAN services"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Troubleshoots and resolves customer faults"
+        },
+        {
+          "name": "Customer service",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Customer-focused with excellent communication skills"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent communication skills"
+        },
+        {
+          "name": "Cisco CCNA",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "CCNA certification is an advantage"
+        },
+        {
+          "name": "HCIA",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "HCIA certification is an advantage"
+        },
+        {
+          "name": "HCIP",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "HCIP certification is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 80,
+      "title": "Assistant Data Management Officer",
+      "employer": "Malawi Enterprise Development Fund Limited (MEDF)",
+      "location": "Various branches, Malawi",
+      "employment_type": "full_time",
+      "role_family": "data",
+      "industry": "microfinance",
+      "seniority": "junior",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": null,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-10",
+      "deadline": "2026-11-18",
+      "summary": "Collects, cleans and analyses credit and branch data, builds dashboards and reports, and enforces data quality, validation and documentation standards across zones.",
+      "responsibilities": [
+        "Collect, clean and maintain accurate data from internal and external sources.",
+        "Design and implement data collection processes aligned with organisational objectives.",
+        "Organise data systematically and make it accessible for reporting and analysis.",
+        "Analyse data to generate reports and identify trends and patterns.",
+        "Develop and present data visualisations, dashboards and reports for decision-making.",
+        "Provide data-driven recommendations to support strategic and operational goals.",
+        "Monitor data quality by identifying errors, inconsistencies and discrepancies and taking corrective action.",
+        "Conduct regular data audits and implement validation rules for system reports.",
+        "Promote proper data use and management at branch and zone levels.",
+        "Provide in-house training and guidance on data management, practices and tools.",
+        "Document data sources, metadata and procedures for auditing and reference."
+      ],
+      "requirements": [
+        "Diploma in Information Technology, Computer Science or a related field from an NCHE-accredited institution.",
+        "Work experience in a similar role within a microfinance institution.",
+        "A bachelor's degree in Information Technology, Computer Science, Data Science or a related field is an added advantage.",
+        "Certification in data analytics or data management is an added advantage.",
+        "Proficiency in data analysis tools such as SQL, Python or R is an advantage.",
+        "Experience with data visualisation software such as Power BI or Tableau is an advantage.",
+        "Experience in database management is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Data collection",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Collects data from internal and external sources"
+        },
+        {
+          "name": "Data cleaning",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Cleans and maintains accurate data"
+        },
+        {
+          "name": "Data analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Analyses data to generate reports and identify trends"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops data visualisations and dashboards"
+        },
+        {
+          "name": "Dashboards",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops dashboards to inform decision-making"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Monitors data quality and corrects errors and inconsistencies"
+        },
+        {
+          "name": "Data validation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Implements data validation rules"
+        },
+        {
+          "name": "Data audits",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Conducts regular audits of data"
+        },
+        {
+          "name": "Metadata management",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Documents data sources and metadata"
+        },
+        {
+          "name": "Data management",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Manages data across branch and zone levels"
+        },
+        {
+          "name": "Training",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Provides in-house training on data management"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Documents procedures for auditing and reference"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "preferred",
+          "evidence": "Proficiency in SQL is an added advantage"
+        },
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Proficiency in Python is an added advantage"
+        },
+        {
+          "name": "R",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Proficiency in R is an added advantage"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with Power BI is an advantage"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with Tableau is an advantage"
+        },
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "preferred",
+          "evidence": "Experience in database management is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 116,
+      "title": "CanePro Administrator",
+      "employer": "Illovo Sugar (Malawi) plc",
+      "location": "Dwangwa",
+      "employment_type": "full_time",
+      "role_family": "data",
+      "industry": "sugar / agribusiness",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 4,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-06",
+      "deadline": "2026-11-19",
+      "summary": "Administers the CanePro agricultural management system, coordinating data capture, master data, quality controls and first-line user support to feed reporting and analytics.",
+      "responsibilities": [
+        "Administer and maintain the CanePro system, including user access, configurations and agricultural master data.",
+        "Coordinate and oversee agricultural data capture activities to meet accuracy and timeline requirements.",
+        "Monitor and improve data quality through validation checks, reconciliations and corrective actions.",
+        "Maintain agricultural master data with authorised, documented and auditable changes.",
+        "Provide first-line system support and guidance to users, including training and troubleshooting.",
+        "Develop user procedures.",
+        "Support agricultural reporting and analytics with accurate data for dashboards, forecasting and performance monitoring.",
+        "Adhere to company policies on SHERQ, competition law and anti-bribery and corruption."
+      ],
+      "requirements": [
+        "Diploma or bachelor's degree in Information Systems, Agriculture, Data Management, Business Information Technology, Statistics, Business Administration or a related discipline.",
+        "At least four years of experience in systems administration, agricultural data management, ERP support, database support, data-capture operations or management information."
+      ],
+      "skills": [
+        {
+          "name": "CanePro",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Administers and maintains the CanePro system"
+        },
+        {
+          "name": "System administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Administers system configurations and user access"
+        },
+        {
+          "name": "User access management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Manages user access in CanePro"
+        },
+        {
+          "name": "Master data management",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Maintains agricultural master data"
+        },
+        {
+          "name": "Data capture",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Coordinates agricultural data capture activities"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Improves data quality through validation and reconciliation"
+        },
+        {
+          "name": "Data validation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Performs validation checks"
+        },
+        {
+          "name": "Reconciliation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Reconciles agricultural data"
+        },
+        {
+          "name": "ERP support",
+          "category": "support",
+          "requirement": "mentioned",
+          "evidence": "ERP support is one acceptable experience background"
+        },
+        {
+          "name": "Database support",
+          "category": "database",
+          "requirement": "mentioned",
+          "evidence": "Database support is one acceptable experience background"
+        },
+        {
+          "name": "IT support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides first-line system support to users"
+        },
+        {
+          "name": "User training",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Trains users and develops user procedures"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Supports agricultural reporting"
+        },
+        {
+          "name": "Analytics",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Supports agricultural analytics and decision-making"
+        },
+        {
+          "name": "Dashboards",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Ensures data is available for dashboards"
+        },
+        {
+          "name": "Forecasting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Supports forecasting"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Documents master data changes and user procedures"
+        },
+        {
+          "name": "Compliance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Adheres to SHERQ, competition law and anti-bribery policies"
+        }
+      ]
+    },
+    {
+      "source_id": 116,
+      "title": "GIS Specialist",
+      "employer": "Illovo Sugar (Malawi) plc",
+      "location": "Nchalo",
+      "employment_type": "full_time",
+      "role_family": "gis",
+      "industry": "sugar / agribusiness",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 5,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-06",
+      "deadline": "2026-11-25",
+      "summary": "Leads GIS and drone data collection, processing and analysis for precision agriculture, integrating spatial systems with business platforms and developing monitoring dashboards.",
+      "responsibilities": [
+        "Lead the collection, processing, analysis and interpretation of GIS and drone data for precision agriculture.",
+        "Integrate GIS with business systems, field equipment and third-party platforms.",
+        "Enable automation, AI-driven analytics and digital transformation initiatives.",
+        "Coordinate drone fleet planning, deployment, maintenance, regulatory compliance and operating procedures.",
+        "Enhance operational reporting, spatial monitoring, dashboard development and real-time decision-making.",
+        "Provide technical leadership and mentorship to GIS teams.",
+        "Collaborate with business functions and external partners on GIS strategy.",
+        "Adhere to company policies on SHERQ, competition law and anti-bribery and corruption."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Systems, GIS, Agriculture, Surveying, Agricultural Economics, Agricultural Engineering or a related field.",
+        "At least five years of experience with agricultural management software such as CanePro and with GIS.",
+        "GIS, land surveying and sugarcane agriculture experience is preferred.",
+        "Drone piloting and agricultural machine control experience is preferred.",
+        "Computer programming and database management software skills are preferred.",
+        "Systems integration and agricultural data analytics skills are preferred."
+      ],
+      "skills": [
+        {
+          "name": "GIS",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Leads GIS data collection, processing and analysis"
+        },
+        {
+          "name": "Drone operations",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Leads drone fleet planning and deployment"
+        },
+        {
+          "name": "Spatial analysis",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Analyses and interprets spatial data"
+        },
+        {
+          "name": "Spatial monitoring",
+          "category": "gis",
+          "requirement": "required",
+          "evidence": "Supports spatial monitoring of agricultural operations"
+        },
+        {
+          "name": "CanePro",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Experience with agricultural management software such as CanePro"
+        },
+        {
+          "name": "Systems integration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Integrates GIS with business systems and platforms"
+        },
+        {
+          "name": "Automation",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Enables automation of GIS and reporting workflows"
+        },
+        {
+          "name": "AI analytics",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Enables AI-driven analytics initiatives"
+        },
+        {
+          "name": "Dashboard development",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops dashboards for operational monitoring"
+        },
+        {
+          "name": "Agricultural data analytics",
+          "category": "data",
+          "requirement": "preferred",
+          "evidence": "Agricultural data analytics is a preferred skill"
+        },
+        {
+          "name": "Computer programming",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Computer programming is a preferred skill"
+        },
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "preferred",
+          "evidence": "Database management software is a preferred skill"
+        },
+        {
+          "name": "Land surveying",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Land surveying is a preferred skill"
+        },
+        {
+          "name": "Agricultural machine control",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Agricultural machine control is a preferred skill"
+        },
+        {
+          "name": "Sugarcane agriculture",
+          "category": "other",
+          "requirement": "preferred",
+          "evidence": "Sugarcane agriculture is a preferred skill"
+        },
+        {
+          "name": "Regulatory compliance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Ensures drone regulatory compliance"
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Provides technical leadership to GIS teams"
+        },
+        {
+          "name": "Mentoring",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Mentors GIS teams"
+        }
+      ]
+    },
+    {
+      "source_id": 125,
+      "title": "Group Internal Audit ICT Manager",
+      "employer": "Renaissance Holdings",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "security",
+      "industry": "diversified holdings",
+      "seniority": "manager",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 7,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-06",
+      "deadline": "2026-11-16",
+      "summary": "Leads independent ICT, cybersecurity and information systems audits across a diversified group, assessing ERP, network, cloud and data controls, cyber resilience and technology risk.",
+      "responsibilities": [
+        "Conduct ICT governance, cybersecurity and information systems audits.",
+        "Evaluate controls within ERP systems, networks, cloud environments and technology infrastructure.",
+        "Assess cyber resilience, data protection and disaster recovery capabilities.",
+        "Review third-party technology and outsourced service provider risks.",
+        "Conduct technology-related investigations and fraud risk reviews.",
+        "Evaluate governance and controls around emerging technologies including artificial intelligence.",
+        "Report audit findings and track remediation."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Computer Science, Information Systems, Cyber Security, Software Engineering or a related ICT field.",
+        "Professional certification such as CISA, CISM, CISSP, CRISC or ISO 27001 Lead Auditor.",
+        "At least seven years of experience in ICT audit, cybersecurity, information security or ICT risk management.",
+        "Demonstrated experience auditing enterprise systems, digital platforms and ICT infrastructure."
+      ],
+      "skills": [
+        {
+          "name": "ICT audit",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Conducts ICT governance and information systems audits"
+        },
+        {
+          "name": "IT governance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Audits ICT governance across the group"
+        },
+        {
+          "name": "Cybersecurity",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Conducts cybersecurity audits"
+        },
+        {
+          "name": "Information systems audit",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Leads independent reviews of information systems controls"
+        },
+        {
+          "name": "ERP controls",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Evaluates controls within ERP systems"
+        },
+        {
+          "name": "Network controls",
+          "category": "networking",
+          "requirement": "required",
+          "evidence": "Evaluates controls within networks"
+        },
+        {
+          "name": "Cloud security",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Evaluates controls within cloud environments"
+        },
+        {
+          "name": "Cyber resilience",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Assesses cyber resilience capabilities"
+        },
+        {
+          "name": "Data protection",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Assesses data protection capabilities"
+        },
+        {
+          "name": "Disaster recovery",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Assesses disaster recovery capabilities"
+        },
+        {
+          "name": "Third-party risk",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Reviews outsourced service provider risks"
+        },
+        {
+          "name": "Fraud investigation",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Conducts technology-related fraud risk reviews"
+        },
+        {
+          "name": "AI governance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Evaluates controls around emerging technologies including AI"
+        },
+        {
+          "name": "CISA",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Professional certification such as CISA is required"
+        },
+        {
+          "name": "CISM",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Professional certification such as CISM is required"
+        },
+        {
+          "name": "CISSP",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Professional certification such as CISSP is required"
+        },
+        {
+          "name": "CRISC",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Professional certification such as CRISC is required"
+        },
+        {
+          "name": "ISO 27001 Lead Auditor",
+          "category": "certification",
+          "requirement": "required",
+          "evidence": "Professional certification such as ISO 27001 Lead Auditor is required"
+        }
+      ]
+    },
+    {
+      "source_id": 410,
+      "title": "Consultant, Digital Health",
+      "employer": "Last Mile Health",
+      "location": "Lilongwe",
+      "employment_type": "consultancy",
+      "role_family": "data",
+      "industry": "NGO / digital health",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": null,
+        "max": null
+      },
+      "salary": {
+        "min": 3000,
+        "max": 4000,
+        "currency": "USD",
+        "period": "month"
+      },
+      "posted_on": "2026-08-13",
+      "deadline": null,
+      "summary": "Designs the technical architecture, interoperability model and costed roadmap for integrating Malawi's MaHIS and iCHIS health information systems, including governance, security and costing.",
+      "responsibilities": [
+        "Define the integration scope, data domains, data flow direction and priority use cases for MaHIS and iCHIS.",
+        "Assess the current architecture, APIs, deployment scale and data landscape of both systems.",
+        "Design the integration architecture and select integration patterns such as APIs, middleware or file exchange.",
+        "Recommend data standards and interoperability profiles such as HL7 FHIR, the DHIS2 data model and OpenHIE.",
+        "Define authentication, authorisation and encryption requirements.",
+        "Specify functional and non-functional requirements, including exchange frequency, error handling and performance.",
+        "Define infrastructure, hosting, connectivity, backup and disaster recovery requirements.",
+        "Produce a phased, costed implementation roadmap covering people, platforms, process and time to value.",
+        "Prepare a risk analysis and mitigation plan.",
+        "Deliver a consolidated, donor-ready roadmap package and presentation.",
+        "Engage government stakeholders and development partners to build consensus."
+      ],
+      "requirements": [
+        "Bachelor's degree in health informatics, computer science, public health or a related field.",
+        "Progressive experience designing and cost planning digital health system integrations, preferably in low- and middle-income settings.",
+        "Demonstrated experience with national health information systems such as DHIS2, OpenMRS, CommCare, ODK or iCHIS.",
+        "Demonstrated experience with data governance, data sharing agreements and privacy or security requirements.",
+        "Strong skills in costing and budgeting digital health projects and preparing donor documents.",
+        "Demonstrated experience engaging government stakeholders and digital health governance structures.",
+        "Experience with interoperability standards such as HL7, FHIR, OpenHIE and API design.",
+        "Excellent written and verbal communication in English, including translating technical concepts for non-technical audiences.",
+        "Experience supporting national digital health strategies or enterprise architecture is an advantage.",
+        "Familiarity with Malawi's digital health ecosystem is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Digital health",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Designs digital health system integrations"
+        },
+        {
+          "name": "Health information systems",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Works with national health information systems"
+        },
+        {
+          "name": "Interoperability",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Designs interoperability between MaHIS and iCHIS"
+        },
+        {
+          "name": "HL7 FHIR",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Experience with HL7 and FHIR standards"
+        },
+        {
+          "name": "DHIS2",
+          "category": "data platform",
+          "requirement": "required",
+          "evidence": "Experience with DHIS2"
+        },
+        {
+          "name": "OpenHIE",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Experience with OpenHIE profiles"
+        },
+        {
+          "name": "API design",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Experience with API design"
+        },
+        {
+          "name": "Systems integration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Designs system integration architecture"
+        },
+        {
+          "name": "Data governance",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Demonstrated experience with data governance"
+        },
+        {
+          "name": "Data sharing agreements",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Works with data sharing agreements"
+        },
+        {
+          "name": "Data privacy",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Defines privacy and security requirements"
+        },
+        {
+          "name": "Security architecture",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Defines authentication, authorisation and encryption requirements"
+        },
+        {
+          "name": "Costing and budgeting",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Produces detailed costing and budgeting for digital health projects"
+        },
+        {
+          "name": "Enterprise architecture",
+          "category": "management",
+          "requirement": "preferred",
+          "evidence": "Experience with enterprise architecture is an advantage"
+        },
+        {
+          "name": "Stakeholder engagement",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Engages government stakeholders and development partners"
+        },
+        {
+          "name": "Risk analysis",
+          "category": "governance",
+          "requirement": "required",
+          "evidence": "Prepares risk analysis and mitigation plans"
+        },
+        {
+          "name": "Technical documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Produces technical architecture and requirements documents"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Translates technical concepts for non-technical audiences"
+        }
+      ]
+    },
+    {
+      "source_id": 415,
+      "title": "NCR Atleos ATM Field Service / Customer Support Engineer",
+      "employer": "Gestetner Ltd (Ricotec)",
+      "location": "Blantyre",
+      "employment_type": "contract",
+      "role_family": "support",
+      "industry": "technology services / banking equipment",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": null,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-08-12",
+      "deadline": null,
+      "summary": "Maintains and repairs NCR Atleos ATM hardware in the field, diagnosing complex faults, performing preventive maintenance and transferring technical knowledge to local engineers.",
+      "responsibilities": [
+        "Provide hands-on technical support across ATM operations and models.",
+        "Troubleshoot, repair and maintain NCR Scalable Recycler machines.",
+        "Perform ATM hardware diagnostics and preventive maintenance.",
+        "Diagnose and resolve complex hardware and technical faults independently.",
+        "Train, mentor and transfer technical knowledge to the local engineering team.",
+        "Support customers and communicate service status."
+      ],
+      "requirements": [
+        "Strong hands-on experience supporting and maintaining NCR Atleos ATM models.",
+        "Proven experience troubleshooting, repairing and maintaining NCR Scalable Recycler machines.",
+        "Strong knowledge of ATM hardware diagnostics, preventive maintenance and field service support.",
+        "Ability to diagnose and resolve complex hardware and technical faults independently.",
+        "Relevant qualification in Electronics, Electrical Engineering, ICT, Mechatronics or a related technical field.",
+        "NCR technical training or certification is an added advantage.",
+        "Good communication and customer service skills."
+      ],
+      "skills": [
+        {
+          "name": "ATM hardware",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides hands-on support across ATM models"
+        },
+        {
+          "name": "NCR Atleos",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Experience supporting NCR Atleos ATM models"
+        },
+        {
+          "name": "NCR Scalable Recycler",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Troubleshoots and repairs NCR Scalable Recycler machines"
+        },
+        {
+          "name": "Hardware diagnostics",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Performs ATM hardware diagnostics"
+        },
+        {
+          "name": "Hardware repair",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Repairs ATM hardware faults"
+        },
+        {
+          "name": "Preventive maintenance",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Performs preventive maintenance"
+        },
+        {
+          "name": "Field service",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Provides field service support"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Diagnoses and resolves complex technical faults"
+        },
+        {
+          "name": "Electronics",
+          "category": "other",
+          "requirement": "required",
+          "evidence": "Relevant qualification in Electronics or a related field"
+        },
+        {
+          "name": "Mentoring",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Trains and mentors local engineers"
+        },
+        {
+          "name": "Customer service",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good customer service skills"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Good communication skills"
+        },
+        {
+          "name": "NCR certification",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "NCR technical training or certification is an added advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 530,
+      "title": "Data Management Support: Monitoring and Evaluation",
+      "employer": "United Nations Volunteers (UNV)",
+      "location": "All districts, Malawi (remote)",
+      "employment_type": "volunteer",
+      "role_family": "data",
+      "industry": "UN / development",
+      "seniority": "junior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 2,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-06-26",
+      "deadline": null,
+      "summary": "Supports M&E data management for a UN country office, refining frameworks and tools, verifying programme data, maintaining databases and producing reports and visualisations.",
+      "responsibilities": [
+        "Review and refine M&E frameworks, data collection tools and reporting templates.",
+        "Track, collect, verify and compile data on programme outputs and outcomes from partners.",
+        "Support data quality assurance for completeness, consistency and accuracy.",
+        "Maintain and update M&E databases to keep data organised, secure and accessible.",
+        "Prepare periodic M&E progress reports with data summaries, tables and visualisations.",
+        "Document lessons learned and best practices."
+      ],
+      "requirements": [
+        "Undergraduate degree in monitoring and evaluation, economics, statistics, development studies, social sciences, project management or a related field.",
+        "At least two years of relevant experience in project management, programme evaluation, data management or M&E roles.",
+        "Familiarity with M&E concepts such as indicators, disaggregation and results-based management.",
+        "Experience with data collection, verification and database maintenance.",
+        "Proficiency in Microsoft Excel including basic formulas and data entry.",
+        "Experience with data visualisation tools such as Power BI or digital data collection platforms such as KoboToolbox or ODK is an advantage.",
+        "Prior work with UN agencies or development partners is an advantage."
+      ],
+      "skills": [
+        {
+          "name": "Monitoring and evaluation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Supports M&E data management across the programme"
+        },
+        {
+          "name": "Data collection",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Collects data on programme outputs and outcomes"
+        },
+        {
+          "name": "Data verification",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Verifies reported programme data"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Checks completeness, consistency and accuracy of data"
+        },
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Maintains and updates M&E databases"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Prepares periodic M&E progress reports"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Produces data summaries, tables and visualisations"
+        },
+        {
+          "name": "Results-based management",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Familiarity with results-based management"
+        },
+        {
+          "name": "Microsoft Excel",
+          "category": "office",
+          "requirement": "required",
+          "evidence": "Proficiency in Excel including formulas and data entry"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with Power BI is an advantage"
+        },
+        {
+          "name": "KoboToolbox",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with KoboToolbox is an advantage"
+        },
+        {
+          "name": "ODK",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with ODK is an advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 607,
+      "title": "Full Stack Developer Intern",
+      "employer": "Dream Weave",
+      "location": "Lilongwe",
+      "employment_type": "internship",
+      "role_family": "software",
+      "industry": "software development",
+      "seniority": "intern",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": 0,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-05-22",
+      "deadline": null,
+      "summary": "Contributes to production full-stack systems, building React frontends, backend APIs and database designs while working in an agile engineering team.",
+      "responsibilities": [
+        "Develop frontend features using React.js.",
+        "Develop and integrate backend APIs.",
+        "Design and optimise databases.",
+        "Integrate third-party services.",
+        "Collaborate within an agile development team."
+      ],
+      "requirements": [
+        "TypeScript and JavaScript.",
+        "React.js and modern frontend architecture.",
+        "Node.js/NestJS or Python/FastAPI.",
+        "PostgreSQL and relational database design.",
+        "REST API development.",
+        "Git and version control workflows.",
+        "A qualification or current enrolment in Computer Science, Software Engineering or a related field.",
+        "Redis or caching strategies are a plus.",
+        "Supabase or similar backend-as-a-service platforms are a plus.",
+        "Docker or cloud deployments are a plus.",
+        "Interest in AI/ML integrations is a plus."
+      ],
+      "skills": [
+        {
+          "name": "TypeScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "TypeScript is a listed requirement"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "JavaScript is a listed requirement"
+        },
+        {
+          "name": "React",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Frontend development using React.js"
+        },
+        {
+          "name": "Node.js",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Node.js/NestJS is a listed requirement"
+        },
+        {
+          "name": "NestJS",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Node.js/NestJS is a listed requirement"
+        },
+        {
+          "name": "Python",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Python/FastAPI is a listed requirement"
+        },
+        {
+          "name": "FastAPI",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Python/FastAPI is a listed requirement"
+        },
+        {
+          "name": "PostgreSQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "PostgreSQL and relational database design"
+        },
+        {
+          "name": "REST APIs",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "REST API development"
+        },
+        {
+          "name": "Git",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Git and version control workflows"
+        },
+        {
+          "name": "Agile",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Collaborative development in an agile team"
+        },
+        {
+          "name": "Redis",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Redis or caching strategies are nice to have"
+        },
+        {
+          "name": "Supabase",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Supabase is nice to have"
+        },
+        {
+          "name": "Docker",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Docker is nice to have"
+        },
+        {
+          "name": "Cloud deployment",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Cloud deployments are nice to have"
+        },
+        {
+          "name": "AI/ML",
+          "category": "data",
+          "requirement": "mentioned",
+          "evidence": "Interest in AI/ML integrations"
+        }
+      ]
+    },
+    {
+      "source_id": 608,
+      "title": "Mobile Developer Intern (React Native)",
+      "employer": "Dream Weave",
+      "location": "Lilongwe",
+      "employment_type": "internship",
+      "role_family": "software",
+      "industry": "software development",
+      "seniority": "intern",
+      "is_ict": true,
+      "education_level": null,
+      "experience_years": {
+        "min": 0,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-05-22",
+      "deadline": null,
+      "summary": "Builds and maintains a React Native application for Android and iOS, integrating backend APIs, implementing mobile interfaces and optimising performance.",
+      "responsibilities": [
+        "Develop mobile applications using React Native.",
+        "Integrate backend APIs and third-party services.",
+        "Implement mobile UI/UX designs.",
+        "Optimise performance and debug mobile applications.",
+        "Collaborate with backend engineers and designers."
+      ],
+      "requirements": [
+        "React Native.",
+        "TypeScript and JavaScript.",
+        "REST API integration in mobile applications.",
+        "Mobile state management with Redux, Zustand or the Context API.",
+        "Mobile performance optimisation and debugging.",
+        "Git and version control workflows.",
+        "A qualification or current enrolment in Computer Science, Software Engineering or a related field.",
+        "Geolocation and maps integration are a plus.",
+        "Push notifications with FCM or APNs are a plus.",
+        "Offline caching strategies are a plus.",
+        "Supabase or Firebase experience is a plus.",
+        "Android or iOS app publishing experience is a plus."
+      ],
+      "skills": [
+        {
+          "name": "React Native",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mobile application development using React Native"
+        },
+        {
+          "name": "TypeScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "TypeScript is a listed requirement"
+        },
+        {
+          "name": "JavaScript",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "JavaScript is a listed requirement"
+        },
+        {
+          "name": "REST APIs",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "REST API integration in mobile applications"
+        },
+        {
+          "name": "Redux",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mobile state management with Redux"
+        },
+        {
+          "name": "Zustand",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mobile state management with Zustand"
+        },
+        {
+          "name": "Context API",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mobile state management with the Context API"
+        },
+        {
+          "name": "Mobile performance optimization",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Mobile performance optimisation and debugging"
+        },
+        {
+          "name": "Debugging",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Debugging mobile applications"
+        },
+        {
+          "name": "Git",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Git and version control workflows"
+        },
+        {
+          "name": "UI/UX implementation",
+          "category": "programming",
+          "requirement": "required",
+          "evidence": "Mobile UI/UX implementation"
+        },
+        {
+          "name": "Geolocation and maps",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Geolocation and maps integration are nice to have"
+        },
+        {
+          "name": "Push notifications",
+          "category": "programming",
+          "requirement": "preferred",
+          "evidence": "Push notifications with FCM/APNs are nice to have"
+        },
+        {
+          "name": "Offline caching",
+          "category": "infrastructure",
+          "requirement": "preferred",
+          "evidence": "Offline caching strategies are nice to have"
+        },
+        {
+          "name": "Supabase",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Supabase experience is nice to have"
+        },
+        {
+          "name": "Firebase",
+          "category": "platform",
+          "requirement": "preferred",
+          "evidence": "Firebase experience is nice to have"
+        },
+        {
+          "name": "App publishing",
+          "category": "other",
+          "requirement": "preferred",
+          "evidence": "Android or iOS app publishing experience is nice to have"
+        }
+      ]
+    },
+    {
+      "source_id": 616,
+      "title": "Senior RetailMax Support Executive",
+      "employer": "RetailMax (TecnoZone IT Solutions)",
+      "location": "Lilongwe",
+      "employment_type": "full_time",
+      "role_family": "support",
+      "industry": "retail technology",
+      "seniority": "senior",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": 5
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-05-19",
+      "deadline": null,
+      "summary": "Leads client support for a retail management platform, resolving escalated issues, analysing requirements and supporting POS, SQL database and reporting systems.",
+      "responsibilities": [
+        "Lead and mentor junior support executives.",
+        "Handle escalated client issues.",
+        "Ensure seamless client adoption of RetailMax features.",
+        "Collaborate with technical teams to resolve complex challenges.",
+        "Drive customer satisfaction and retention through proactive support.",
+        "Document processes and maintain accurate client support records.",
+        "Analyse business requirements.",
+        "Support POS systems, SQL databases and reporting tools."
+      ],
+      "requirements": [
+        "Bachelor's degree in Information Technology, Computer Science, Business Administration or a related field.",
+        "Three to five years of experience in customer support or retail systems management.",
+        "Strong knowledge of database systems.",
+        "Strong knowledge of business analysis.",
+        "Excellent problem solving and troubleshooting abilities.",
+        "Customer-focused mindset with proven conflict resolution skills.",
+        "Ability to train, mentor and supervise junior staff.",
+        "Strong communication and documentation skills.",
+        "Technical proficiency in POS systems, SQL databases and reporting tools.",
+        "Ability to work under pressure and manage multiple client requests.",
+        "Professional certifications in customer support, ITIL or retail systems are an added advantage."
+      ],
+      "skills": [
+        {
+          "name": "Retail systems",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Experience in retail systems management"
+        },
+        {
+          "name": "POS systems",
+          "category": "platform",
+          "requirement": "required",
+          "evidence": "Technical proficiency in POS systems"
+        },
+        {
+          "name": "SQL",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Technical proficiency in SQL databases"
+        },
+        {
+          "name": "Database systems",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Strong knowledge of database systems"
+        },
+        {
+          "name": "Business analysis",
+          "category": "management",
+          "requirement": "required",
+          "evidence": "Strong knowledge of business analysis"
+        },
+        {
+          "name": "Reporting tools",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Technical proficiency in reporting tools"
+        },
+        {
+          "name": "Application support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Leads client support for RetailMax"
+        },
+        {
+          "name": "Troubleshooting",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Excellent problem solving and troubleshooting abilities"
+        },
+        {
+          "name": "Problem solving",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Excellent problem solving abilities"
+        },
+        {
+          "name": "Customer service",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Customer-focused mindset"
+        },
+        {
+          "name": "Conflict resolution",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Proven conflict resolution skills"
+        },
+        {
+          "name": "Mentoring",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Trains, mentors and supervises junior staff"
+        },
+        {
+          "name": "Team supervision",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Supervises junior support executives"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Strong communication skills"
+        },
+        {
+          "name": "Documentation",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Documents processes and support records"
+        },
+        {
+          "name": "ITIL",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "ITIL certification is an added advantage"
+        },
+        {
+          "name": "Customer support certification",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "Customer support certification is an added advantage"
+        }
+      ]
+    },
+    {
+      "source_id": 655,
+      "title": "Data Specialist",
+      "employer": "United Nations Volunteers (UNV)",
+      "location": "Lilongwe",
+      "employment_type": "volunteer",
+      "role_family": "data",
+      "industry": "UN / development",
+      "seniority": "mid",
+      "is_ict": true,
+      "education_level": "bachelor",
+      "experience_years": {
+        "min": 3,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-04-10",
+      "deadline": null,
+      "summary": "Implements databases, data collection systems and analytics for a UN resident coordinator's office, cleaning data, producing dashboards and building staff data capacity.",
+      "responsibilities": [
+        "Implement databases, data collection systems and data analytics strategies.",
+        "Identify, analyse and interpret trends and patterns using statistical methods.",
+        "Implement process improvements for data analytics tasks.",
+        "Acquire and clean data from primary and secondary sources.",
+        "Maintain databases, data systems and websites.",
+        "Develop reports, dashboards and tools to summarise findings for management.",
+        "Track and report on department-specific data initiatives.",
+        "Compile data insights and prepare supporting materials for stakeholder communications.",
+        "Keep abreast of emerging data analytics practices and tools.",
+        "Build staff capacity on data analytics through training.",
+        "Participate in the Data, Monitoring, Evaluation and Learning Group and results groups."
+      ],
+      "requirements": [
+        "Bachelor's degree in economics, statistics, computer science, mathematics, data science, social science or a related field.",
+        "Three years of relevant experience.",
+        "Fluency in English.",
+        "Experience with data visualisation tools such as Power BI or Tableau is a plus.",
+        "Experience with GIS software such as ArcGIS is a plus.",
+        "Ability to analyse results information by triangulating quantitative and qualitative data.",
+        "Adaptability, client orientation, continuous learning, communication, creativity, planning and teamwork competencies."
+      ],
+      "skills": [
+        {
+          "name": "Database management",
+          "category": "database",
+          "requirement": "required",
+          "evidence": "Implements and maintains databases"
+        },
+        {
+          "name": "Data collection",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Implements data collection systems"
+        },
+        {
+          "name": "Data analytics",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Implements data analytics strategies"
+        },
+        {
+          "name": "Statistical analysis",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Uses statistical methods to identify trends and patterns"
+        },
+        {
+          "name": "Data cleaning",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Acquires and cleans data from primary and secondary sources"
+        },
+        {
+          "name": "Data quality",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Optimises statistical efficiency and quality"
+        },
+        {
+          "name": "Dashboards",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops dashboards to summarise findings"
+        },
+        {
+          "name": "Reporting",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops reports for management"
+        },
+        {
+          "name": "Data visualization",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Develops visual tools to convey information"
+        },
+        {
+          "name": "Triangulation",
+          "category": "data",
+          "requirement": "required",
+          "evidence": "Triangulates quantitative and qualitative data"
+        },
+        {
+          "name": "Capacity building",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Builds staff capacity on data analytics"
+        },
+        {
+          "name": "Communication",
+          "category": "soft",
+          "requirement": "required",
+          "evidence": "Communication competency is required"
+        },
+        {
+          "name": "Power BI",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with Power BI is a plus"
+        },
+        {
+          "name": "Tableau",
+          "category": "data platform",
+          "requirement": "preferred",
+          "evidence": "Experience with Tableau is a plus"
+        },
+        {
+          "name": "ArcGIS",
+          "category": "gis",
+          "requirement": "preferred",
+          "evidence": "Experience with ArcGIS is a plus"
+        }
+      ]
+    }
+  ]
+}
