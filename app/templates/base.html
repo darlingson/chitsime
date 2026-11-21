@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Chitsime{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  {% block head %}{% endblock %}
+</head>
+<body>
+<div class="app">
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <a class="brand-mark" href="{{ url_for('jobs.index') }}" aria-label="Chitsime home">C</a>
+        <div>
+          <h1>Chitsime</h1>
+          <p>ICT job and skill demand in Malawi</p>
+        </div>
+      </div>
+
+      <nav class="tabs" aria-label="Sections">
+        <a href="{{ url_for('jobs.job_list') }}"
+           class="{{ 'active' if active_tab == 'jobs' else '' }}">Jobs</a>
+        <a href="{{ url_for('skills.skill_demand') }}"
+           class="{{ 'active' if active_tab == 'skills' else '' }}">Skill demand</a>
+        <a href="{{ url_for('admin.job_list') }}"
+           class="{{ 'active' if active_tab == 'admin' else '' }}">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flash-list">
+          {% for category, message in messages %}
+            <li class="flash flash-{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    Chitsime · ICT job and skill demand in Malawi
+  </footer>
+
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>

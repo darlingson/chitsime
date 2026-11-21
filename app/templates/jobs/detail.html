@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% set active_tab = "jobs" %}
+
+{% block title %}{{ job.title }} — Chitsime{% endblock %}
+
+{% block content %}
+<div class="detail-page">
+
+  <a href="{{ url_for('jobs.job_list') }}" class="detail-back">← Back to jobs</a>
+
+  <div class="detail-head" style="margin-top: 18px;">
+    <div>
+      <h2>{{ job.title }}</h2>
+      <p class="employer" style="margin-top: 6px;">{{ job.employer.name }}</p>
+    </div>
+    {% if job.is_ict %}<span class="badge-ict">ICT</span>{% endif %}
+  </div>
+
+  <dl class="detail-meta" style="margin-top: 20px;">
+    <div>
+      <dt>Location</dt>
+      <dd>{{ job.location or '—' }}</dd>
+    </div>
+    <div>
+      <dt>Employment type</dt>
+      <dd>{{ job.employment_type | replace('_', ' ') | title }}</dd>
+    </div>
+    <div>
+      <dt>Role family</dt>
+      <dd>{{ job.role_family | title }}</dd>
+    </div>
+    <div>
+      <dt>Seniority</dt>
+      <dd>{{ job.seniority | title }}</dd>
+    </div>
+    {% if job.education_level %}
+    <div>
+      <dt>Min. education</dt>
+      <dd>{{ job.education_level | title }}</dd>
+    </div>
+    {% endif %}
+    <div>
+      <dt>Experience</dt>
+      <dd>
+        {% if job.experience_min_years is not none and job.experience_max_years is not none %}
+          {% if job.experience_min_years == job.experience_max_years %}
+            {{ job.experience_min_years }} year{{ 's' if job.experience_min_years != 1 else '' }}
+          {% else %}
+            {{ job.experience_min_years }}–{{ job.experience_max_years }} years
+          {% endif %}
+        {% elif job.experience_min_years is not none %}
+          {{ job.experience_min_years }}+ years
+        {% elif job.experience_max_years is not none %}
+          Up to {{ job.experience_max_years }} year{{ 's' if job.experience_max_years != 1 else '' }}
+        {% else %}
+          Not specified
+        {% endif %}
+      </dd>
+    </div>
+    <div>
+      <dt>Salary</dt>
+      <dd>
+        {% if job.salary_disclosed %}
+          {% if job.salary_min and job.salary_max and job.salary_min != job.salary_max %}
+            {{ job.salary_currency or '' }} {{ '{:,.0f}'.format(job.salary_min) }} – {{ '{:,.0f}'.format(job.salary_max) }}
+          {% elif job.salary_min %}
+            {{ job.salary_currency or '' }} {{ '{:,.0f}'.format(job.salary_min) }}
+          {% else %}
+            {{ job.salary_currency or '' }} {{ '{:,.0f}'.format(job.salary_max) }}
+          {% endif %}
+          {% if job.salary_period %} / {{ job.salary_period }}{% endif %}
+        {% else %}
+          Not disclosed
+        {% endif %}
+      </dd>
+    </div>
+    <div>
+      <dt>Posted</dt>
+      <dd>{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</dd>
+    </div>
+    {% if job.deadline %}
+    <div>
+      <dt>Deadline</dt>
+      <dd>{{ job.deadline.strftime('%-d %b %Y') }}</dd>
+    </div>
+    {% endif %}
+  </dl>
+
+  {% if job.summary %}
+  <div class="detail-section" style="margin-top: 24px;">
+    <h3>Summary</h3>
+    <p>{{ job.summary }}</p>
+  </div>
+  {% endif %}
+
+  {% if job.responsibilities %}
+  <div class="detail-section" style="margin-top: 24px;">
+    <h3>Responsibilities</h3>
+    <ul class="bullet-list">
+      {% for item in job.responsibilities %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if job.requirements %}
+  <div class="detail-section" style="margin-top: 24px;">
+    <h3>Requirements</h3>
+    <ul class="bullet-list">
+      {% for item in job.requirements %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if skills %}
+  <div class="detail-section" style="margin-top: 24px;">
+    <h3>Skills</h3>
+    <div class="table-wrap">
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Category</th>
+            <th>Requirement</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for js in skills %}
+          <tr>
+            <td><strong>{{ js.skill.name }}</strong></td>
+            <td>{{ js.skill.category }}</td>
+            <td>
+              <span class="req req-{{ js.requirement }}">{{ js.requirement }}</span>
+            </td>
+            <td class="evidence">{{ js.evidence or '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% endif %}
+
+  <div style="margin-top: 32px;">
+    <a href="{{ url_for('admin.edit_job', job_id=job.id) }}" class="ghost">Edit this job</a>
+  </div>
+
+</div>
+{% endblock %}

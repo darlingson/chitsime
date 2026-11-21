@@ -37,6 +37,20 @@ data/*.db-shm
 # generated raw source
 data/*-raw*.json
 
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Flask / Alembic
+instance/
+
 # Editor/IDE
 # .idea/
 # .vscode/

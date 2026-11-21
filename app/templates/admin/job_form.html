@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% set active_tab = "admin" %}
+
+{% block title %}{{ 'Edit' if job else 'New' }} job — Chitsime{% endblock %}
+
+{% block content %}
+<div class="form-page">
+  <a href="{{ url_for('admin.job_list') }}" class="detail-back">← Back to jobs</a>
+
+  <div class="intro" style="margin-top: 18px; margin-bottom: 28px;">
+    <h2>{{ 'Edit job' if job else 'Add a new job' }}</h2>
+    {% if job %}<p>Editing: <strong>{{ job.title }}</strong></p>{% endif %}
+  </div>
+
+  <form method="POST" novalidate>
+    {{ form.hidden_tag() }}
+
+    <div class="form-grid">
+
+      {# ── Core ─────────────────────────────────────────────────────────── #}
+      <div class="form-field form-full">
+        {{ form.title.label }}
+        {{ form.title(class="") }}
+        {% for error in form.title.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.employer.label }}
+        {{ form.employer() }}
+        {% for error in form.employer.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.location.label }}
+        {{ form.location() }}
+        {% for error in form.location.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.employment_type.label }}
+        {{ form.employment_type() }}
+        {% for error in form.employment_type.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.role_family.label }}
+        {{ form.role_family() }}
+        {% for error in form.role_family.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.seniority.label }}
+        {{ form.seniority() }}
+        {% for error in form.seniority.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.industry.label }}
+        {{ form.industry() }}
+      </div>
+
+      <div class="form-field">
+        {{ form.education_level.label }}
+        {{ form.education_level() }}
+      </div>
+
+      <div class="form-field" style="align-items:start; padding-top:22px;">
+        <label style="display:flex; align-items:center; gap:8px; text-transform:none; font-size:14px; cursor:pointer;">
+          {{ form.is_ict() }} {{ form.is_ict.label.text }}
+        </label>
+      </div>
+
+      {# ── Experience ───────────────────────────────────────────────────── #}
+      <div class="form-field">
+        {{ form.experience_min_years.label }}
+        {{ form.experience_min_years() }}
+      </div>
+
+      <div class="form-field">
+        {{ form.experience_max_years.label }}
+        {{ form.experience_max_years() }}
+      </div>
+
+      {# ── Salary ───────────────────────────────────────────────────────── #}
+      <div class="form-field">
+        {{ form.salary_min.label }}
+        {{ form.salary_min() }}
+      </div>
+
+      <div class="form-field">
+        {{ form.salary_max.label }}
+        {{ form.salary_max() }}
+      </div>
+
+      <div class="form-field">
+        {{ form.salary_currency.label }}
+        {{ form.salary_currency(placeholder="e.g. MWK, USD") }}
+      </div>
+
+      <div class="form-field">
+        {{ form.salary_period.label }}
+        {{ form.salary_period() }}
+      </div>
+
+      {# ── Dates ────────────────────────────────────────────────────────── #}
+      <div class="form-field">
+        {{ form.posted_on.label }}
+        {{ form.posted_on() }}
+        {% for error in form.posted_on.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field">
+        {{ form.deadline.label }}
+        {{ form.deadline() }}
+      </div>
+
+      {# ── Text areas ───────────────────────────────────────────────────── #}
+      <div class="form-field form-full">
+        {{ form.summary.label }}
+        {{ form.summary(rows=4) }}
+        {% for error in form.summary.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      <div class="form-field form-full">
+        {{ form.responsibilities.label }}
+        {{ form.responsibilities(rows=5, placeholder="One bullet per line") }}
+      </div>
+
+      <div class="form-field form-full">
+        {{ form.requirements.label }}
+        {{ form.requirements(rows=5, placeholder="One bullet per line") }}
+      </div>
+
+    </div>{# /form-grid #}
+
+    {# ── Skills ─────────────────────────────────────────────────────────── #}
+    <div style="margin-top: 32px;">
+      <h3 style="font-size:13px; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">
+        Skills
+      </h3>
+
+      <div class="skill-rows" id="skill-rows">
+        {% for entry in form.skills %}
+          <div class="skill-row">
+            {{ entry.name(placeholder="Skill name") }}
+            {{ entry.category(placeholder="Category") }}
+            {{ entry.requirement() }}
+            {{ entry.evidence(placeholder="Evidence quote", rows=1) }}
+            <button type="button" class="remove-skill" onclick="this.closest('.skill-row').remove()">✕</button>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button type="button" class="ghost" id="add-skill" style="margin-top:12px; font-size:13px;">
+        + Add skill
+      </button>
+    </div>
+
+    <div class="form-actions" style="margin-top: 32px;">
+      <button type="submit" class="primary">{{ 'Save changes' if job else 'Add job' }}</button>
+      <a href="{{ url_for('admin.job_list') }}" class="ghost">Cancel</a>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Dynamic skill row add
+  const rowsContainer = document.getElementById('skill-rows');
+  const addBtn = document.getElementById('add-skill');
+
+  const requirementOptions = [
+    {% for val, label in form.skills[0].requirement.choices %}
+      { value: "{{ val }}", label: "{{ label }}" },
+    {% endfor %}
+  ];
+
+  addBtn.addEventListener('click', () => {
+    const idx = rowsContainer.querySelectorAll('.skill-row').length;
+    const prefix = `skills-${idx}`;
+
+    const opts = requirementOptions.map(o =>
+      `<option value="${o.value}">${o.label}</option>`
+    ).join('');
+
+    const row = document.createElement('div');
+    row.className = 'skill-row';
+    row.innerHTML = `
+      <input type="text"     id="${prefix}-name"        name="${prefix}-name"        placeholder="Skill name">
+      <input type="text"     id="${prefix}-category"    name="${prefix}-category"    placeholder="Category">
+      <select                id="${prefix}-requirement" name="${prefix}-requirement">${opts}</select>
+      <textarea              id="${prefix}-evidence"    name="${prefix}-evidence"    placeholder="Evidence quote" rows="1"></textarea>
+      <button type="button" class="remove-skill" onclick="this.closest('.skill-row').remove()">✕</button>
+    `;
+    rowsContainer.appendChild(row);
+  });
+</script>
+{% endblock %}
