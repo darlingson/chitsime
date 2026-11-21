@@ -12,13 +12,13 @@
 
   <header class="masthead">
     <div class="masthead-inner">
-      <div class="brand">
-        <a class="brand-mark" href="{{ url_for('jobs.index') }}" aria-label="Chitsime home">C</a>
-        <div>
+      <a class="brand" href="{{ url_for('jobs.index') }}">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <div class="brand-text">
           <h1>Chitsime</h1>
           <p>ICT job and skill demand in Malawi</p>
         </div>
-      </div>
+      </a>
 
       <nav class="tabs" aria-label="Sections">
         <a href="{{ url_for('jobs.job_list') }}"
@@ -34,7 +34,7 @@
   <main class="page">
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
-        <ul class="flash-list">
+        <ul class="flash-list" role="status">
           {% for category, message in messages %}
             <li class="flash flash-{{ category }}">{{ message }}</li>
           {% endfor %}

@@ -1,15 +1,11 @@
 {% extends "base.html" %}
 {% set active_tab = "jobs" %}
-
 {% block title %}Jobs — Chitsime{% endblock %}
 
 {% block content %}
 <section class="intro">
   <h2>Structured vacancies</h2>
-  <p>
-    Hand-structured Malawian job adverts with comparable fields and explicit skill
-    requirements. Filter by role family, skill, or posting window.
-  </p>
+  <p>Hand-structured Malawian job adverts with comparable fields and explicit skill requirements.</p>
 </section>
 
 <form class="filters" method="GET" action="{{ url_for('jobs.job_list') }}">
@@ -17,8 +13,7 @@
     <span>Role family</span>
     <select name="role_family">
       {% for rf in role_families %}
-        <option value="{{ rf.value }}"
-          {{ 'selected' if filters.role_family == rf.value else '' }}>
+        <option value="{{ rf.value }}" {{ 'selected' if filters.role_family == rf.value }}>
           {{ rf.label }}
         </option>
       {% endfor %}
@@ -35,9 +30,7 @@
       autocomplete="off"
     />
     <datalist id="skill-options">
-      {% for name in skill_names %}
-        <option value="{{ name }}"></option>
-      {% endfor %}
+      {% for name in skill_names %}<option value="{{ name }}"></option>{% endfor %}
     </datalist>
   </label>
 
@@ -60,7 +53,8 @@
 {% if jobs %}
   <ul class="job-grid">
     {% for job in jobs %}
-      <li class="job-card">
+    <li>
+      <a class="job-card" href="{{ url_for('jobs.job_detail', job_id=job.id) }}">
         <div class="job-card-top">
           <h3>{{ job.title }}</h3>
           {% if job.is_ict %}<span class="badge-ict">ICT</span>{% endif %}
@@ -68,70 +62,69 @@
 
         <p class="employer">{{ job.employer.name }}</p>
 
-        <dl class="job-meta">
-          <div>
-            <dt>Location</dt>
-            <dd>{{ job.location or '—' }}</dd>
-          </div>
-          <div>
-            <dt>Type</dt>
-            <dd>{{ job.employment_type | replace('_', ' ') | title }}</dd>
-          </div>
-          <div>
-            <dt>Posted</dt>
-            <dd>{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</dd>
-          </div>
-        </dl>
+        <div class="job-meta">
+          <span class="meta-pill">{{ job.location or '—' }}</span>
+          <span class="meta-pill">{{ job.employment_type | replace('_', ' ') | title }}</span>
+          <span class="meta-pill">{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</span>
+        </div>
 
         {% set visible_skills = job.job_skills[:4] %}
-        {% set hidden_count = job.job_skills | length - 4 %}
+        {% set hidden_count = (job.job_skills | length) - 4 %}
         {% if visible_skills %}
-          <ul class="chips" aria-label="Skills">
-            {% for js in visible_skills %}
-              <li class="chip chip-{{ js.requirement }}">{{ js.skill.name }}</li>
-            {% endfor %}
-            {% if hidden_count > 0 %}
-              <li class="chip chip-more">+{{ hidden_count }} more</li>
-            {% endif %}
-          </ul>
+        <ul class="chips" aria-label="Skills">
+          {% for js in visible_skills %}
+            <li class="chip chip-{{ js.requirement }}">{{ js.skill.name }}</li>
+          {% endfor %}
+          {% if hidden_count > 0 %}
+            <li class="chip chip-more">+{{ hidden_count }} more</li>
+          {% endif %}
+        </ul>
         {% endif %}
 
-        <a href="{{ url_for('jobs.job_detail', job_id=job.id) }}" class="card-action">
-          View details
-        </a>
-      </li>
+        <span class="card-action">View details</span>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 {% else %}
   <div class="state">
     <strong>No jobs match those filters</strong>
-    {% if has_filters %}
-      Try widening the date range or clearing the skill filter.
-    {% else %}
-      Add jobs via the <a href="{{ url_for('admin.new_job') }}">admin panel</a>.
-    {% endif %}
+    <p>
+      {% if has_filters %}
+        Try widening the date range or clearing the skill filter.
+      {% else %}
+        Add jobs via the <a href="{{ url_for('admin.new_job') }}">admin panel</a>.
+      {% endif %}
+    </p>
   </div>
 {% endif %}
 
 <div class="pager">
-  <p>
-    Page {{ page }} · {{ jobs | length }}
-    {{ 'advert' if jobs | length == 1 else 'adverts' }}
+  <p class="pager-info">
+    Page {{ page }} &middot; {{ jobs | length }} {{ 'advert' if jobs | length == 1 else 'adverts' }}
     {% if has_filters %} matching your filters{% endif %}
   </p>
   <div class="pager-buttons">
     {% if can_go_back %}
-      <a href="{{ url_for('jobs.job_list', role_family=filters.role_family, skill=filters.skill, posted_from=filters.posted_from, posted_to=filters.posted_to, offset=[offset - page_size, 0] | max) }}"
-         class="">Previous</a>
+      <a href="{{ url_for('jobs.job_list',
+           role_family=filters.role_family,
+           skill=filters.skill,
+           posted_from=filters.posted_from,
+           posted_to=filters.posted_to,
+           offset=[offset - page_size, 0] | max) }}">← Previous</a>
     {% else %}
-      <span class="disabled">Previous</span>
+      <span class="disabled">← Previous</span>
     {% endif %}
 
     {% if can_go_forward %}
-      <a href="{{ url_for('jobs.job_list', role_family=filters.role_family, skill=filters.skill, posted_from=filters.posted_from, posted_to=filters.posted_to, offset=offset + page_size) }}"
-         >Next</a>
+      <a href="{{ url_for('jobs.job_list',
+           role_family=filters.role_family,
+           skill=filters.skill,
+           posted_from=filters.posted_from,
+           posted_to=filters.posted_to,
+           offset=offset + page_size) }}">Next →</a>
     {% else %}
-      <span class="disabled">Next</span>
+      <span class="disabled">Next →</span>
     {% endif %}
   </div>
 </div>
