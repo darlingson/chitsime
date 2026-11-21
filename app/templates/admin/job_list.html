@@ -30,7 +30,7 @@
         <td style="color:var(--text-secondary);">{{ job.employer.name }}</td>
         <td style="color:var(--text-tertiary); font-size:13px;">{{ job.role_family | title }}</td>
         <td style="color:var(--text-tertiary); font-size:13px; white-space:nowrap;">
-          {{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}
+          {{ job.posted_on.strftime('%d %b %Y').lstrip('0') if job.posted_on else '—' }}
         </td>
         <td>
           <div class="row-actions">

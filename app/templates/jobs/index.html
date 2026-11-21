@@ -60,7 +60,7 @@
         <div class="job-meta">
           <span class="job-meta-item">{{ job.location or '—' }}</span>
           <span class="job-meta-item">{{ job.employment_type | replace('_', ' ') | title }}</span>
-          <span class="job-meta-item">{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</span>
+          <span class="job-meta-item">{{ job.posted_on.strftime('%d %b %Y').lstrip('0') if job.posted_on else '—' }}</span>
         </div>
 
         {% set visible_skills = job.job_skills[:4] %}

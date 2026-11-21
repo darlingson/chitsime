@@ -72,12 +72,12 @@
     </div>
     <div class="meta-cell">
       <dt>Posted</dt>
-      <dd>{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</dd>
+      <dd>{{ job.posted_on.strftime('%d %b %Y').lstrip('0') if job.posted_on else '—' }}</dd>
     </div>
     {% if job.deadline %}
     <div class="meta-cell">
       <dt>Deadline</dt>
-      <dd>{{ job.deadline.strftime('%-d %b %Y') }}</dd>
+      <dd>{{ job.deadline.strftime('%d %b %Y').lstrip('0') }}</dd>
     </div>
     {% endif %}
     {% if job.industry %}
