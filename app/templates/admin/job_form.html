@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% set active_tab = "admin" %}
-{% block title %}{{ 'Edit' if job else 'New' }} job — Chitsime{% endblock %}
+{% block title %}{{ 'Edit' if job else 'New job' }} — Chitsime{% endblock %}
 
 {% block content %}
 <div class="form-page">
 
-  <a href="{{ url_for('admin.job_list') }}" class="detail-back">Back to jobs</a>
+  <a href="{{ url_for('admin.job_list') }}" class="detail-back">← Back to jobs</a>
 
   <section class="intro">
     <h2>{{ 'Edit job' if job else 'Add a new job' }}</h2>
@@ -15,179 +15,160 @@
   <form method="POST" novalidate>
     {{ form.hidden_tag() }}
 
-    {# ── Core details ────────────────────────────────────────────────── #}
-    <div class="form-card">
-      <div class="form-card-header"><h3>Core details</h3></div>
-      <div class="form-card-body">
-        <div class="form-grid">
+    {# ── Core ─────────────────────────────────────────────────────── #}
+    <div class="form-section">
+      <p class="form-section-label">Core details</p>
+      <div class="form-grid">
 
-          <div class="form-field form-full">
-            {{ form.title.label }}
-            {{ form.title() }}
-            {% for e in form.title.errors %}<p class="error">{{ e }}</p>{% endfor %}
-          </div>
-
-          <div class="form-field">
-            {{ form.employer.label }}
-            {{ form.employer() }}
-            {% for e in form.employer.errors %}<p class="error">{{ e }}</p>{% endfor %}
-          </div>
-
-          <div class="form-field">
-            {{ form.location.label }}
-            {{ form.location() }}
-            {% for e in form.location.errors %}<p class="error">{{ e }}</p>{% endfor %}
-          </div>
-
-          <div class="form-field">
-            {{ form.employment_type.label }}
-            {{ form.employment_type() }}
-          </div>
-
-          <div class="form-field">
-            {{ form.role_family.label }}
-            {{ form.role_family() }}
-          </div>
-
-          <div class="form-field">
-            {{ form.seniority.label }}
-            {{ form.seniority() }}
-          </div>
-
-          <div class="form-field">
-            {{ form.industry.label }}
-            {{ form.industry(placeholder="e.g. NGO / humanitarian") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.education_level.label }}
-            {{ form.education_level() }}
-          </div>
-
-          <div class="form-field" style="justify-content: flex-end; padding-bottom: 2px;">
-            <label class="checkbox-label">
-              {{ form.is_ict() }} {{ form.is_ict.label.text }}
-            </label>
-          </div>
-
+        <div class="form-field form-full">
+          {{ form.title.label }}
+          {{ form.title() }}
+          {% for e in form.title.errors %}<p class="error">{{ e }}</p>{% endfor %}
         </div>
+
+        <div class="form-field">
+          {{ form.employer.label }}
+          {{ form.employer() }}
+          {% for e in form.employer.errors %}<p class="error">{{ e }}</p>{% endfor %}
+        </div>
+
+        <div class="form-field">
+          {{ form.location.label }}
+          {{ form.location() }}
+          {% for e in form.location.errors %}<p class="error">{{ e }}</p>{% endfor %}
+        </div>
+
+        <div class="form-field">
+          {{ form.employment_type.label }}
+          {{ form.employment_type() }}
+        </div>
+
+        <div class="form-field">
+          {{ form.role_family.label }}
+          {{ form.role_family() }}
+        </div>
+
+        <div class="form-field">
+          {{ form.seniority.label }}
+          {{ form.seniority() }}
+        </div>
+
+        <div class="form-field">
+          {{ form.industry.label }}
+          {{ form.industry(placeholder="e.g. NGO / humanitarian") }}
+        </div>
+
+        <div class="form-field">
+          {{ form.education_level.label }}
+          {{ form.education_level() }}
+        </div>
+
+        <div class="form-field" style="justify-content:flex-end;">
+          <label class="checkbox-label">
+            {{ form.is_ict() }} {{ form.is_ict.label.text }}
+          </label>
+        </div>
+
       </div>
     </div>
 
-    {# ── Experience & salary ──────────────────────────────────────────── #}
-    <div class="form-card">
-      <div class="form-card-header"><h3>Experience &amp; salary</h3></div>
-      <div class="form-card-body">
-        <div class="form-grid">
+    {# ── Experience & salary ───────────────────────────────────── #}
+    <div class="form-section">
+      <p class="form-section-label">Experience &amp; salary</p>
+      <div class="form-grid">
 
-          <div class="form-field">
-            {{ form.experience_min_years.label }}
-            {{ form.experience_min_years(placeholder="e.g. 2") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.experience_max_years.label }}
-            {{ form.experience_max_years(placeholder="e.g. 5") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.salary_min.label }}
-            {{ form.salary_min(placeholder="e.g. 500000") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.salary_max.label }}
-            {{ form.salary_max(placeholder="e.g. 800000") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.salary_currency.label }}
-            {{ form.salary_currency(placeholder="e.g. MWK") }}
-          </div>
-
-          <div class="form-field">
-            {{ form.salary_period.label }}
-            {{ form.salary_period() }}
-          </div>
-
+        <div class="form-field">
+          {{ form.experience_min_years.label }}
+          {{ form.experience_min_years(placeholder="e.g. 2") }}
         </div>
+        <div class="form-field">
+          {{ form.experience_max_years.label }}
+          {{ form.experience_max_years(placeholder="e.g. 5") }}
+        </div>
+        <div class="form-field">
+          {{ form.salary_min.label }}
+          {{ form.salary_min(placeholder="e.g. 500000") }}
+        </div>
+        <div class="form-field">
+          {{ form.salary_max.label }}
+          {{ form.salary_max(placeholder="e.g. 800000") }}
+        </div>
+        <div class="form-field">
+          {{ form.salary_currency.label }}
+          {{ form.salary_currency(placeholder="e.g. MWK") }}
+        </div>
+        <div class="form-field">
+          {{ form.salary_period.label }}
+          {{ form.salary_period() }}
+        </div>
+
       </div>
     </div>
 
-    {# ── Dates ───────────────────────────────────────────────────────── #}
-    <div class="form-card">
-      <div class="form-card-header"><h3>Dates</h3></div>
-      <div class="form-card-body">
-        <div class="form-grid">
+    {# ── Dates ─────────────────────────────────────────────────── #}
+    <div class="form-section">
+      <p class="form-section-label">Dates</p>
+      <div class="form-grid">
 
-          <div class="form-field">
-            {{ form.posted_on.label }}
-            {{ form.posted_on() }}
-            {% for e in form.posted_on.errors %}<p class="error">{{ e }}</p>{% endfor %}
-          </div>
-
-          <div class="form-field">
-            {{ form.deadline.label }}
-            {{ form.deadline() }}
-          </div>
-
+        <div class="form-field">
+          {{ form.posted_on.label }}
+          {{ form.posted_on() }}
+          {% for e in form.posted_on.errors %}<p class="error">{{ e }}</p>{% endfor %}
         </div>
+        <div class="form-field">
+          {{ form.deadline.label }}
+          {{ form.deadline() }}
+        </div>
+
       </div>
     </div>
 
-    {# ── Description ─────────────────────────────────────────────────── #}
-    <div class="form-card">
-      <div class="form-card-header"><h3>Description</h3></div>
-      <div class="form-card-body">
-        <div class="form-grid">
+    {# ── Description ───────────────────────────────────────────── #}
+    <div class="form-section">
+      <p class="form-section-label">Description</p>
+      <div class="form-grid">
 
-          <div class="form-field form-full">
-            {{ form.summary.label }}
-            {{ form.summary(rows=4) }}
-            {% for e in form.summary.errors %}<p class="error">{{ e }}</p>{% endfor %}
-          </div>
-
-          <div class="form-field form-full">
-            {{ form.responsibilities.label }}
-            {{ form.responsibilities(rows=5, placeholder="One bullet per line") }}
-          </div>
-
-          <div class="form-field form-full">
-            {{ form.requirements.label }}
-            {{ form.requirements(rows=5, placeholder="One bullet per line") }}
-          </div>
-
+        <div class="form-field form-full">
+          {{ form.summary.label }}
+          {{ form.summary(rows=4) }}
+          {% for e in form.summary.errors %}<p class="error">{{ e }}</p>{% endfor %}
         </div>
+        <div class="form-field form-full">
+          {{ form.responsibilities.label }}
+          {{ form.responsibilities(rows=5, placeholder="One bullet per line") }}
+        </div>
+        <div class="form-field form-full">
+          {{ form.requirements.label }}
+          {{ form.requirements(rows=5, placeholder="One bullet per line") }}
+        </div>
+
       </div>
     </div>
 
-    {# ── Skills ──────────────────────────────────────────────────────── #}
-    <div class="form-card">
-      <div class="form-card-header">
-        <h3>Skills</h3>
-      </div>
-      <div class="form-card-body">
+    {# ── Skills ────────────────────────────────────────────────── #}
+    <div class="form-section">
+      <p class="form-section-label">Skills</p>
 
-        <div class="skill-rows" id="skill-rows">
-          {% for entry in form.skills %}
-          <div class="skill-row">
-            {{ entry.name(placeholder="Skill name") }}
-            {{ entry.category(placeholder="Category") }}
-            {{ entry.requirement() }}
-            {{ entry.evidence(placeholder="Evidence quote", rows=1) }}
-            <button type="button" class="remove-skill" title="Remove skill" onclick="this.closest('.skill-row').remove()">✕</button>
-          </div>
-          {% endfor %}
+      <div class="skill-rows" id="skill-rows">
+        {% for entry in form.skills %}
+        <div class="skill-row">
+          {{ entry.name(placeholder="Skill name") }}
+          {{ entry.category(placeholder="Category") }}
+          {{ entry.requirement() }}
+          {{ entry.evidence(placeholder="Evidence quote", rows=1) }}
+          <button type="button" class="remove-skill"
+                  title="Remove" onclick="this.closest('.skill-row').remove()">✕</button>
         </div>
-
-        <button type="button" id="add-skill"
-                class="ghost" style="margin-top: 12px; font-size: 13px; padding: 7px 14px;">
-          + Add skill
-        </button>
+        {% endfor %}
       </div>
+
+      <button type="button" id="add-skill" class="ghost"
+              style="margin-top:12px; font-size:14px; padding:8px 18px;">
+        + Add skill
+      </button>
     </div>
 
-    {# ── Actions ─────────────────────────────────────────────────────── #}
+    {# ── Actions ───────────────────────────────────────────────── #}
     <div class="form-actions">
       <button type="submit" class="primary">{{ 'Save changes' if job else 'Add job' }}</button>
       <a href="{{ url_for('admin.job_list') }}" class="ghost">Cancel</a>
@@ -199,32 +180,29 @@
 
 {% block scripts %}
 <script>
-  const rowsContainer = document.getElementById('skill-rows');
+  const rows = document.getElementById('skill-rows');
   const addBtn = document.getElementById('add-skill');
-
-  const requirementOptions = [
+  const opts = [
     {% for val, label in form.skills[0].requirement.choices %}
       { value: "{{ val }}", label: "{{ label }}" },
     {% endfor %}
   ];
 
   addBtn.addEventListener('click', () => {
-    const idx = rowsContainer.querySelectorAll('.skill-row').length;
-    const prefix = `skills-${idx}`;
-    const opts = requirementOptions.map(o =>
-      `<option value="${o.value}">${o.label}</option>`
-    ).join('');
-    const row = document.createElement('div');
-    row.className = 'skill-row';
-    row.innerHTML = `
-      <input  type="text" id="${prefix}-name"        name="${prefix}-name"        placeholder="Skill name">
-      <input  type="text" id="${prefix}-category"    name="${prefix}-category"    placeholder="Category">
-      <select             id="${prefix}-requirement" name="${prefix}-requirement">${opts}</select>
-      <textarea           id="${prefix}-evidence"    name="${prefix}-evidence"    placeholder="Evidence quote" rows="1"></textarea>
+    const idx = rows.querySelectorAll('.skill-row').length;
+    const p = `skills-${idx}`;
+    const o = opts.map(x => `<option value="${x.value}">${x.label}</option>`).join('');
+    const div = document.createElement('div');
+    div.className = 'skill-row';
+    div.innerHTML = `
+      <input  type="text" id="${p}-name"        name="${p}-name"        placeholder="Skill name">
+      <input  type="text" id="${p}-category"    name="${p}-category"    placeholder="Category">
+      <select             id="${p}-requirement" name="${p}-requirement">${o}</select>
+      <textarea           id="${p}-evidence"    name="${p}-evidence"    placeholder="Evidence quote" rows="1"></textarea>
       <button type="button" class="remove-skill" title="Remove" onclick="this.closest('.skill-row').remove()">✕</button>
     `;
-    rowsContainer.appendChild(row);
-    row.querySelector('input').focus();
+    rows.appendChild(div);
+    div.querySelector('input').focus();
   });
 </script>
 {% endblock %}

@@ -5,17 +5,16 @@
 {% block content %}
 <div class="detail-page">
 
-  <a href="{{ url_for('jobs.job_list') }}" class="detail-back">Back to jobs</a>
+  <a href="{{ url_for('jobs.job_list') }}" class="detail-back">← Back to jobs</a>
 
   <div class="detail-header">
     <div>
       <h2>{{ job.title }}</h2>
-      <p class="employer" style="margin-top: 5px; font-size:15px;">{{ job.employer.name }}</p>
+      <p class="employer">{{ job.employer.name }}</p>
     </div>
-    {% if job.is_ict %}<span class="badge-ict" style="flex-shrink:0; margin-top:4px;">ICT</span>{% endif %}
+    {% if job.is_ict %}<span class="badge-ict" style="margin-top:4px;">ICT</span>{% endif %}
   </div>
 
-  {# ── Meta grid ───────────────────────────────────────────────────────── #}
   <dl class="detail-meta">
     <div class="meta-cell">
       <dt>Location</dt>
@@ -26,7 +25,7 @@
       <dd>{{ job.employment_type | replace('_', ' ') | title }}</dd>
     </div>
     <div class="meta-cell">
-      <dt>Role family</dt>
+      <dt>Role</dt>
       <dd>{{ job.role_family | title }}</dd>
     </div>
     <div class="meta-cell">
@@ -52,8 +51,7 @@
           {{ job.experience_min_years }}+ yrs
         {%- elif job.experience_max_years is not none -%}
           Up to {{ job.experience_max_years }} yrs
-        {%- else -%}
-          Not specified
+        {%- else -%}Not specified
         {%- endif -%}
       </dd>
     </div>
@@ -69,9 +67,7 @@
             {{ job.salary_currency or '' }} {{ '{:,.0f}'.format(job.salary_max) }}
           {% endif %}
           {% if job.salary_period %} / {{ job.salary_period }}{% endif %}
-        {% else %}
-          Not disclosed
-        {% endif %}
+        {% else %}Not disclosed{% endif %}
       </dd>
     </div>
     <div class="meta-cell">
@@ -92,39 +88,35 @@
     {% endif %}
   </dl>
 
-  {# ── Summary ─────────────────────────────────────────────────────────── #}
   {% if job.summary %}
   <div class="detail-section">
-    <h3>Summary</h3>
+    <p class="section-label">Summary</p>
     <p>{{ job.summary }}</p>
   </div>
   {% endif %}
 
-  {# ── Responsibilities ────────────────────────────────────────────────── #}
   {% if job.responsibilities %}
   <div class="detail-section">
-    <h3>Responsibilities</h3>
+    <p class="section-label">Responsibilities</p>
     <ul class="bullet-list">
       {% for item in job.responsibilities %}<li>{{ item }}</li>{% endfor %}
     </ul>
   </div>
   {% endif %}
 
-  {# ── Requirements ────────────────────────────────────────────────────── #}
   {% if job.requirements %}
   <div class="detail-section">
-    <h3>Requirements</h3>
+    <p class="section-label">Requirements</p>
     <ul class="bullet-list">
       {% for item in job.requirements %}<li>{{ item }}</li>{% endfor %}
     </ul>
   </div>
   {% endif %}
 
-  {# ── Skills ──────────────────────────────────────────────────────────── #}
   {% if skills %}
   <div class="detail-section">
-    <h3>Skills</h3>
-    <div class="table-wrap" style="margin-top:4px;">
+    <p class="section-label">Skills</p>
+    <div class="table-wrap">
       <table class="skill-table">
         <thead>
           <tr>
@@ -137,8 +129,8 @@
         <tbody>
           {% for js in skills %}
           <tr>
-            <td><strong>{{ js.skill.name }}</strong></td>
-            <td style="color: var(--text-muted); font-size:13px;">{{ js.skill.category }}</td>
+            <td style="font-weight:500;">{{ js.skill.name }}</td>
+            <td style="color:var(--text-tertiary); font-size:13px;">{{ js.skill.category }}</td>
             <td><span class="req req-{{ js.requirement }}">{{ js.requirement }}</span></td>
             <td class="evidence">{{ js.evidence or '—' }}</td>
           </tr>
@@ -149,11 +141,9 @@
   </div>
   {% endif %}
 
-  {# ── Edit link ───────────────────────────────────────────────────────── #}
   <div>
-    <a href="{{ url_for('admin.edit_job', job_id=job.id) }}" class="ghost" style="font-size:13.5px; padding:7px 14px;">
-      Edit this job
-    </a>
+    <a href="{{ url_for('admin.edit_job', job_id=job.id) }}" class="ghost"
+       style="font-size:14px; padding:8px 18px;">Edit this job</a>
   </div>
 
 </div>

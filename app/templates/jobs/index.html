@@ -22,13 +22,8 @@
 
   <label class="field">
     <span>Skill</span>
-    <input
-      list="skill-options"
-      name="skill"
-      value="{{ filters.skill }}"
-      placeholder="e.g. DHIS2"
-      autocomplete="off"
-    />
+    <input list="skill-options" name="skill" value="{{ filters.skill }}"
+           placeholder="e.g. DHIS2" autocomplete="off" />
     <datalist id="skill-options">
       {% for name in skill_names %}<option value="{{ name }}"></option>{% endfor %}
     </datalist>
@@ -45,7 +40,7 @@
   </label>
 
   <div class="filter-actions">
-    <button type="submit" class="primary">Apply filters</button>
+    <button type="submit" class="primary">Apply</button>
     <a href="{{ url_for('jobs.job_list') }}" class="ghost">Reset</a>
   </div>
 </form>
@@ -63,9 +58,9 @@
         <p class="employer">{{ job.employer.name }}</p>
 
         <div class="job-meta">
-          <span class="meta-pill">{{ job.location or '—' }}</span>
-          <span class="meta-pill">{{ job.employment_type | replace('_', ' ') | title }}</span>
-          <span class="meta-pill">{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</span>
+          <span class="job-meta-item">{{ job.location or '—' }}</span>
+          <span class="job-meta-item">{{ job.employment_type | replace('_', ' ') | title }}</span>
+          <span class="job-meta-item">{{ job.posted_on.strftime('%-d %b %Y') if job.posted_on else '—' }}</span>
         </div>
 
         {% set visible_skills = job.job_skills[:4] %}
@@ -81,7 +76,7 @@
         </ul>
         {% endif %}
 
-        <span class="card-action">View details</span>
+        <span class="card-action">View details →</span>
       </a>
     </li>
     {% endfor %}
@@ -90,38 +85,29 @@
   <div class="state">
     <strong>No jobs match those filters</strong>
     <p>
-      {% if has_filters %}
-        Try widening the date range or clearing the skill filter.
-      {% else %}
-        Add jobs via the <a href="{{ url_for('admin.new_job') }}">admin panel</a>.
-      {% endif %}
+      {% if has_filters %}Try widening the date range or clearing the skill filter.
+      {% else %}Add jobs via the <a href="{{ url_for('admin.new_job') }}">admin panel</a>.{% endif %}
     </p>
   </div>
 {% endif %}
 
 <div class="pager">
   <p class="pager-info">
-    Page {{ page }} &middot; {{ jobs | length }} {{ 'advert' if jobs | length == 1 else 'adverts' }}
-    {% if has_filters %} matching your filters{% endif %}
+    Page {{ page }} &middot;
+    {{ jobs | length }} {{ 'advert' if jobs | length == 1 else 'adverts' }}
+    {% if has_filters %}matching your filters{% endif %}
   </p>
   <div class="pager-buttons">
     {% if can_go_back %}
-      <a href="{{ url_for('jobs.job_list',
-           role_family=filters.role_family,
-           skill=filters.skill,
-           posted_from=filters.posted_from,
-           posted_to=filters.posted_to,
+      <a href="{{ url_for('jobs.job_list', role_family=filters.role_family, skill=filters.skill,
+           posted_from=filters.posted_from, posted_to=filters.posted_to,
            offset=[offset - page_size, 0] | max) }}">← Previous</a>
     {% else %}
       <span class="disabled">← Previous</span>
     {% endif %}
-
     {% if can_go_forward %}
-      <a href="{{ url_for('jobs.job_list',
-           role_family=filters.role_family,
-           skill=filters.skill,
-           posted_from=filters.posted_from,
-           posted_to=filters.posted_to,
+      <a href="{{ url_for('jobs.job_list', role_family=filters.role_family, skill=filters.skill,
+           posted_from=filters.posted_from, posted_to=filters.posted_to,
            offset=offset + page_size) }}">Next →</a>
     {% else %}
       <span class="disabled">Next →</span>
