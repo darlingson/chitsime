@@ -139,18 +139,12 @@ button:disabled { cursor: not-allowed; }
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 30px;
   height: 30px;
   border-radius: 8px;
-  background: var(--brand);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
   flex-shrink: 0;
-}
+}
 
 .brand-text h1 {
   font-size: 17px;

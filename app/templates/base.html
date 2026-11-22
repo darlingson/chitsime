@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% block title %}Chitsime{% endblock %}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
   {% block head %}{% endblock %}
 </head>
 <body>
@@ -13,7 +14,7 @@
   <header class="masthead">
     <div class="masthead-inner">
       <a class="brand" href="{{ url_for('jobs.index') }}">
-        <span class="brand-mark" aria-hidden="true">C</span>
+        <img class="brand-mark" src="{{ url_for('static', filename='favicon.svg') }}" alt="" width="30" height="30" />
         <div class="brand-text">
           <h1>Chitsime</h1>
           <p>ICT job and skill demand in Malawi</p>
