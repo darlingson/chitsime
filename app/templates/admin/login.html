@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% set active_tab = "admin" %}
+{% block title %}Admin sign in — Chitsime{% endblock %}
+
+{% block content %}
+<div class="form-page" style="max-width: 520px; margin: 0 auto;">
+  <section class="intro">
+    <h2>Admin sign in</h2>
+    <p>Sign in to manage job records.</p>
+  </section>
+
+  <form method="POST" novalidate>
+    {{ form.hidden_tag() }}
+
+    <div class="form-card">
+      <div class="form-card-header"><h3>Account</h3></div>
+      <div class="form-card-body">
+        <div class="form-grid" style="grid-template-columns: 1fr;">
+          <div class="form-field">
+            {{ form.username.label }}
+            {{ form.username(autocomplete="username", autofocus=true) }}
+            {% for e in form.username.errors %}<p class="error">{{ e }}</p>{% endfor %}
+          </div>
+
+          <div class="form-field">
+            {{ form.password.label }}
+            {{ form.password(autocomplete="current-password") }}
+            {% for e in form.password.errors %}<p class="error">{{ e }}</p>{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="primary">Sign in</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

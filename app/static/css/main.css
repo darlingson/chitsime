@@ -975,8 +975,12 @@ button:disabled { cursor: not-allowed; }
   letter-spacing: 0;
 }
 
+/* ── Admin session ──────────────────────────────────────────────────── */
+.admin-session { margin: 0; }
+.admin-logout { font-size: 12px; padding: 6px 12px; }
+
 /* ── Responsive ─────────────────────────────────────────────────────── */
-@media (max-width: 680px) {
+@media (max-width: 680px) {
   .masthead-inner { padding: 0 16px; }
   .page { padding: 36px 16px 72px; gap: 40px; }
   .job-grid { grid-template-columns: 1fr; }

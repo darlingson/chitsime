@@ -1,11 +1,15 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, abort
+from flask_login import current_user, login_required, login_user, logout_user
+from sqlalchemy import func as sqla_func
+
 from app import db
+from app.forms import JobForm, LoginForm
 from app.models import (
+    AdminUser,
     Job, Employer, Skill, JobSkill,
     EMPLOYMENT_TYPES, ROLE_FAMILIES, SENIORITY_LEVELS,
     EDUCATION_LEVELS, SALARY_PERIODS, REQUIREMENT_LEVELS,
-)
-from app.forms import JobForm
+)
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
 
@@ -36,15 +40,47 @@ def _get_or_create_skill(name: str, category: str) -> Skill:
     return skill
 
 
-from sqlalchemy import func as sqla_func
-
-
 def func_lower(col):
     return sqla_func.lower(col)
 
 
+@admin_bp.route("/")
+def index():
+    if current_user.is_authenticated:
+        return redirect(url_for("admin.job_list"))
+    return redirect(url_for("admin.login"))
+
+
+@admin_bp.route("/login", methods=["GET", "POST"])
+def login():
+    if current_user.is_authenticated:
+        return redirect(url_for("admin.job_list"))
+
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = db.session.query(AdminUser).filter_by(username=form.username.data.strip()).first()
+        if user and user.check_password(form.password.data):
+            login_user(user)
+            next_url = request.args.get("next", "")
+            if not next_url.startswith("/"):
+                next_url = url_for("admin.job_list")
+            return redirect(next_url)
+        flash("Invalid username or password.", "danger")
+
+    return render_template("admin/login.html", form=form)
+
+
+@admin_bp.route("/logout", methods=["POST"])
+@login_required
+def logout():
+    logout_user()
+    flash("Signed out.", "success")
+    return redirect(url_for("admin.login"))
+
+
 @admin_bp.route("/jobs")
-def job_list():
+@login_required
+def job_list():
     page = request.args.get("page", 1, type=int)
     pagination = (
         db.session.query(Job)
@@ -56,7 +92,8 @@ def job_list():
 
 
 @admin_bp.route("/jobs/new", methods=["GET", "POST"])
-def new_job():
+@login_required
+def new_job():
     form = JobForm()
     if form.validate_on_submit():
         try:
@@ -99,7 +136,8 @@ def new_job():
 
 
 @admin_bp.route("/jobs/<int:job_id>/edit", methods=["GET", "POST"])
-def edit_job(job_id):
+@login_required
+def edit_job(job_id):
     job = db.session.get(Job, job_id)
     if job is None:
         abort(404)
@@ -152,7 +190,8 @@ def edit_job(job_id):
 
 
 @admin_bp.route("/jobs/<int:job_id>/delete", methods=["POST"])
-def delete_job(job_id):
+@login_required
+def delete_job(job_id):
     job = db.session.get(Job, job_id)
     if job is None:
         abort(404)

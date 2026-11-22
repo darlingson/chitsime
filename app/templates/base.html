@@ -25,9 +25,14 @@
            class="{{ 'active' if active_tab == 'jobs' else '' }}">Jobs</a>
         <a href="{{ url_for('skills.skill_demand') }}"
            class="{{ 'active' if active_tab == 'skills' else '' }}">Skill demand</a>
-        <a href="{{ url_for('admin.job_list') }}"
-           class="{{ 'active' if active_tab == 'admin' else '' }}">Admin</a>
       </nav>
+
+      {% if current_user.is_authenticated and active_tab == 'admin' %}
+        <form method="POST" action="{{ url_for('admin.logout') }}" class="admin-session">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+          <button type="submit" class="ghost admin-logout">Sign out</button>
+        </form>
+      {% endif %}
     </div>
   </header>
 

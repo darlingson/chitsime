@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import (
     StringField, TextAreaField, SelectField, BooleanField,
-    IntegerField, FloatField, FieldList, FormField, DateField,
-)
+    IntegerField, FloatField, FieldList, FormField, DateField, PasswordField,
+)
 from wtforms.validators import DataRequired, Optional, Length, NumberRange
 from app.models import (
     EMPLOYMENT_TYPES, ROLE_FAMILIES, SENIORITY_LEVELS,
@@ -88,3 +88,8 @@ class JobForm(FlaskForm):
     )
 
     skills = FieldList(FormField(SkillEntryForm), min_entries=1)
+
+
+class LoginForm(FlaskForm):
+    username = StringField("Username", validators=[DataRequired(), Length(max=80)])
+    password = PasswordField("Password", validators=[DataRequired(), Length(max=255)])
