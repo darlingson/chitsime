@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set active_tab = "admin" %}
+{% block title %}Import jobs — Chitsime{% endblock %}
+
+{% block content %}
+<div class="form-page" style="max-width: 720px; margin: 0 auto;">
+  <a href="{{ url_for('admin.job_list') }}" class="detail-back">Back to jobs</a>
+
+  <section class="intro">
+    <h2>Import jobs</h2>
+    <p>Upload a JSON file with the same shape as <code>data/jobs-structured.json</code>. Existing jobs are updated by title, employer, and posted date; skills for imported jobs are replaced.</p>
+  </section>
+
+  <form method="POST" enctype="multipart/form-data" novalidate>
+    {{ form.hidden_tag() }}
+
+    <div class="form-card">
+      <div class="form-card-header"><h3>JSON file</h3></div>
+      <div class="form-card-body">
+        <div class="form-grid" style="grid-template-columns: 1fr;">
+          <div class="form-field">
+            {{ form.file.label }}
+            {{ form.file(accept=".json,application/json") }}
+            {% for e in form.file.errors %}<p class="error">{{ e }}</p>{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="primary">Import</button>
+      <a href="{{ url_for('admin.job_list') }}" class="ghost">Cancel</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

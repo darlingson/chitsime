@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileAllowed, FileField, FileRequired
 from wtforms import (
     StringField, TextAreaField, SelectField, BooleanField,
     IntegerField, FloatField, FieldList, FormField, DateField, PasswordField,
@@ -92,4 +93,11 @@ class JobForm(FlaskForm):
 
 class LoginForm(FlaskForm):
     username = StringField("Username", validators=[DataRequired(), Length(max=80)])
-    password = PasswordField("Password", validators=[DataRequired(), Length(max=255)])
+    password = PasswordField("Password", validators=[DataRequired(), Length(max=255)])
+
+
+class ImportJobsForm(FlaskForm):
+    file = FileField(
+        "JSON file",
+        validators=[FileRequired(), FileAllowed(["json"], "JSON files only.")],
+    )

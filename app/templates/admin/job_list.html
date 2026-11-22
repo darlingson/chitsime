@@ -8,7 +8,10 @@
     <h2>Manage jobs</h2>
     <p>{{ pagination.total }} job{{ 's' if pagination.total != 1 else '' }} in the database.</p>
   </section>
-  <a href="{{ url_for('admin.new_job') }}" class="primary">Add job</a>
+  <div class="row-actions">
+    <a href="{{ url_for('admin.import_jobs_view') }}" class="ghost">Import JSON</a>
+    <a href="{{ url_for('admin.new_job') }}" class="primary">Add job</a>
+  </div>
 </div>
 
 {% if pagination.items %}

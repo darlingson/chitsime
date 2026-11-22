@@ -1,15 +1,18 @@
+import json
+
 from flask import Blueprint, render_template, request, redirect, url_for, flash, abort
 from flask_login import current_user, login_required, login_user, logout_user
 from sqlalchemy import func as sqla_func
 
 from app import db
-from app.forms import JobForm, LoginForm
+from app.forms import ImportJobsForm, JobForm, LoginForm
 from app.models import (
     AdminUser,
     Job, Employer, Skill, JobSkill,
     EMPLOYMENT_TYPES, ROLE_FAMILIES, SENIORITY_LEVELS,
     EDUCATION_LEVELS, SALARY_PERIODS, REQUIREMENT_LEVELS,
-)
+)
+from app.services.job_import import JobImportError, import_jobs
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
 
@@ -202,7 +205,33 @@ def delete_job(job_id):
     return redirect(url_for("admin.job_list"))
 
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+@admin_bp.route("/import", methods=["GET", "POST"])
+@login_required
+def import_jobs_view():
+    form = ImportJobsForm()
+    if form.validate_on_submit():
+        try:
+            payload = json.load(form.file.data.stream)
+            result = import_jobs(payload)
+            flash(
+                f"Imported {result['total']} jobs ({result['created']} created, {result['updated']} updated).",
+                "success",
+            )
+            return redirect(url_for("admin.job_list"))
+        except json.JSONDecodeError as exc:
+            db.session.rollback()
+            flash(f"Invalid JSON file: {exc.msg}.", "danger")
+        except JobImportError as exc:
+            db.session.rollback()
+            flash(str(exc), "danger")
+        except Exception as exc:
+            db.session.rollback()
+            flash(f"Import failed: {exc}", "danger")
+
+    return render_template("admin/import_jobs.html", form=form)
+
+
+# ── helpers ──────────────────────────────────────────────────────────────────
 
 def _parse_lines(text: str) -> list[str]:
     """Split a textarea value on newlines, strip blanks."""
