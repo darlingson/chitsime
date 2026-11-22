@@ -1,8 +1,13 @@
+import csv
+import io
 import json
+import zipfile
+from datetime import datetime, timezone
 
-from flask import Blueprint, render_template, request, redirect, url_for, flash, abort
+from flask import Blueprint, Response, render_template, request, redirect, url_for, flash, abort
 from flask_login import current_user, login_required, login_user, logout_user
 from sqlalchemy import func as sqla_func
+from sqlalchemy.orm import joinedload, selectinload
 
 from app import db
 from app.forms import ImportJobsForm, JobForm, LoginForm
@@ -229,6 +234,196 @@ def import_jobs_view():
             flash(f"Import failed: {exc}", "danger")
 
     return render_template("admin/import_jobs.html", form=form)
+
+
+# ── exports ─────────────────────────────────────────────────────────────────
+
+
+def _export_jobs():
+    return (
+        db.session.query(Job)
+        .options(
+            joinedload(Job.employer),
+            selectinload(Job.job_skills).joinedload(JobSkill.skill),
+        )
+        .order_by(Job.posted_on.desc(), Job.id.desc())
+        .all()
+    )
+
+
+def _job_to_export_dict(job: Job) -> dict:
+    skills = sorted(job.job_skills, key=lambda js: (js.skill.name.lower(), js.skill.id))
+    return {
+        "id": job.id,
+        "source_id": job.source_id,
+        "title": job.title,
+        "employer": job.employer.name if job.employer else None,
+        "location": job.location,
+        "employment_type": job.employment_type,
+        "role_family": job.role_family,
+        "industry": job.industry,
+        "seniority": job.seniority,
+        "is_ict": job.is_ict,
+        "education_level": job.education_level,
+        "experience_years": {
+            "min": job.experience_min_years,
+            "max": job.experience_max_years,
+        },
+        "salary": {
+            "min": job.salary_min,
+            "max": job.salary_max,
+            "currency": job.salary_currency,
+            "period": job.salary_period,
+        },
+        "posted_on": job.posted_on.isoformat() if job.posted_on else None,
+        "deadline": job.deadline.isoformat() if job.deadline else None,
+        "summary": job.summary,
+        "responsibilities": job.responsibilities or [],
+        "requirements": job.requirements or [],
+        "skills": [
+            {
+                "name": js.skill.name,
+                "category": js.skill.category,
+                "requirement": js.requirement,
+                "evidence": js.evidence,
+            }
+            for js in skills
+        ],
+    }
+
+
+def _csv_bytes(fieldnames, rows):
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(buffer, fieldnames=fieldnames, extrasaction="ignore")
+    writer.writeheader()
+    for row in rows:
+        writer.writerow(row)
+    return buffer.getvalue().encode("utf-8-sig")
+
+
+@admin_bp.route("/export/json")
+@login_required
+def export_jobs_json():
+    jobs = [_job_to_export_dict(job) for job in _export_jobs()]
+    payload = {
+        "exported_at": datetime.now(timezone.utc).isoformat(),
+        "jobs": jobs,
+    }
+    body = json.dumps(payload, ensure_ascii=False, indent=2)
+    filename = f"chitsime-jobs-{datetime.now().strftime('%Y-%m-%d')}.json"
+    return Response(
+        body,
+        mimetype="application/json; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
+@admin_bp.route("/export/csv")
+@login_required
+def export_jobs_csv():
+    jobs = _export_jobs()
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    jobs_rows = []
+    skills_rows = []
+    responsibilities_rows = []
+    requirements_rows = []
+
+    for job in jobs:
+        jobs_rows.append(
+            {
+                "job_id": job.id,
+                "source_id": job.source_id,
+                "title": job.title,
+                "employer": job.employer.name if job.employer else None,
+                "location": job.location,
+                "employment_type": job.employment_type,
+                "role_family": job.role_family,
+                "industry": job.industry,
+                "seniority": job.seniority,
+                "is_ict": job.is_ict,
+                "education_level": job.education_level,
+                "experience_min_years": job.experience_min_years,
+                "experience_max_years": job.experience_max_years,
+                "salary_min": job.salary_min,
+                "salary_max": job.salary_max,
+                "salary_currency": job.salary_currency,
+                "salary_period": job.salary_period,
+                "posted_on": job.posted_on.isoformat() if job.posted_on else None,
+                "deadline": job.deadline.isoformat() if job.deadline else None,
+                "summary": job.summary,
+            }
+        )
+
+        for js in sorted(job.job_skills, key=lambda item: (item.skill.name.lower(), item.skill.id)):
+            skills_rows.append(
+                {
+                    "job_id": job.id,
+                    "skill_name": js.skill.name,
+                    "skill_category": js.skill.category,
+                    "requirement": js.requirement,
+                    "evidence": js.evidence,
+                }
+            )
+
+        for index, text in enumerate(job.responsibilities or [], start=1):
+            responsibilities_rows.append({"job_id": job.id, "order": index, "text": text})
+
+        for index, text in enumerate(job.requirements or [], start=1):
+            requirements_rows.append({"job_id": job.id, "order": index, "text": text})
+
+    files = {
+        "jobs.csv": _csv_bytes(
+            [
+                "job_id",
+                "source_id",
+                "title",
+                "employer",
+                "location",
+                "employment_type",
+                "role_family",
+                "industry",
+                "seniority",
+                "is_ict",
+                "education_level",
+                "experience_min_years",
+                "experience_max_years",
+                "salary_min",
+                "salary_max",
+                "salary_currency",
+                "salary_period",
+                "posted_on",
+                "deadline",
+                "summary",
+            ],
+            jobs_rows,
+        ),
+        "job_skills.csv": _csv_bytes(
+            ["job_id", "skill_name", "skill_category", "requirement", "evidence"],
+            skills_rows,
+        ),
+        "job_responsibilities.csv": _csv_bytes(
+            ["job_id", "order", "text"],
+            responsibilities_rows,
+        ),
+        "job_requirements.csv": _csv_bytes(
+            ["job_id", "order", "text"],
+            requirements_rows,
+        ),
+    }
+
+    archive = io.BytesIO()
+    with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for name, content in files.items():
+            zf.writestr(name, content)
+    archive.seek(0)
+
+    filename = f"chitsime-csv-export-{today}.zip"
+    return Response(
+        archive.getvalue(),
+        mimetype="application/zip",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────

@@ -9,6 +9,8 @@
     <p>{{ pagination.total }} job{{ 's' if pagination.total != 1 else '' }} in the database.</p>
   </section>
   <div class="row-actions">
+    <a href="{{ url_for('admin.export_jobs_json') }}" class="ghost">Export JSON</a>
+    <a href="{{ url_for('admin.export_jobs_csv') }}" class="ghost">Export CSV</a>
     <a href="{{ url_for('admin.import_jobs_view') }}" class="ghost">Import JSON</a>
     <a href="{{ url_for('admin.new_job') }}" class="primary">Add job</a>
   </div>

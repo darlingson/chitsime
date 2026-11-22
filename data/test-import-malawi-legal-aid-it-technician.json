@@ -1,0 +1,116 @@
+{
+  "jobs": [
+    {
+      "source_id": null,
+      "title": "Information Technology Technician",
+      "employer": "Malawi Legal Aid Bureau",
+      "location": "Blantyre",
+      "employment_type": "full_time",
+      "role_family": "support",
+      "industry": "Public sector / legal aid",
+      "seniority": "junior",
+      "is_ict": true,
+      "education_level": "diploma",
+      "experience_years": {
+        "min": 1,
+        "max": null
+      },
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null
+      },
+      "posted_on": "2026-11-16",
+      "deadline": "2026-11-24",
+      "summary": "Installs, maintains and troubleshoots hardware, software and user systems for the Malawi Legal Aid Bureau, providing first-line technical support and ensuring secure, reliable IT operations at the Blantyre duty station.",
+      "responsibilities": [
+        "Install and configure hardware and software components to ensure usability.",
+        "Troubleshoot hardware and software issues.",
+        "Ensure electrical safety standards are met.",
+        "Repair or replace damaged hardware.",
+        "Upgrade the entire system to enable compatible software on all computers.",
+        "Install and upgrade anti-virus software to ensure security at the user level.",
+        "Perform tests and evaluations of new software and hardware.",
+        "Provide support to users and be the first point of contact for error reporting.",
+        "Conduct daily backup operations.",
+        "Manage technical documentation.",
+        "Perform any other related duties assigned from time to time by relevant officers."
+      ],
+      "requirements": [
+        "Diploma in Information Systems, Computer Science or a relevant related field from a recognised and accredited university.",
+        "Bachelor's degree in the above related fields will be an added advantage.",
+        "A minimum of 1 year experience in computer networks, systems administration and maintenance.",
+        "A+ or Cisco Certified Network Associate accreditation is also an added advantage."
+      ],
+      "skills": [
+        {
+          "name": "Hardware troubleshooting",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Troubleshooting hardware and software issues; Repairing or replacing damaged hardware"
+        },
+        {
+          "name": "Software installation and configuration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Installing and configuring hardware and software components to ensure usability"
+        },
+        {
+          "name": "Computer networks",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "A minimum of 1year experience in computer networks, systems administration and maintenance"
+        },
+        {
+          "name": "Systems administration",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "A minimum of 1year experience in computer networks, systems administration and maintenance"
+        },
+        {
+          "name": "IT maintenance",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "A minimum of 1year experience in computer networks, systems administration and maintenance"
+        },
+        {
+          "name": "Anti-virus management",
+          "category": "security",
+          "requirement": "required",
+          "evidence": "Installing and upgrading anti-virus software to ensure security at the user level"
+        },
+        {
+          "name": "Backup operations",
+          "category": "infrastructure",
+          "requirement": "required",
+          "evidence": "Conducting daily backup operations"
+        },
+        {
+          "name": "Technical documentation",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Managing technical documentation"
+        },
+        {
+          "name": "User support",
+          "category": "support",
+          "requirement": "required",
+          "evidence": "Providing support to users and being the first point of contact for error reporting"
+        },
+        {
+          "name": "CompTIA A+",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "A+ or Cisco Certified Network Associate accreditation is also an added advantage"
+        },
+        {
+          "name": "CCNA",
+          "category": "certification",
+          "requirement": "preferred",
+          "evidence": "A+ or Cisco Certified Network Associate accreditation is also an added advantage"
+        }
+      ]
+    }
+  ]
+}
