@@ -19,29 +19,38 @@ def parse_date(value):
         raise JobImportError(f"Invalid date {value!r}") from exc
 
 
-def _get_or_create_employer(name):
-    employer = Employer.query.filter_by(name=name).first()
-    if employer:
-        return employer
-    employer = Employer(name=name)
-    db.session.add(employer)
-    db.session.flush()
+def _get_or_create_employer(name, cache):
+    key = name.strip()
+    if key in cache:
+        return cache[key]
+    employer = Employer.query.filter_by(name=key).first()
+    if employer is None:
+        employer = Employer(name=key)
+        db.session.add(employer)
+        db.session.flush()
+    cache[key] = employer
     return employer
 
 
-def _get_or_create_skill(name, category):
-    skill = Skill.query.filter_by(name=name).first()
-    if skill:
+def _get_or_create_skill(name, category, cache):
+    key = name.strip()
+    if key in cache:
+        skill = cache[key]
         if category and skill.category != category:
             skill.category = category
         return skill
-    skill = Skill(name=name, category=category or "other")
-    db.session.add(skill)
-    db.session.flush()
+    skill = Skill.query.filter_by(name=key).first()
+    if skill is None:
+        skill = Skill(name=key, category=category or "other")
+        db.session.add(skill)
+        db.session.flush()
+    elif category and skill.category != category:
+        skill.category = category
+    cache[key] = skill
     return skill
 
 
-def upsert_job(data):
+def upsert_job(data, employer_cache, skill_cache):
     if not isinstance(data, dict):
         raise JobImportError("Each job must be an object")
 
@@ -56,7 +65,7 @@ def upsert_job(data):
     if posted_on is None:
         raise JobImportError(f"Job {title!r} is missing posted_on")
 
-    employer = _get_or_create_employer(employer_name)
+    employer = _get_or_create_employer(employer_name, employer_cache)
     job = Job.query.filter_by(
         title=title,
         employer_id=employer.id,
@@ -98,7 +107,7 @@ def upsert_job(data):
         skill_name = (item.get("name") or "").strip()
         if not skill_name:
             continue
-        skill = _get_or_create_skill(skill_name, (item.get("category") or "other").strip())
+        skill = _get_or_create_skill(skill_name, (item.get("category") or "other").strip(), skill_cache)
         db.session.add(
             JobSkill(
                 job_id=job.id,
@@ -122,14 +131,21 @@ def import_jobs(payload):
     if not isinstance(jobs, list):
         raise JobImportError("'jobs' must be a list")
 
+    employer_cache = {e.name: e for e in Employer.query.all()}
+    skill_cache = {s.name: s for s in Skill.query.all()}
+
     created = 0
     updated = 0
     for index, item in enumerate(jobs, start=1):
         try:
-            _, was_created = upsert_job(item)
+            with db.session.no_autoflush:
+                _, was_created = upsert_job(item, employer_cache, skill_cache)
+            db.session.commit()
         except JobImportError:
+            db.session.rollback()
             raise
         except Exception as exc:
+            db.session.rollback()
             title = item.get("title") if isinstance(item, dict) else None
             label = f"job {index}" + (f" ({title!r})" if title else "")
             raise JobImportError(f"Failed to import {label}: {exc}") from exc
@@ -138,5 +154,4 @@ def import_jobs(payload):
         else:
             updated += 1
 
-    db.session.commit()
     return {"total": len(jobs), "created": created, "updated": updated}

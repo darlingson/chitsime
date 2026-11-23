@@ -84,12 +84,12 @@ class Job(db.Model):
     employer_id = db.Column(db.Integer, db.ForeignKey("employer.id"), nullable=False)
     location = db.Column(db.String(255), nullable=False)
 
-    employment_type = db.Column(db.Enum(*EMPLOYMENT_TYPES), nullable=False)
-    role_family = db.Column(db.Enum(*ROLE_FAMILIES), nullable=False)
+    employment_type = db.Column(db.Enum(*EMPLOYMENT_TYPES, native_enum=False), nullable=False)
+    role_family = db.Column(db.Enum(*ROLE_FAMILIES, native_enum=False), nullable=False)
     industry = db.Column(db.String(100), nullable=True)
-    seniority = db.Column(db.Enum(*SENIORITY_LEVELS), nullable=False)
+    seniority = db.Column(db.Enum(*SENIORITY_LEVELS, native_enum=False), nullable=False)
     is_ict = db.Column(db.Boolean, nullable=False, default=True)
-    education_level = db.Column(db.Enum(*EDUCATION_LEVELS), nullable=True)
+    education_level = db.Column(db.Enum(*EDUCATION_LEVELS, native_enum=False), nullable=True)
 
     experience_min_years = db.Column(db.Integer, nullable=True)
     experience_max_years = db.Column(db.Integer, nullable=True)
@@ -97,7 +97,7 @@ class Job(db.Model):
     salary_min = db.Column(db.Float, nullable=True)
     salary_max = db.Column(db.Float, nullable=True)
     salary_currency = db.Column(db.String(10), nullable=True)
-    salary_period = db.Column(db.Enum(*SALARY_PERIODS), nullable=True)
+    salary_period = db.Column(db.Enum(*SALARY_PERIODS, native_enum=False), nullable=True)
 
     posted_on = db.Column(db.Date, nullable=False)
     deadline = db.Column(db.Date, nullable=True)
@@ -130,7 +130,7 @@ class JobSkill(db.Model):
 
     job_id = db.Column(db.Integer, db.ForeignKey("job.id", ondelete="CASCADE"), primary_key=True)
     skill_id = db.Column(db.Integer, db.ForeignKey("skill.id"), primary_key=True)
-    requirement = db.Column(db.Enum(*REQUIREMENT_LEVELS), nullable=False)
+    requirement = db.Column(db.Enum(*REQUIREMENT_LEVELS, native_enum=False), nullable=False)
     evidence = db.Column(db.Text, nullable=True)
 
     job = db.relationship("Job", back_populates="job_skills")
